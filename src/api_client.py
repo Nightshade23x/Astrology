@@ -74,3 +74,20 @@ def get_fixture_events(fixture_id):
     time.sleep(1.2)
 
     return r.json()["response"]
+
+def get_fixture_player_stats(fixture_id):
+    url = f"{BASE_URL}/fixtures/players"
+    params = {"fixture": fixture_id}
+
+    r = session.get(
+        url,
+        headers=HEADERS,
+        params=params,
+        timeout=30,
+        verify=False
+    )
+    r.raise_for_status()
+
+    time.sleep(1.2)  # stay safe with rate limits
+
+    return r.json()["response"]
