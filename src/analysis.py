@@ -39,7 +39,7 @@ def same_day_clustering(df):
     return daily.groupby("Zodiac").mean().sort_values(ascending=False)
 
 
-def cancer_sagittarius_coupling(df):
+#def cancer_sagittarius_coupling(df):
     """
     P(Sagittarius | Cancer) vs baseline
     """
@@ -79,13 +79,13 @@ def main():
     print("\n=== Same-Day Clustering ===")
     print(same_day_clustering(df))
 
-    print("\n=== Cancer ↔ Sagittarius Coupling ===")
-    coupling = cancer_sagittarius_coupling(df)
-    if coupling:
-        for k, v in coupling.items():
-            print(f"{k}: {v:.3f}")
-    else:
-        print("Not enough data yet")
+    #print("\n=== Cancer ↔ Sagittarius Coupling ===")
+    #coupling = cancer_sagittarius_coupling(df)
+    #if coupling:
+    #    for k, v in coupling.items():
+    #        print(f"{k}: {v:.3f}")
+    #else:
+    #    print("Not enough data yet")
 
 
 if __name__ == "__main__":
