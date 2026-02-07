@@ -1,13 +1,27 @@
 import json
 import time
 import requests
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+# --------------------
+# ENV SETUP
+# --------------------
+load_dotenv()
+
+API_KEY = os.getenv("API_FOOTBALL_KEY")
+if not API_KEY:
+    raise RuntimeError("API_FOOTBALL_KEY not loaded")
 
 BASE_URL = "https://v3.football.api-sports.io"
 HEADERS = {
-    "x-apisports-key": "YOUR_API_KEY_HERE"
+    "x-apisports-key": API_KEY
 }
 
+# --------------------
+# DATA SETUP
+# --------------------
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
@@ -42,7 +56,7 @@ def fetch_and_store_fixtures(league_id=39):
                     headers=HEADERS,
                     params=params,
                     timeout=30,
-                    verify=False  # Windows SSL stability
+                    verify=False  # Windows / uni SSL issues
                 )
                 r.raise_for_status()
 
@@ -52,15 +66,14 @@ def fetch_and_store_fixtures(league_id=39):
                 print(f"  → Retrieved {len(data)} fixtures")
                 break
 
-            except requests.exceptions.RequestException:
-                print(f"Request failed (attempt {attempt + 1}/5). Retrying...")
+            except requests.exceptions.RequestException as e:
+                print(f"Request failed (attempt {attempt + 1}/5): {e}")
                 time.sleep(2)
 
         else:
             raise RuntimeError(f"Failed to fetch fixtures for season {season}")
 
-        # polite pause between seasons
-        time.sleep(1)
+        time.sleep(1)  # polite pause
 
     with open(FIXTURES_FILE, "w", encoding="utf-8") as f:
         json.dump(all_fixtures, f)
