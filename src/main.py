@@ -10,7 +10,7 @@ DATA_DIR.mkdir(exist_ok=True)
 PROCESSED_FILE = DATA_DIR / "processed_fixtures.txt"
 CSV_PATH = DATA_DIR / "season_events.csv"
 
-MAX_CALLS = 15  # safe limit (you get 100/day)
+MAX_CALLS = 90  # safe limit (you get 100/day)
 
 
 def load_processed():
