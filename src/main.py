@@ -4,23 +4,31 @@ from processing import load_players, tag_players
 import pandas as pd
 from pathlib import Path
 
+# --------------------
+# CONFIG
+# --------------------
+SEASON = 2025  # CHANGE HERE: 2024 or 2025
+MAX_CALLS = 40
+
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
-PROCESSED_FILE = DATA_DIR / "processed_fixtures.txt"
-CSV_PATH = DATA_DIR / "season_events.csv"
 
-MAX_CALLS = 90  # safe limit (you get 100/day)
+def season_paths(season):
+    return (
+        DATA_DIR / f"season_events_{season}.csv",
+        DATA_DIR / f"processed_fixtures_{season}.txt"
+    )
 
 
-def load_processed():
-    if not PROCESSED_FILE.exists():
+def load_processed(processed_file):
+    if not processed_file.exists():
         return set()
-    return set(PROCESSED_FILE.read_text().splitlines())
+    return set(processed_file.read_text().splitlines())
 
 
-def save_processed(fixture_id):
-    with open(PROCESSED_FILE, "a") as f:
+def save_processed(processed_file, fixture_id):
+    with open(processed_file, "a") as f:
         f.write(str(fixture_id) + "\n")
 
 
@@ -45,11 +53,13 @@ def extract_players_from_stats(fixture_response, fixture_id, date):
 
 
 def main():
-    fetch_and_store_fixtures()
-    fixtures = load_fixtures()
+    csv_path, processed_file = season_paths(SEASON)
+
+    fetch_and_store_fixtures(seasons=[SEASON])
+    fixtures = load_fixtures(SEASON)
     players = load_players()
 
-    processed = load_processed()
+    processed = load_processed(processed_file)
     all_events = []
     calls = 0
 
@@ -66,7 +76,7 @@ def main():
             break
 
         date = fx["fixture"]["date"][:10]
-        print("Fetching PLAYER STATS for fixture:", fixture_id)
+        print(f"Fetching PLAYER STATS for fixture {fixture_id}")
 
         response = get_fixture_player_stats(fixture_id)
         calls += 1
@@ -85,7 +95,7 @@ def main():
         tagged = tag_players(events, players)
         all_events.append(tagged)
 
-        save_processed(fixture_id)
+        save_processed(processed_file, fixture_id)
 
     if not all_events:
         print("No new fixtures processed")
@@ -93,14 +103,14 @@ def main():
 
     new_df = pd.concat(all_events, ignore_index=True)
 
-    if CSV_PATH.exists():
-        old_df = pd.read_csv(CSV_PATH)
+    if csv_path.exists():
+        old_df = pd.read_csv(csv_path)
         final_df = pd.concat([old_df, new_df], ignore_index=True)
     else:
         final_df = new_df
 
-    final_df.to_csv(CSV_PATH, index=False)
-    print("Updated season_events.csv")
+    final_df.to_csv(csv_path, index=False)
+    print(f"Updated {csv_path.name}")
 
 
 if __name__ == "__main__":

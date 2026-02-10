@@ -25,22 +25,62 @@ HEADERS = {
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
-FIXTURES_FILE = DATA_DIR / "fixtures.json"
 
-SEASONS = [2024]   # add future seasons here
+def fixtures_file_for_season(season):
+    return DATA_DIR / f"fixtures_{season}.json"
 
 
-def fetch_and_store_fixtures(league_id=39):
+# --------------------
+# SEASON DISCOVERY
+# --------------------
+def get_league_seasons(league_id=39):
     """
-    Fetch fixtures for multiple seasons and cache them.
+    Ask API-Football which seasons actually exist for this league.
+    Returns a list like: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
     """
-    if FIXTURES_FILE.exists():
-        print("Fixtures already cached")
-        return
+    url = f"{BASE_URL}/leagues"
+    params = {"id": league_id}
 
-    all_fixtures = []
+    try:
+        r = requests.get(
+            url,
+            headers=HEADERS,
+            params=params,
+            timeout=30,
+            verify=False
+        )
+        r.raise_for_status()
+    except Exception as e:
+        print("Failed to fetch league metadata:", e)
+        return []
 
-    for season in SEASONS:
+    response = r.json().get("response", [])
+    if not response:
+        return []
+
+    seasons = response[0].get("seasons", [])
+    return sorted([s["year"] for s in seasons if "year" in s])
+
+
+# --------------------
+# FIXTURE FETCHING
+# --------------------
+def fetch_and_store_fixtures(league_id=39, seasons=None):
+    """
+    Fetch fixtures for valid seasons and store them separately.
+    If seasons=None, automatically discovers seasons via API.
+    """
+    if seasons is None:
+        seasons = get_league_seasons(league_id)
+        print(f"Discovered seasons from API: {seasons}")
+
+    for season in seasons:
+        fixtures_file = fixtures_file_for_season(season)
+
+        if fixtures_file.exists():
+            print(f"Fixtures for season {season} already cached")
+            continue
+
         print(f"Fetching fixtures for season {season}…")
 
         url = f"{BASE_URL}/fixtures"
@@ -56,31 +96,36 @@ def fetch_and_store_fixtures(league_id=39):
                     headers=HEADERS,
                     params=params,
                     timeout=30,
-                    verify=False  # Windows / uni SSL issues
+                    verify=False
                 )
                 r.raise_for_status()
 
-                data = r.json()["response"]
-                all_fixtures.extend(data)
+                fixtures = r.json().get("response", [])
 
-                print(f"  → Retrieved {len(data)} fixtures")
+                with open(fixtures_file, "w", encoding="utf-8") as f:
+                    json.dump(fixtures, f)
+
+                print(f"Saved {len(fixtures)} fixtures for season {season}")
                 break
 
             except requests.exceptions.RequestException as e:
                 print(f"Request failed (attempt {attempt + 1}/5): {e}")
                 time.sleep(2)
 
-        else:
-            raise RuntimeError(f"Failed to fetch fixtures for season {season}")
-
-        time.sleep(1)  # polite pause
-
-    with open(FIXTURES_FILE, "w", encoding="utf-8") as f:
-        json.dump(all_fixtures, f)
-
-    print(f"Saved {len(all_fixtures)} fixtures total")
+        time.sleep(1)
 
 
-def load_fixtures():
-    with open(FIXTURES_FILE, "r", encoding="utf-8") as f:
+# --------------------
+# LOAD FIXTURES
+# --------------------
+def load_fixtures(season):
+    fixtures_file = fixtures_file_for_season(season)
+
+    if not fixtures_file.exists():
+        raise FileNotFoundError(
+            f"No cached fixtures found for season {season}. "
+            "Run fetch_and_store_fixtures() first."
+        )
+
+    with open(fixtures_file, "r", encoding="utf-8") as f:
         return json.load(f)

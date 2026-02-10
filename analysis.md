@@ -155,3 +155,37 @@ Perfect (1.0) probabilities still occur for rare signs (e.g., Cancer, Aries) but
 ### Conclusion
 Introducing minimum support strengthens the coupling analysis.
 The surviving patterns are more robust and provide a stronger foundation for dataset expansion.
+
+
+
+
+PREDICTOR BEGINNINGS
+
+# Astrology-Based Same-Day Performance Analysis
+
+## Motivation
+
+The goal of this project was **not** to claim that astrology deterministically predicts football performance.  
+Instead, the objective was to test a personal intuition:
+
+> *Given that footballers are human and subject to mood, rhythm, and contextual factors, could grouping players by zodiac reveal small but measurable same-day performance biases?*
+
+In particular:
+- Does early-day performance influence later matches on the **same calendar day**?
+- Is this influence visible when players are grouped by zodiac signs?
+- Is the intuition completely random, or does it show structured signal?
+
+---
+
+## Data Collection
+
+- Fixtures were fetched from the **Premier League (2024 season)** using the API-Football API.
+- For each finished match:
+  - Player statistics were collected.
+  - A player was marked as **performed** if **any** of the following held:
+    - Goals > 0
+    - Assists > 0
+    - Match rating ≥ 7.0
+- Player birthdates were mapped to zodiac signs via a static `players.csv`.
+
+All match events were stored in:
