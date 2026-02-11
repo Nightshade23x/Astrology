@@ -7,29 +7,13 @@ from pathlib import Path
 # --------------------
 # CONFIG
 # --------------------
-SEASON = 2025  # CHANGE HERE: 2024 or 2025
-MAX_CALLS = 40
+SEASON = 2024
+MAX_CALLS = 150
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
-
-def season_paths(season):
-    return (
-        DATA_DIR / f"season_events_{season}.csv",
-        DATA_DIR / f"processed_fixtures_{season}.txt"
-    )
-
-
-def load_processed(processed_file):
-    if not processed_file.exists():
-        return set()
-    return set(processed_file.read_text().splitlines())
-
-
-def save_processed(processed_file, fixture_id):
-    with open(processed_file, "a") as f:
-        f.write(str(fixture_id) + "\n")
+CSV_PATH = DATA_DIR / "season_events_2024.csv"
 
 
 def extract_players_from_stats(fixture_response, fixture_id, date):
@@ -45,7 +29,7 @@ def extract_players_from_stats(fixture_response, fixture_id, date):
                 "assists": stats["goals"]["assists"] or 0,
                 "rating": float(stats["games"]["rating"]) if stats["games"]["rating"] else 0,
                 "minutes": stats["games"]["minutes"] or 0,
-                "match_id": fixture_id,
+                "match_id": str(fixture_id),
                 "date": date
             })
 
@@ -53,13 +37,19 @@ def extract_players_from_stats(fixture_response, fixture_id, date):
 
 
 def main():
-    csv_path, processed_file = season_paths(SEASON)
-
+    # Fetch fixtures (only if not already cached)
     fetch_and_store_fixtures(seasons=[SEASON])
     fixtures = load_fixtures(SEASON)
     players = load_players()
 
-    processed = load_processed(processed_file)
+    # Load existing CSV if exists
+    if CSV_PATH.exists():
+        existing_df = pd.read_csv(CSV_PATH)
+        processed_ids = set(existing_df["match_id"].astype(str))
+    else:
+        existing_df = None
+        processed_ids = set()
+
     all_events = []
     calls = 0
 
@@ -68,7 +58,9 @@ def main():
             continue
 
         fixture_id = str(fx["fixture"]["id"])
-        if fixture_id in processed:
+
+        # Skip fixtures already stored
+        if fixture_id in processed_ids:
             continue
 
         if calls >= MAX_CALLS:
@@ -86,6 +78,7 @@ def main():
 
         events = extract_players_from_stats(response, fixture_id, date)
 
+        # Performance logic
         events["performed"] = (
             (events["goals"] > 0) |
             (events["assists"] > 0) |
@@ -95,22 +88,19 @@ def main():
         tagged = tag_players(events, players)
         all_events.append(tagged)
 
-        save_processed(processed_file, fixture_id)
-
     if not all_events:
         print("No new fixtures processed")
         return
 
     new_df = pd.concat(all_events, ignore_index=True)
 
-    if csv_path.exists():
-        old_df = pd.read_csv(csv_path)
-        final_df = pd.concat([old_df, new_df], ignore_index=True)
+    if existing_df is not None:
+        final_df = pd.concat([existing_df, new_df], ignore_index=True)
     else:
         final_df = new_df
 
-    final_df.to_csv(csv_path, index=False)
-    print(f"Updated {csv_path.name}")
+    final_df.to_csv(CSV_PATH, index=False)
+    print(f"Updated {CSV_PATH.name}")
 
 
 if __name__ == "__main__":
