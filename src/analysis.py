@@ -30,7 +30,7 @@ def same_day_clustering(df):
 
 
 def main():
-    SEASON = 2025  # change freely
+    SEASON = 2024  # change freely
 
     df = load_data(SEASON)
 

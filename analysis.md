@@ -189,3 +189,21 @@ In particular:
 - Player birthdates were mapped to zodiac signs via a static `players.csv`.
 
 All match events were stored in:
+
+
+
+Calendar D+1 Zodiac Continuation Test (2024 – 10 Teams)
+What We Tested
+
+We checked whether a zodiac sign that performed on one calendar day (e.g., Saturday) was more likely to perform again on the very next calendar day (e.g., Sunday).
+So if Scorpio performed on Saturday, we tested whether another Scorpio performed on Sunday.
+We compared this “next-day continuation rate” to the normal baseline rate of that zodiac appearing on any random day.
+
+Results
+No zodiac sign had a higher next-day continuation rate than its normal baseline rate.
+All Lift values were below 1.
+This means there was no evidence of a two-day persistence effect.
+In fact, continuation was slightly weaker than baseline in most cases.
+
+Conclusion
+Based on the 2024 data (10 teams), there is no statistical support for the idea that zodiac performance carries over to the next calendar day.

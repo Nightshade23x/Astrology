@@ -1,6 +1,6 @@
 import pandas as pd
 
-DATA_PATH = "data/season_events.csv"
+DATA_PATH = "data/season_events_2024.csv"
 
 
 def same_sign_continuation():

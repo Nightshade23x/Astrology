@@ -5,7 +5,7 @@ from predictor import ZodiacPredictor
 from analysis import zodiac_reliability, same_day_clustering
 
 
-DATA_PATH = "data/season_events.csv"
+DATA_PATH = "data/season_events_2024.csv"
 
 CONFIDENCE_MULTIPLIER = 1.2   # try 1.1–1.4 later
 
