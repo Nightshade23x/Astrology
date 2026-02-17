@@ -7,13 +7,14 @@ from pathlib import Path
 # --------------------
 # CONFIG
 # --------------------
-SEASON = 2024
-MAX_CALLS = 150
+SEASON = 2023
+MAX_CALLS = 20
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
-CSV_PATH = DATA_DIR / "season_events_2024.csv"
+CSV_PATH = DATA_DIR / f"season_events_{SEASON}.csv"
+
 
 
 def extract_players_from_stats(fixture_response, fixture_id, date):
