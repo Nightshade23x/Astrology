@@ -1,91 +1,92 @@
 import pandas as pd
-from itertools import combinations
 from collections import defaultdict
+
 
 # --------------------
 # CONFIG
 # --------------------
-CSV_PATH = "data/season_events.csv"
+SEASONS = [2023, 2024]
 ZODIAC_COL = "Zodiac"
 DATE_COL = "date"
 PERFORMED_COL = "performed"
 
 
-def load_data():
-    df = pd.read_csv(CSV_PATH)
+def load_data(season):
+    path = f"data/season_events_{season}.csv"
+    df = pd.read_csv(path)
+    df[DATE_COL] = pd.to_datetime(df[DATE_COL])
+    df = df[df[ZODIAC_COL].notna()]
     return df
 
 
 def build_daily_zodiac_sets(df):
-    """
-    For each date, collect the set of zodiac signs
-    that had at least one performing player.
-    """
     performed = df[df[PERFORMED_COL] == 1]
 
     daily_sets = (
         performed
         .groupby(DATE_COL)[ZODIAC_COL]
-        .apply(lambda x: set(x.dropna()))
+        .apply(lambda x: set(x))
     )
 
     return daily_sets
 
 
-def compute_pair_counts(daily_sets):
-    """
-    Count how often each zodiac pair appears on the same day.
-    """
-    pair_counts = defaultdict(int)
-
-    for zodiac_set in daily_sets:
-        if len(zodiac_set) < 2:
-            continue
-
-        for a, b in combinations(sorted(zodiac_set), 2):
-            pair_counts[(a, b)] += 1
-
-    return pd.Series(pair_counts).sort_values(ascending=False)
-
-
-def compute_conditional_probabilities(daily_sets):
-    """
-    Compute P(B | A):
-    On days where A appears, how often does B also appear?
-    """
+def compute_lift_matrix(daily_sets):
     appearance_counts = defaultdict(int)
     coappearance_counts = defaultdict(int)
 
+    total_days = len(daily_sets)
+
+    # Count appearances
+    for zodiac_set in daily_sets:
+        for z in zodiac_set:
+            appearance_counts[z] += 1
+
+    # Count co-appearances
     for zodiac_set in daily_sets:
         for a in zodiac_set:
-            appearance_counts[a] += 1
+            for b in zodiac_set:
+                if a != b:
+                    coappearance_counts[(a, b)] += 1
 
-        for a, b in combinations(zodiac_set, 2):
-            coappearance_counts[(a, b)] += 1
-            coappearance_counts[(b, a)] += 1
+    rows = []
 
-    conditional = {}
+    for (a, b), co_count in coappearance_counts.items():
+        p_a = appearance_counts[a] / total_days
+        p_b = appearance_counts[b] / total_days
+        p_b_given_a = co_count / appearance_counts[a]
 
-    for (a, b), count in coappearance_counts.items():
-        conditional[(a, b)] = count / appearance_counts[a]
+        lift = p_b_given_a / p_b if p_b > 0 else None
 
-    return (
-        pd.Series(conditional)
-        .sort_values(ascending=False)
-    )
+        rows.append({
+            "Trigger": a,
+            "Target": b,
+            "P(B|A)": round(p_b_given_a, 3),
+            "Baseline_P(B)": round(p_b, 3),
+            "Lift": round(lift, 3) if lift else None
+        })
+
+    result_df = pd.DataFrame(rows)
+
+    return result_df.sort_values("Lift", ascending=False)
 
 
 def main():
-    df = load_data()
-    daily_sets = build_daily_zodiac_sets(df)
+    for season in SEASONS:
+        print("\n======================================")
+        print(f"=== Zodiac Coupling Analysis: {season} ===")
+        print("======================================")
 
-    print("\n=== Zodiac Pair Co-occurrence Counts ===")
-    pair_counts = compute_pair_counts(daily_sets)
-    print(pair_counts.head(15))
+        df = load_data(season)
+        daily_sets = build_daily_zodiac_sets(df)
 
-    print("\n=== Conditional Probabilities P(B | A) ===")
-    conditional_probs = compute_conditional_probabilities(daily_sets)
-    print(conditional_probs.head(15))
+        lift_df = compute_lift_matrix(daily_sets)
+
+        print("\n--- Strongest Positive Couplings ---")
+        print(lift_df.head(15).to_string(index=False))
+
+        print("\n--- Strongest Negative Couplings ---")
+        print(lift_df.sort_values("Lift").head(15).to_string(index=False))
 
 
 if __name__ == "__main__":

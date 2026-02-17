@@ -1,10 +1,8 @@
 import pandas as pd
 
-DATA_PATH = "data/season_events_2024.csv"
 
-
-def same_sign_continuation():
-    df = pd.read_csv(DATA_PATH)
+def same_sign_continuation(data_path):
+    df = pd.read_csv(data_path)
     df["date"] = pd.to_datetime(df["date"])
 
     # Remove NaN zodiacs
@@ -54,13 +52,16 @@ def same_sign_continuation():
 
         if activation_days > 0:
             continuation_rate = continuation_days / activation_days
+            baseline = baseline_rate.get(zodiac, 0)
+
             lift = (
-                continuation_rate / baseline_rate.get(zodiac, 0)
-                if baseline_rate.get(zodiac, 0) > 0
+                continuation_rate / baseline
+                if baseline > 0
                 else None
             )
         else:
             continuation_rate = 0
+            baseline = baseline_rate.get(zodiac, 0)
             lift = None
 
         results.append({
@@ -68,7 +69,7 @@ def same_sign_continuation():
             "Activation_days": activation_days,
             "Continuation_days": continuation_days,
             "Continuation_rate": round(continuation_rate, 3),
-            "Baseline_rate": round(baseline_rate.get(zodiac, 0), 3),
+            "Baseline_rate": round(baseline, 3),
             "Lift": round(lift, 3) if lift else None
         })
 
@@ -76,9 +77,19 @@ def same_sign_continuation():
         "Lift", ascending=False, na_position="last"
     )
 
-    print("\n=== Same-Sign Continuation Test ===")
-    print(result_df.to_string(index=False))
+    return result_df
 
 
 if __name__ == "__main__":
-    same_sign_continuation()
+    SEASONS = [2023, 2024]
+
+    for season in SEASONS:
+        print("\n======================================")
+        print(f"=== Same-Sign Continuation: {season} ===")
+        print("======================================")
+
+        path = f"data/season_events_{season}.csv"
+        result = same_sign_continuation(path)
+
+        print(result.to_string(index=False))
+        print()
