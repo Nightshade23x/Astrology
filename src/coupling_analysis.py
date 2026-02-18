@@ -1,7 +1,6 @@
 import pandas as pd
 from collections import defaultdict
 
-
 # --------------------
 # CONFIG
 # --------------------
@@ -52,7 +51,6 @@ def compute_lift_matrix(daily_sets):
     rows = []
 
     for (a, b), co_count in coappearance_counts.items():
-        p_a = appearance_counts[a] / total_days
         p_b = appearance_counts[b] / total_days
         p_b_given_a = co_count / appearance_counts[a]
 
@@ -61,32 +59,52 @@ def compute_lift_matrix(daily_sets):
         rows.append({
             "Trigger": a,
             "Target": b,
-            "P(B|A)": round(p_b_given_a, 3),
-            "Baseline_P(B)": round(p_b, 3),
-            "Lift": round(lift, 3) if lift else None
+            "Lift": lift
         })
 
-    result_df = pd.DataFrame(rows)
-
-    return result_df.sort_values("Lift", ascending=False)
+    return pd.DataFrame(rows)
 
 
-def main():
-    for season in SEASONS:
-        print("\n======================================")
-        print(f"=== Zodiac Coupling Analysis: {season} ===")
-        print("======================================")
+# 🔥 This is what predictor.py will call
+def get_cross_season_coupling(seasons):
+    season_results = []
 
+    for season in seasons:
         df = load_data(season)
         daily_sets = build_daily_zodiac_sets(df)
-
         lift_df = compute_lift_matrix(daily_sets)
 
-        print("\n--- Strongest Positive Couplings ---")
-        print(lift_df.head(15).to_string(index=False))
+        lift_df = lift_df.rename(columns={"Lift": str(season)})
+        season_results.append(lift_df)
 
-        print("\n--- Strongest Negative Couplings ---")
-        print(lift_df.sort_values("Lift").head(15).to_string(index=False))
+    # Merge all seasons
+    combined = season_results[0]
+
+    for df in season_results[1:]:
+        combined = combined.merge(df, on=["Trigger", "Target"], how="outer")
+
+    # Compute average lift without penalizing missing seasons
+    season_cols = [str(s) for s in seasons]
+    combined["Avg_Lift"] = combined[season_cols].mean(axis=1, skipna=True)
+
+    combined = combined.sort_values("Avg_Lift", ascending=False)
+
+    return combined
+
+
+# Optional manual run
+def main():
+    combined = get_cross_season_coupling(SEASONS)
+
+    print("\n======================================")
+    print("=== Cross-Season Zodiac Coupling ===")
+    print("======================================")
+
+    print("\n--- Strongest Positive Couplings ---")
+    print(combined.head(20).to_string(index=False))
+
+    print("\n--- Strongest Negative Couplings ---")
+    print(combined.sort_values("Avg_Lift").head(20).to_string(index=False))
 
 
 if __name__ == "__main__":

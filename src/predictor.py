@@ -1,75 +1,80 @@
 import pandas as pd
+from analysis import multi_season_reliability
+from coupling_analysis import get_cross_season_coupling
+
+# --------------------
+# CONFIG
+# --------------------
+SEASONS = [2023, 2024]
+RELIABILITY_WEIGHT = 0.6
+COUPLING_WEIGHT = 0.4
 
 
-class ZodiacPredictor:
-    """
-    Core prediction engine.
-    Computes zodiac and player-level performance probabilities
-    using baseline strength + same-day activation.
-    """
+def predict_next_signs(active_signs):
+    # Load reliability
+    reliability_df = multi_season_reliability(SEASONS)
+    reliability = reliability_df["Average"]
 
-    def __init__(
-        self,
-        reliability,
-        clustering,
-        activation_power=1.0,
-        min_baseline=0.01
-    ):
-        """
-        reliability: Series indexed by Zodiac (baseline probability)
-        clustering: Series indexed by Zodiac (same-day clustering strength)
-        activation_power: exponent applied per same-day activation
-        min_baseline: floor probability to avoid zeroing out
-        """
-        self.reliability = reliability
-        self.clustering = clustering
-        self.activation_power = activation_power
-        self.min_baseline = min_baseline
+    # Load coupling matrix
+    coupling_df = get_cross_season_coupling(SEASONS)
 
-    def zodiac_score(self, zodiac, day_state):
-        """
-        Compute today's score for a zodiac sign.
-        """
-        base = self.reliability.get(zodiac, self.min_baseline)
-        cluster = self.clustering.get(zodiac, 1.0)
-        activations = day_state.get_activation_count(zodiac)
+    results = []
 
-        score = base * (cluster ** (activations * self.activation_power))
-        return score
+    for sign in reliability.index:
+        # Skip already active signs
+        if sign in active_signs:
+            continue
 
-    def score_players(self, match_df, day_state):
-        """
-        Score players in an upcoming match.
+        # Base reliability
+        base_score = reliability.get(sign, 0)
 
-        match_df must contain:
-            - 'player'
-            - 'Zodiac'
-        """
-        scores = []
+        # Coupling score from active signs
+        lifts = []
 
-        for _, row in match_df.iterrows():
-            zodiac = row["Zodiac"]
-            score = self.zodiac_score(zodiac, day_state)
+        for active in active_signs:
+            match = coupling_df[
+                (coupling_df["Trigger"] == active) &
+                (coupling_df["Target"] == sign)
+            ]
 
-            scores.append({
-                "player": row["player"],
-                "Zodiac": zodiac,
-                "score": score
-            })
+            if not match.empty:
+                lifts.append(match["Avg_Lift"].values[0])
 
-        return pd.DataFrame(scores).sort_values("score", ascending=False)
+        coupling_score = sum(lifts) / len(lifts) if lifts else 1
 
-    def top_zodiacs(self, day_state, n=3):
-        """
-        Return top-N zodiac signs for the current day.
-        """
-        rows = []
+        final_score = (
+            RELIABILITY_WEIGHT * base_score +
+            COUPLING_WEIGHT * coupling_score
+        )
 
-        for zodiac in self.reliability.index:
-            rows.append({
-                "Zodiac": zodiac,
-                "score": self.zodiac_score(zodiac, day_state)
-            })
+        results.append({
+            "Sign": sign,
+            "Reliability": round(base_score, 3),
+            "Coupling": round(coupling_score, 3),
+            "Final_Score": round(final_score, 3)
+        })
 
-        df = pd.DataFrame(rows)
-        return df.sort_values("score", ascending=False).head(n)
+    result_df = pd.DataFrame(results)
+
+    return result_df.sort_values("Final_Score", ascending=False)
+
+
+def main():
+    print("\nEnter zodiac signs that performed today.")
+    print("Separate by comma (example: Virgo,Pisces,Cancer)\n")
+
+    user_input = input("Active signs: ")
+
+    active_signs = [s.strip() for s in user_input.split(",")]
+
+    prediction = predict_next_signs(active_signs)
+
+    print("\n===============================")
+    print("Predicted Next Best Signs")
+    print("===============================\n")
+
+    print(prediction.head(10).to_string(index=False))
+
+
+if __name__ == "__main__":
+    main()

@@ -16,29 +16,37 @@ def zodiac_reliability(df):
     appeared = grouped[grouped["performed"] >= 1].groupby("Zodiac").size()
     clustered = grouped[grouped["performed"] >= 2].groupby("Zodiac").size()
 
-    return (clustered / appeared).fillna(0).sort_values(ascending=False)
+    reliability = (clustered / appeared)
+
+    return reliability
 
 
-def same_day_clustering(df):
-    daily = (
-        df[df["performed"] == 1]
-        .groupby(["date", "Zodiac"])
-        .size()
-    )
+def multi_season_reliability(seasons):
+    all_scores = []
 
-    return daily.groupby("Zodiac").mean().sort_values(ascending=False)
+    for season in seasons:
+        df = load_data(season)
+        rel = zodiac_reliability(df)
+        rel.name = str(season)
+        all_scores.append(rel)
+
+    combined = pd.concat(all_scores, axis=1)
+
+    # Average without penalizing missing seasons
+    combined["Average"] = combined.mean(axis=1, skipna=True)
+
+    combined = combined.fillna(0)
+
+    return combined.sort_values("Average", ascending=False)
 
 
 def main():
-    SEASON = 2023  # change freely
+    SEASONS = [2023, 2024]
 
-    df = load_data(SEASON)
+    result = multi_season_reliability(SEASONS)
 
-    print(f"\n=== Zodiac Reliability ({SEASON}) ===")
-    print(zodiac_reliability(df))
-
-    print(f"\n=== Same-Day Clustering ({SEASON}) ===")
-    print(same_day_clustering(df))
+    print("\n=== Cross-Season Zodiac Reliability ===")
+    print(result)
 
 
 if __name__ == "__main__":
