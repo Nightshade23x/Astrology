@@ -10,11 +10,19 @@ SELF_WEIGHT = 0.2
 
 
 def normalize_sign(sign):
+    if not isinstance(sign, str):
+        return None
     return sign.strip().capitalize()
 
 
+
 def predict_next_signs(active_signs):
-    active_signs = [normalize_sign(s) for s in active_signs]
+    active_signs = [
+        normalize_sign(s)
+        for s in active_signs
+        if normalize_sign(s) is not None
+    ]
+
 
     reliability_df = multi_season_reliability(SEASONS)
     reliability = reliability_df["Average"]

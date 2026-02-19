@@ -8,7 +8,7 @@ from pathlib import Path
 # CONFIG
 # --------------------
 SEASON = 2023
-MAX_CALLS = 15
+MAX_CALLS = 80
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
