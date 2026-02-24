@@ -1,5 +1,6 @@
 import pandas as pd
 from collections import defaultdict
+import os
 
 # --------------------
 # CONFIG
@@ -11,10 +12,12 @@ PERFORMED_COL = "performed"
 
 
 def load_data(season):
-    path = f"data/season_events_{season}.csv"
+    base_dir = os.path.dirname(os.path.dirname(__file__))
+    path = os.path.join(base_dir, "data", f"season_events_{season}.csv")
+
     df = pd.read_csv(path)
-    df[DATE_COL] = pd.to_datetime(df[DATE_COL])
-    df = df[df[ZODIAC_COL].notna()]
+    df["date"] = pd.to_datetime(df["date"])
+    df = df[df["Zodiac"].notna()]
     return df
 
 

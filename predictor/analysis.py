@@ -1,10 +1,11 @@
+import os
 import pandas as pd
 
 
 def load_data(season):
-    path = f"data/season_events_{season}.csv"
+    base_dir = os.path.dirname(os.path.dirname(__file__))
+    path = os.path.join(base_dir, "data", f"season_events_{season}.csv")
     return pd.read_csv(path)
-
 
 def zodiac_reliability(df):
     grouped = (

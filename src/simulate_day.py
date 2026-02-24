@@ -1,8 +1,8 @@
 import pandas as pd
 
-from day_state import DayState
-from predictor import ZodiacPredictor
-from analysis import zodiac_reliability, same_day_clustering
+from predictor.day_state import DayState
+from predictor.predictor import ZodiacPredictor
+from predictor.analysis import zodiac_reliability, same_day_clustering
 
 
 DATA_PATH = "data/season_events_2024.csv"

@@ -1,6 +1,6 @@
 import pandas as pd
 from collections import defaultdict
-from predictor import normalize_sign
+from predictor.predictor import normalize_sign
 
 SEASONS = [2023, 2024]
 
