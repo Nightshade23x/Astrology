@@ -1,50 +1,53 @@
+import os
 import pandas as pd
 from collections import defaultdict
-import os
 
-# --------------------
-# CONFIG
-# --------------------
-SEASONS = [2023, 2024]
+MANUAL_WEIGHT = 0.15
 ZODIAC_COL = "Zodiac"
 DATE_COL = "date"
 PERFORMED_COL = "performed"
 
 
-def load_data(season):
+def load_historical_data(season):
     base_dir = os.path.dirname(os.path.dirname(__file__))
     path = os.path.join(base_dir, "data", f"season_events_{season}.csv")
-
     df = pd.read_csv(path)
-    df["date"] = pd.to_datetime(df["date"])
-    df = df[df["Zodiac"].notna()]
+    df[DATE_COL] = pd.to_datetime(df[DATE_COL])
     return df
 
 
-def build_daily_zodiac_sets(df):
+def load_manual_data():
+    base_dir = os.path.dirname(os.path.dirname(__file__))
+    path = os.path.join(base_dir, "data", "manual_day_events.csv")
+
+    if not os.path.exists(path):
+        return pd.DataFrame(columns=[DATE_COL, ZODIAC_COL, PERFORMED_COL])
+
+    df = pd.read_csv(path)
+    df[DATE_COL] = pd.to_datetime(df[DATE_COL])
+    return df
+
+
+def build_daily_sets(df):
     performed = df[df[PERFORMED_COL] == 1]
 
-    daily_sets = (
+    return (
         performed
         .groupby(DATE_COL)[ZODIAC_COL]
         .apply(lambda x: set(x))
     )
 
-    return daily_sets
 
+def compute_lift(daily_sets):
 
-def compute_lift_matrix(daily_sets):
     appearance_counts = defaultdict(int)
     coappearance_counts = defaultdict(int)
-
     total_days = len(daily_sets)
 
-    # Count appearances
     for zodiac_set in daily_sets:
         for z in zodiac_set:
             appearance_counts[z] += 1
 
-    # Count co-appearances
     for zodiac_set in daily_sets:
         for a in zodiac_set:
             for b in zodiac_set:
@@ -54,9 +57,9 @@ def compute_lift_matrix(daily_sets):
     rows = []
 
     for (a, b), co_count in coappearance_counts.items():
+
         p_b = appearance_counts[b] / total_days
         p_b_given_a = co_count / appearance_counts[a]
-
         lift = p_b_given_a / p_b if p_b > 0 else None
 
         rows.append({
@@ -68,47 +71,43 @@ def compute_lift_matrix(daily_sets):
     return pd.DataFrame(rows)
 
 
-# 🔥 This is what predictor.py will call
 def get_cross_season_coupling(seasons):
-    season_results = []
+
+    # Historical
+    hist_sets = []
 
     for season in seasons:
-        df = load_data(season)
-        daily_sets = build_daily_zodiac_sets(df)
-        lift_df = compute_lift_matrix(daily_sets)
+        df = load_historical_data(season)
+        hist_sets.append(build_daily_sets(df))
 
-        lift_df = lift_df.rename(columns={"Lift": str(season)})
-        season_results.append(lift_df)
+    hist_daily = pd.concat(hist_sets)
+    hist_lift = compute_lift(hist_daily)
 
-    # Merge all seasons
-    combined = season_results[0]
+    # Manual
+    manual_df = load_manual_data()
 
-    for df in season_results[1:]:
-        combined = combined.merge(df, on=["Trigger", "Target"], how="outer")
+    if not manual_df.empty:
+        manual_sets = build_daily_sets(manual_df)
+        manual_lift = compute_lift(manual_sets)
+    else:
+        manual_lift = pd.DataFrame(columns=["Trigger", "Target", "Lift"])
 
-    # Compute average lift without penalizing missing seasons
-    season_cols = [str(s) for s in seasons]
-    combined["Avg_Lift"] = combined[season_cols].mean(axis=1, skipna=True)
+    # Merge weighted
+    combined = hist_lift.copy()
+    combined = combined.rename(columns={"Lift": "Hist_Lift"})
 
-    combined = combined.sort_values("Avg_Lift", ascending=False)
+    combined = combined.merge(
+        manual_lift.rename(columns={"Lift": "Manual_Lift"}),
+        on=["Trigger", "Target"],
+        how="outer"
+    )
 
-    return combined
+    combined["Hist_Lift"] = combined["Hist_Lift"].fillna(1)
+    combined["Manual_Lift"] = combined["Manual_Lift"].fillna(1)
 
+    combined["Avg_Lift"] = (
+        (1 - MANUAL_WEIGHT) * combined["Hist_Lift"] +
+        MANUAL_WEIGHT * combined["Manual_Lift"]
+    )
 
-# Optional manual run
-def main():
-    combined = get_cross_season_coupling(SEASONS)
-
-    print("\n======================================")
-    print("=== Cross-Season Zodiac Coupling ===")
-    print("======================================")
-
-    print("\n--- Strongest Positive Couplings ---")
-    print(combined.head(20).to_string(index=False))
-
-    print("\n--- Strongest Negative Couplings ---")
-    print(combined.sort_values("Avg_Lift").head(20).to_string(index=False))
-
-
-if __name__ == "__main__":
-    main()
+    return combined[["Trigger", "Target", "Avg_Lift"]]
