@@ -10,42 +10,43 @@ SEASONS = [2023, 2024]
 
 
 def normalize_sign(sign):
-    """
-    Clean and standardize zodiac input.
-    """
     if not isinstance(sign, str):
         return None
     return sign.strip().capitalize()
 
 
 def predict_same_day(active_signs):
-    """
-    Compute same-day conditional probabilities using:
-    - Historical reliability (prior)
-    - Coupling lift (conditional)
-    - Momentum amplification (count-based)
-    """
 
-    # Count occurrences (momentum strength)
     sign_counts = Counter(active_signs)
 
-    # Load reliability (prior probability)
     reliability_df = multi_season_reliability(SEASONS)
     base_rates = reliability_df["Average"]
 
-    # Load coupling matrix
     coupling_df = get_cross_season_coupling(SEASONS)
+
+    # Detect dominant sign (count >= 3)
+    dominant_sign = None
+    dominant_count = 0
+
+    for sign, count in sign_counts.items():
+        if count >= 3:
+            dominant_sign = sign
+            dominant_count = count
+            break
 
     results = []
 
     for sign in base_rates.index:
 
         base_prob = base_rates.get(sign, 0)
-
-        # Avoid log(0)
         log_prob = np.log(base_prob + 1e-9)
 
-        # Apply momentum-based coupling
+        # -------- Momentum (nonlinear) --------
+        if sign in sign_counts:
+            count = sign_counts[sign]
+            log_prob += (count ** 1.2) * 0.15
+
+        # -------- Coupling --------
         for active_sign, count in sign_counts.items():
 
             match = coupling_df[
@@ -58,6 +59,25 @@ def predict_same_day(active_signs):
                 if lift > 0:
                     log_prob += count * np.log(lift)
 
+        # -------- Dominant Boost --------
+        if dominant_sign:
+
+            if sign == dominant_sign:
+                boost = 1 + 0.20 * (dominant_count - 2)
+                log_prob += np.log(boost)
+
+            else:
+                match = coupling_df[
+                    (coupling_df["Trigger"] == dominant_sign) &
+                    (coupling_df["Target"] == sign)
+                ]
+
+                if not match.empty:
+                    lift = match["Avg_Lift"].values[0]
+                    if lift > 1.15:
+                        boost = 1 + 0.08 * (dominant_count - 2)
+                        log_prob += np.log(boost)
+
         results.append({
             "Sign": sign,
             "Log_Prob": log_prob
@@ -65,10 +85,7 @@ def predict_same_day(active_signs):
 
     result_df = pd.DataFrame(results)
 
-    # Convert back from log-space
     result_df["Raw"] = np.exp(result_df["Log_Prob"])
-
-    # Normalize to probability distribution
     total = result_df["Raw"].sum()
     result_df["Probability"] = (result_df["Raw"] / total) * 100
 
@@ -79,10 +96,6 @@ def predict_same_day(active_signs):
 
 
 def save_manual_input(active_signs):
-    """
-    Save today's manual input as a synthetic matchday.
-    This reinforces future predictions.
-    """
 
     base_dir = os.path.dirname(os.path.dirname(__file__))
     path = os.path.join(base_dir, "data", "manual_day_events.csv")
@@ -113,11 +126,8 @@ def main():
     print("============================================\n")
 
     print("Enter zodiac signs that have already performed today.")
-    print("Separate with commas (example: Cancer,Pisces)\n")
-    print("IMPORTANT:")
-    print("- If a sign has performed multiple times,")
-    print("  repeat it multiple times in your input.")
-    print("  Example: Pisces,Pisces,Pisces,Cancer\n")
+    print("Repeat signs if multiple players from same zodiac performed.")
+    print("Example: Pisces,Pisces,Pisces,Cancer\n")
 
     user_input = input("Active signs: ")
 
@@ -140,7 +150,6 @@ def main():
     print("==============================\n")
     print(prediction.to_string(index=False))
 
-    # Save AFTER prediction (affects future runs only)
     save_manual_input(active_signs)
 
 
