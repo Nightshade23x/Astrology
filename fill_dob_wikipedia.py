@@ -1,31 +1,44 @@
 import pandas as pd
 import requests
 import time
-import re
 
 HEADERS = {
-    "User-Agent": "ZodiacProject/1.0 (contact@example.com)"
+    "User-Agent": "ZodiacProject/1.0"
 }
 
-def get_dob_from_wikipedia(player_name):
+def get_dob_from_wikidata(player_name):
     try:
-        # Direct page summary endpoint
-        url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{player_name.replace(' ', '_')}"
-        r = requests.get(url, headers=HEADERS, timeout=10)
+        # Step 1: Search entity on Wikidata
+        search_url = "https://www.wikidata.org/w/api.php"
+        params = {
+            "action": "wbsearchentities",
+            "search": player_name,
+            "language": "en",
+            "format": "json"
+        }
 
-        if r.status_code != 200:
-            return None
-
+        r = requests.get(search_url, params=params, headers=HEADERS, timeout=10)
         data = r.json()
 
-        # Try to extract birth date from description
-        extract = data.get("extract", "")
+        if not data.get("search"):
+            return None
 
-        # Pattern like: born 11 August 1995
-        match = re.search(r"born\s+(\d{1,2}\s\w+\s\d{4})", extract, re.IGNORECASE)
+        entity_id = data["search"][0]["id"]
 
-        if match:
-            return match.group(1)
+        # Step 2: Fetch entity details
+        entity_url = f"https://www.wikidata.org/wiki/Special:EntityData/{entity_id}.json"
+
+        r2 = requests.get(entity_url, headers=HEADERS, timeout=10)
+        entity_data = r2.json()
+
+        claims = entity_data["entities"][entity_id]["claims"]
+
+        # P569 = Date of Birth
+        if "P569" in claims:
+            dob_raw = claims["P569"][0]["mainsnak"]["datavalue"]["value"]["time"]
+            # Format example: "+1997-11-26T00:00:00Z"
+            dob_clean = dob_raw[1:11]  # Extract YYYY-MM-DD
+            return dob_clean
 
     except Exception:
         return None
@@ -33,26 +46,30 @@ def get_dob_from_wikipedia(player_name):
     return None
 
 
-df = pd.read_csv("data/player_dob_batch.csv")
+# IMPORTANT: force birth_date to string
+df = pd.read_csv("data/player_dob_batch.csv", dtype={"birth_date": str})
+df["birth_date"] = df["birth_date"].astype(str)
 
 for i, row in df.iterrows():
 
-    if pd.notna(row["birth_date"]) and row["birth_date"] != "":
+    if pd.notna(row["birth_date"]) and row["birth_date"] != "" and row["birth_date"] != "nan":
         continue
 
     name = row["player"]
     print("Fetching:", name)
 
-    dob = get_dob_from_wikipedia(name)
+    dob = get_dob_from_wikidata(name)
 
     if dob:
         df.at[i, "birth_date"] = dob
+        print("  Found:", dob)
 
-    time.sleep(0.8)  # lighter delay
-
-    # Save progress every 25 players
-    if i % 25 == 0:
+        # Save immediately after each success
         df.to_csv("data/player_dob_batch.csv", index=False)
+
+    time.sleep(0.5)
+
+    
 
 df.to_csv("data/player_dob_batch.csv", index=False)
 

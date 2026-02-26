@@ -16,7 +16,10 @@ for file in files:
     players.update(performed_df["player"].str.strip().str.lower())
 
 players_df = pd.DataFrame(sorted(players), columns=["player"])
+
+# Force birth_date column to string
 players_df["birth_date"] = ""
+players_df["birth_date"] = players_df["birth_date"].astype(str)
 
 players_df.to_csv("data/player_dob_batch.csv", index=False)
 
