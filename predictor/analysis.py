@@ -4,88 +4,88 @@ import pandas as pd
 MANUAL_WEIGHT = 0.15
 
 
-def load_historical_data(season):
-    base_dir = os.path.dirname(os.path.dirname(__file__))
+# Always get project root (ASTROLOGY folder)
+PROJECT_ROOT = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..")
+)
 
-    season_path = os.path.join(base_dir, "data", f"season_events_{season}.csv")
-    dob_path = os.path.join(base_dir, "data", "player_dob_batch.csv")
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+
+
+def load_historical_data(season):
+
+    season_path = os.path.join(DATA_DIR, f"season_events_{season}.csv")
+    dob_path = os.path.join(DATA_DIR, "player_dob_batch.csv")
 
     df = pd.read_csv(season_path)
     dob_df = pd.read_csv(dob_path)
 
-    # Merge zodiac into season data
+    df.columns = df.columns.str.strip()
+    dob_df.columns = dob_df.columns.str.strip()
+
+    if "zodiac" in dob_df.columns:
+        dob_df = dob_df.rename(columns={"zodiac": "Zodiac"})
+
     df = df.merge(
         dob_df[["player", "Zodiac"]],
         on="player",
         how="left"
     )
 
-    # Remove players without zodiac
     df = df.dropna(subset=["Zodiac"])
 
-    df["date"] = pd.to_datetime(df["date"])
+    df["date"] = pd.to_datetime(
+        df["date"],
+        format="%d-%m-%Y",
+        errors="coerce"
+    )
+
+    df = df.dropna(subset=["date"])
 
     return df
 
 
-def load_manual_data():
-    base_dir = os.path.dirname(os.path.dirname(__file__))
-    path = os.path.join(base_dir, "data", "manual_day_events.csv")
-
-    if not os.path.exists(path):
-        return pd.DataFrame(columns=["date", "Zodiac", "performed"])
-
-    return pd.read_csv(path)
-
-
 def zodiac_reliability(df):
+
+    df = df[df["performed"] == 1]
+
     grouped = (
-        df.groupby(["date", "Zodiac"])["performed"]
-        .sum()
-        .reset_index()
+        df.groupby(["date", "Zodiac"])
+        .size()
+        .reset_index(name="count")
     )
 
-    appeared = grouped[grouped["performed"] >= 1].groupby("Zodiac").size()
-    clustered = grouped[grouped["performed"] >= 2].groupby("Zodiac").size()
+    appeared = grouped.groupby("Zodiac").size()
+    clustered = grouped[grouped["count"] >= 2].groupby("Zodiac").size()
 
-    reliability = (clustered / appeared)
+    reliability = (clustered / appeared).fillna(0)
 
     return reliability
 
 
 def multi_season_reliability(seasons):
 
-    # Historical
-    hist_scores = []
+    all_signs = set()
+    season_results = []
 
     for season in seasons:
         df = load_historical_data(season)
         rel = zodiac_reliability(df)
-        hist_scores.append(rel)
 
-    hist_combined = pd.concat(hist_scores, axis=1)
-    hist_combined["Historical"] = hist_combined.mean(axis=1, skipna=True)
+        all_signs.update(rel.index)
+        season_results.append(rel)
 
-    # Manual
-    manual_df = load_manual_data()
+    all_signs = sorted(list(all_signs))
 
-    if not manual_df.empty:
-        manual_rel = zodiac_reliability(manual_df)
-    else:
-        manual_rel = pd.Series(dtype=float)
+    aligned = []
 
-    # Combine weighted
-    combined = hist_combined["Historical"].copy()
+    for rel in season_results:
+        aligned.append(rel.reindex(all_signs).fillna(0))
 
-    for sign in manual_rel.index:
-        hist_val = combined.get(sign, 0)
-        manual_val = manual_rel.get(sign, 0)
+    hist_combined = pd.concat(aligned, axis=1)
 
-        combined[sign] = (
-            (1 - MANUAL_WEIGHT) * hist_val +
-            MANUAL_WEIGHT * manual_val
-        )
+    hist_combined["Historical"] = hist_combined.mean(axis=1)
 
-    combined = combined.fillna(0)
+    final = hist_combined["Historical"].fillna(0)
 
-    return combined.sort_values(ascending=False).to_frame(name="Average")
+    return final.sort_values(ascending=False).to_frame(name="Average")

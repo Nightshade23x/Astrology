@@ -3,53 +3,54 @@ import pandas as pd
 from collections import defaultdict
 
 MANUAL_WEIGHT = 0.15
-ZODIAC_COL = "Zodiac"
-DATE_COL = "date"
-PERFORMED_COL = "performed"
+
+
+PROJECT_ROOT = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..")
+)
+
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 
 
 def load_historical_data(season):
-    base_dir = os.path.dirname(os.path.dirname(__file__))
 
-    season_path = os.path.join(base_dir, "data", f"season_events_{season}.csv")
-    dob_path = os.path.join(base_dir, "data", "player_dob_batch.csv")
+    season_path = os.path.join(DATA_DIR, f"season_events_{season}.csv")
+    dob_path = os.path.join(DATA_DIR, "player_dob_batch.csv")
 
     df = pd.read_csv(season_path)
     dob_df = pd.read_csv(dob_path)
 
-    # Merge zodiac into season data
+    df.columns = df.columns.str.strip()
+    dob_df.columns = dob_df.columns.str.strip()
+
+    if "zodiac" in dob_df.columns:
+        dob_df = dob_df.rename(columns={"zodiac": "Zodiac"})
+
     df = df.merge(
         dob_df[["player", "Zodiac"]],
         on="player",
         how="left"
     )
 
-    # Remove players without zodiac
     df = df.dropna(subset=["Zodiac"])
 
-    df["date"] = pd.to_datetime(df["date"])
+    df["date"] = pd.to_datetime(
+        df["date"],
+        format="%d-%m-%Y",
+        errors="coerce"
+    )
 
-    return df
+    df = df.dropna(subset=["date"])
 
-
-def load_manual_data():
-    base_dir = os.path.dirname(os.path.dirname(__file__))
-    path = os.path.join(base_dir, "data", "manual_day_events.csv")
-
-    if not os.path.exists(path):
-        return pd.DataFrame(columns=[DATE_COL, ZODIAC_COL, PERFORMED_COL])
-
-    df = pd.read_csv(path)
-    df[DATE_COL] = pd.to_datetime(df[DATE_COL])
     return df
 
 
 def build_daily_sets(df):
-    performed = df[df[PERFORMED_COL] == 1]
+
+    df = df[df["performed"] == 1]
 
     return (
-        performed
-        .groupby(DATE_COL)[ZODIAC_COL]
+        df.groupby("date")["Zodiac"]
         .apply(lambda x: set(x))
     )
 
@@ -58,6 +59,7 @@ def compute_lift(daily_sets):
 
     appearance_counts = defaultdict(int)
     coappearance_counts = defaultdict(int)
+
     total_days = len(daily_sets)
 
     for zodiac_set in daily_sets:
@@ -74,14 +76,18 @@ def compute_lift(daily_sets):
 
     for (a, b), co_count in coappearance_counts.items():
 
+        if appearance_counts[a] == 0:
+            continue
+
         p_b = appearance_counts[b] / total_days
         p_b_given_a = co_count / appearance_counts[a]
-        lift = p_b_given_a / p_b if p_b > 0 else None
+
+        lift = p_b_given_a / p_b if p_b > 0 else 1
 
         rows.append({
             "Trigger": a,
             "Target": b,
-            "Lift": lift
+            "Avg_Lift": lift
         })
 
     return pd.DataFrame(rows)
@@ -89,41 +95,13 @@ def compute_lift(daily_sets):
 
 def get_cross_season_coupling(seasons):
 
-    # Historical
-    hist_sets = []
+    all_sets = []
 
     for season in seasons:
         df = load_historical_data(season)
-        hist_sets.append(build_daily_sets(df))
+        daily_sets = build_daily_sets(df)
+        all_sets.append(daily_sets)
 
-    hist_daily = pd.concat(hist_sets)
-    hist_lift = compute_lift(hist_daily)
+    combined_sets = pd.concat(all_sets)
 
-    # Manual
-    manual_df = load_manual_data()
-
-    if not manual_df.empty:
-        manual_sets = build_daily_sets(manual_df)
-        manual_lift = compute_lift(manual_sets)
-    else:
-        manual_lift = pd.DataFrame(columns=["Trigger", "Target", "Lift"])
-
-    # Merge weighted
-    combined = hist_lift.copy()
-    combined = combined.rename(columns={"Lift": "Hist_Lift"})
-
-    combined = combined.merge(
-        manual_lift.rename(columns={"Lift": "Manual_Lift"}),
-        on=["Trigger", "Target"],
-        how="outer"
-    )
-
-    combined["Hist_Lift"] = combined["Hist_Lift"].fillna(1)
-    combined["Manual_Lift"] = combined["Manual_Lift"].fillna(1)
-
-    combined["Avg_Lift"] = (
-        (1 - MANUAL_WEIGHT) * combined["Hist_Lift"] +
-        MANUAL_WEIGHT * combined["Manual_Lift"]
-    )
-
-    return combined[["Trigger", "Target", "Avg_Lift"]]
+    return compute_lift(combined_sets)
