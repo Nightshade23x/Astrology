@@ -10,9 +10,25 @@ PERFORMED_COL = "performed"
 
 def load_historical_data(season):
     base_dir = os.path.dirname(os.path.dirname(__file__))
-    path = os.path.join(base_dir, "data", f"season_events_{season}.csv")
-    df = pd.read_csv(path)
-    df[DATE_COL] = pd.to_datetime(df[DATE_COL])
+
+    season_path = os.path.join(base_dir, "data", f"season_events_{season}.csv")
+    dob_path = os.path.join(base_dir, "data", "player_dob_batch.csv")
+
+    df = pd.read_csv(season_path)
+    dob_df = pd.read_csv(dob_path)
+
+    # Merge zodiac into season data
+    df = df.merge(
+        dob_df[["player", "Zodiac"]],
+        on="player",
+        how="left"
+    )
+
+    # Remove players without zodiac
+    df = df.dropna(subset=["Zodiac"])
+
+    df["date"] = pd.to_datetime(df["date"])
+
     return df
 
 
