@@ -3,8 +3,6 @@ import pandas as pd
 
 MANUAL_WEIGHT = 0.15
 
-
-# Always get project root (ASTROLOGY folder)
 PROJECT_ROOT = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "..")
 )
@@ -42,25 +40,26 @@ def load_historical_data(season):
 
     df = df.dropna(subset=["date"])
 
-    return df
+    return df, dob_df
 
 
-def zodiac_reliability(df):
+def zodiac_base_strength(df, dob_df):
 
     df = df[df["performed"] == 1]
 
-    grouped = (
-        df.groupby(["date", "Zodiac"])
-        .size()
-        .reset_index(name="count")
-    )
+    total_days = df["date"].nunique()
 
-    appeared = grouped.groupby("Zodiac").size()
-    clustered = grouped[grouped["count"] >= 2].groupby("Zodiac").size()
+    total_performances = df.groupby("Zodiac").size()
+    population = dob_df["Zodiac"].value_counts()
 
-    reliability = (clustered / appeared).fillna(0)
+    all_signs = sorted(set(population.index).union(set(total_performances.index)))
 
-    return reliability
+    total_performances = total_performances.reindex(all_signs).fillna(0)
+    population = population.reindex(all_signs).fillna(0)
+
+    strength = total_performances / (total_days * population)
+
+    return strength.fillna(0)
 
 
 def multi_season_reliability(seasons):
@@ -69,8 +68,8 @@ def multi_season_reliability(seasons):
     season_results = []
 
     for season in seasons:
-        df = load_historical_data(season)
-        rel = zodiac_reliability(df)
+        df, dob_df = load_historical_data(season)
+        rel = zodiac_base_strength(df, dob_df)
 
         all_signs.update(rel.index)
         season_results.append(rel)
@@ -78,7 +77,6 @@ def multi_season_reliability(seasons):
     all_signs = sorted(list(all_signs))
 
     aligned = []
-
     for rel in season_results:
         aligned.append(rel.reindex(all_signs).fillna(0))
 

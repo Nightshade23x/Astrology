@@ -24,7 +24,6 @@ def predict_same_day(active_signs):
 
     coupling_df = get_cross_season_coupling(SEASONS)
 
-    # Detect dominant sign (count >= 3)
     dominant_sign = None
     dominant_count = 0
 
@@ -41,10 +40,15 @@ def predict_same_day(active_signs):
         base_prob = base_rates.get(sign, 0)
         log_prob = np.log(base_prob + 1e-9)
 
-        # -------- Momentum (nonlinear) --------
+        # -------- Strong Nonlinear Momentum --------
         if sign in sign_counts:
             count = sign_counts[sign]
-            log_prob += (count ** 1.2) * 0.15
+
+            if count >= 2:
+                momentum_boost = 0.6 * ((count - 1) ** 1.5)
+                log_prob += momentum_boost
+            else:
+                log_prob += 0.1
 
         # -------- Coupling --------
         for active_sign, count in sign_counts.items():
@@ -63,20 +67,8 @@ def predict_same_day(active_signs):
         if dominant_sign:
 
             if sign == dominant_sign:
-                boost = 1 + 0.20 * (dominant_count - 2)
+                boost = 1 + 0.25 * (dominant_count - 2)
                 log_prob += np.log(boost)
-
-            else:
-                match = coupling_df[
-                    (coupling_df["Trigger"] == dominant_sign) &
-                    (coupling_df["Target"] == sign)
-                ]
-
-                if not match.empty:
-                    lift = match["Avg_Lift"].values[0]
-                    if lift > 1.15:
-                        boost = 1 + 0.08 * (dominant_count - 2)
-                        log_prob += np.log(boost)
 
         results.append({
             "Sign": sign,
@@ -103,7 +95,6 @@ def save_manual_input(active_signs):
     today = datetime.now().strftime("%Y-%m-%d")
 
     rows = []
-
     for sign in active_signs:
         rows.append({
             "date": today,
@@ -121,8 +112,9 @@ def save_manual_input(active_signs):
 
 
 def main():
+
     print("\n============================================")
-    print("  Same-Matchday Zodiac Momentum Predictor")
+    print("   Same-Matchday Zodiac Momentum Predictor")
     print("============================================\n")
 
     print("Enter zodiac signs that have already performed today.")
