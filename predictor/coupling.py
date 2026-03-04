@@ -2,9 +2,6 @@ import os
 import pandas as pd
 from collections import defaultdict
 
-MANUAL_WEIGHT = 0.15
-
-
 PROJECT_ROOT = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "..")
 )
@@ -45,7 +42,10 @@ def load_historical_data(season):
     return df
 
 
-def build_daily_sets(df):
+# -----------------------------
+# PRESENCE-LEVEL DAILY SETS
+# -----------------------------
+def build_presence_sets(df):
 
     df = df[df["performed"] == 1]
 
@@ -55,6 +55,31 @@ def build_daily_sets(df):
     )
 
 
+# -----------------------------
+# CLUSTER-LEVEL DAILY SETS
+# (2+ performers)
+# -----------------------------
+def build_cluster_sets(df):
+
+    df = df[df["performed"] == 1]
+
+    grouped = (
+        df.groupby(["date", "Zodiac"])
+        .size()
+        .reset_index(name="count")
+    )
+
+    clustered = grouped[grouped["count"] >= 2]
+
+    return (
+        clustered.groupby("date")["Zodiac"]
+        .apply(lambda x: set(x))
+    )
+
+
+# -----------------------------
+# GENERIC LIFT CALCULATION
+# -----------------------------
 def compute_lift(daily_sets):
 
     appearance_counts = defaultdict(int)
@@ -87,21 +112,42 @@ def compute_lift(daily_sets):
         rows.append({
             "Trigger": a,
             "Target": b,
-            "Avg_Lift": lift
+            "Lift": lift
         })
 
     return pd.DataFrame(rows)
 
 
+# -----------------------------
+# MAIN FUNCTION
+# -----------------------------
 def get_cross_season_coupling(seasons):
 
-    all_sets = []
+    presence_sets = []
+    cluster_sets = []
 
     for season in seasons:
         df = load_historical_data(season)
-        daily_sets = build_daily_sets(df)
-        all_sets.append(daily_sets)
 
-    combined_sets = pd.concat(all_sets)
+        presence_sets.append(build_presence_sets(df))
+        cluster_sets.append(build_cluster_sets(df))
 
-    return compute_lift(combined_sets)
+    combined_presence = pd.concat(presence_sets)
+    combined_cluster = pd.concat(cluster_sets)
+
+    presence_lift = compute_lift(combined_presence)
+    cluster_lift = compute_lift(combined_cluster)
+
+    presence_lift = presence_lift.rename(columns={"Lift": "Presence_Lift"})
+    cluster_lift = cluster_lift.rename(columns={"Lift": "Cluster_Lift"})
+
+    merged = presence_lift.merge(
+        cluster_lift,
+        on=["Trigger", "Target"],
+        how="outer"
+    )
+
+    merged["Presence_Lift"] = merged["Presence_Lift"].fillna(1)
+    merged["Cluster_Lift"] = merged["Cluster_Lift"].fillna(1)
+
+    return merged

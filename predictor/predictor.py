@@ -40,7 +40,9 @@ def predict_same_day(active_signs):
         base_prob = base_rates.get(sign, 0)
         log_prob = np.log(base_prob + 1e-9)
 
-        # -------- Strong Nonlinear Momentum --------
+        # -----------------------------
+        # STRONG NONLINEAR MOMENTUM
+        # -----------------------------
         if sign in sign_counts:
             count = sign_counts[sign]
 
@@ -50,8 +52,10 @@ def predict_same_day(active_signs):
             else:
                 log_prob += 0.1
 
-        # -------- Coupling --------
-        for active_sign, count in sign_counts.items():
+        # -----------------------------
+        # PRESENCE + CLUSTER COUPLING
+        # -----------------------------
+        for active_sign, trigger_count in sign_counts.items():
 
             match = coupling_df[
                 (coupling_df["Trigger"] == active_sign) &
@@ -59,16 +63,24 @@ def predict_same_day(active_signs):
             ]
 
             if not match.empty:
-                lift = match["Avg_Lift"].values[0]
-                if lift > 0:
-                    log_prob += count * np.log(lift)
 
-        # -------- Dominant Boost --------
-        if dominant_sign:
+                presence_lift = match["Presence_Lift"].values[0]
+                cluster_lift = match["Cluster_Lift"].values[0]
 
-            if sign == dominant_sign:
-                boost = 1 + 0.25 * (dominant_count - 2)
-                log_prob += np.log(boost)
+                # Presence-based lift
+                if presence_lift > 0:
+                    log_prob += trigger_count * np.log(presence_lift)
+
+                # Cluster-based lift (only if trigger clusters)
+                if trigger_count >= 2 and cluster_lift > 0:
+                    log_prob += 1.2 * np.log(cluster_lift)
+
+        # -----------------------------
+        # DOMINANT SIGN EXTRA BOOST
+        # -----------------------------
+        if dominant_sign and sign == dominant_sign:
+            boost = 1 + 0.25 * (dominant_count - 2)
+            log_prob += np.log(boost)
 
         results.append({
             "Sign": sign,
