@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
 from collections import Counter
-from predictor.analysis import multi_season_reliability
-from predictor.coupling import get_cross_season_coupling
+from analysis import multi_season_reliability
+from coupling import get_cross_season_coupling
 from datetime import datetime
-from data.moon import get_moon_sign
+from moon import get_moon_sign
 import os
 
 
@@ -29,24 +29,24 @@ def normalize_sign(sign):
 
 def compute_moon_boosts():
 
-    df1 = pd.read_csv("data/season_events_2023.csv")
-    df2 = pd.read_csv("data/season_events_2024.csv")
-    dob = pd.read_csv("data/player_dob_batch.csv")
+    base_dir = os.path.dirname(os.path.dirname(__file__))
+
+    df1 = pd.read_csv(os.path.join(base_dir, "data", "season_events_2023.csv"))
+    df2 = pd.read_csv(os.path.join(base_dir, "data", "season_events_2024.csv"))
+    dob = pd.read_csv(os.path.join(base_dir, "data", "player_dob_batch.csv"))
 
     df = pd.concat([df1, df2], ignore_index=True)
 
-    # attach zodiac
     df = df.merge(dob[["player", "Zodiac"]], on="player", how="left")
 
     df = df[df["minutes"] > 0]
 
-    # compute moon sign dynamically
-    df["moon_sign"] = df["date"].apply(lambda d: get_moon_sign(pd.to_datetime(d).strftime("%Y/%m/%d")))
+    df["moon_sign"] = df["date"].apply(
+        lambda d: get_moon_sign(pd.to_datetime(d, dayfirst=True).strftime("%Y/%m/%d"))
+    )
 
-    # baseline rating per zodiac
     baseline = df.groupby("Zodiac")["rating"].mean()
 
-    # moon + zodiac rating
     moon_avg = df.groupby(["moon_sign", "Zodiac"])["rating"].mean()
 
     boost = (moon_avg / baseline).unstack().fillna(1.0)
@@ -63,24 +63,44 @@ def predict_same_day(active_signs):
     sign_counts = Counter(active_signs)
 
     reliability_df = multi_season_reliability(SEASONS)
+
     base_rates = reliability_df["Average"]
 
     coupling_df = get_cross_season_coupling(SEASONS)
 
     moon_boost_table = compute_moon_boosts()
 
-    # get today's moon sign automatically
     today = datetime.now().strftime("%Y/%m/%d")
+
     moon_sign = get_moon_sign(today)
 
+
+    # ---------------------------------------------------
+    # COUPLING STRENGTH DEPENDS ON INPUT SIZE
+    # ---------------------------------------------------
+
+    n_signs = len(active_signs)
+
+    coupling_weight = min(n_signs / 3, 1)
+
+    momentum_weight = min(n_signs / 2, 1)
+
+
+    # ---------------------------------------------------
+    # DOMINANT SIGN DETECTION
+    # ---------------------------------------------------
 
     dominant_sign = None
     dominant_count = 0
 
     for sign, count in sign_counts.items():
+
         if count >= 3:
+
             dominant_sign = sign
+
             dominant_count = count
+
             break
 
 
@@ -103,10 +123,14 @@ def predict_same_day(active_signs):
             count = sign_counts[sign]
 
             if count >= 2:
-                momentum_boost = 0.6 * ((count - 1) ** 1.5)
+
+                momentum_boost = momentum_weight * (0.8 * ((count - 1) ** 1.6))
+
                 log_prob += momentum_boost
+
             else:
-                log_prob += 0.1
+
+                log_prob += 0.05
 
 
         # ---------------------------------------------------
@@ -123,13 +147,16 @@ def predict_same_day(active_signs):
             if not match.empty:
 
                 presence_lift = match["Presence_Lift"].values[0]
+
                 cluster_lift = match["Cluster_Lift"].values[0]
 
                 if presence_lift > 0:
-                    log_prob += trigger_count * np.log(presence_lift)
+
+                    log_prob += coupling_weight * trigger_count * np.log(presence_lift)
 
                 if trigger_count >= 2 and cluster_lift > 0:
-                    log_prob += 1.2 * np.log(cluster_lift)
+
+                    log_prob += coupling_weight * 1.5 * np.log(cluster_lift)
 
 
         # ---------------------------------------------------
@@ -138,13 +165,13 @@ def predict_same_day(active_signs):
 
         if dominant_sign and sign == dominant_sign:
 
-            boost = 1 + 0.25 * (dominant_count - 2)
+            boost = 1 + 0.3 * (dominant_count - 2)
 
             log_prob += np.log(boost)
 
 
         # ---------------------------------------------------
-        # MOON BOOST EFFECT (DATA-DRIVEN)
+        # MOON BOOST
         # ---------------------------------------------------
 
         if moon_sign in moon_boost_table.index and sign in moon_boost_table.columns:
@@ -155,8 +182,11 @@ def predict_same_day(active_signs):
 
 
         results.append({
+
             "Sign": sign,
+
             "Log_Prob": log_prob
+
         })
 
 
@@ -192,9 +222,13 @@ def save_manual_input(active_signs):
     for sign in active_signs:
 
         rows.append({
+
             "date": today,
+
             "Zodiac": sign,
+
             "performed": 1
+
         })
 
     df_new = pd.DataFrame(rows)
@@ -219,7 +253,6 @@ def main():
     print("============================================\n")
 
     print("Enter zodiac signs that have already performed today.")
-    print("Repeat signs if multiple players from same zodiac performed.")
     print("Example: Pisces,Pisces,Cancer\n")
 
     user_input = input("Active signs: ")
@@ -233,6 +266,7 @@ def main():
         norm = normalize_sign(s)
 
         if norm is not None:
+
             active_signs.append(norm)
 
     if len(active_signs) == 0:
