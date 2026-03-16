@@ -54,6 +54,10 @@ def compute_moon_boosts():
     return boost
 
 
+# compute once (faster predictions)
+MOON_BOOST_TABLE = compute_moon_boosts()
+
+
 # ---------------------------------------------------
 # MAIN PREDICTION FUNCTION
 # ---------------------------------------------------
@@ -68,7 +72,7 @@ def predict_same_day(active_signs):
 
     coupling_df = get_cross_season_coupling(SEASONS)
 
-    moon_boost_table = compute_moon_boosts()
+    moon_boost_table = MOON_BOOST_TABLE
 
     today = datetime.now().strftime("%Y/%m/%d")
 
