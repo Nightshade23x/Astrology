@@ -10,6 +10,8 @@ import os
 
 SEASONS = [2023, 2024]
 
+DEBUG = True   # set True when you want to inspect model behaviour
+
 
 # ---------------------------------------------------
 # NORMALIZE SIGN INPUT
@@ -54,7 +56,7 @@ def compute_moon_boosts():
     return boost
 
 
-# compute once (faster predictions)
+# compute once for speed
 MOON_BOOST_TABLE = compute_moon_boosts()
 
 
@@ -77,6 +79,11 @@ def predict_same_day(active_signs):
     today = datetime.now().strftime("%Y/%m/%d")
 
     moon_sign = get_moon_sign(today)
+
+
+    if DEBUG:
+        print("\nBaseline reliability:")
+        print(base_rates.sort_values(ascending=False))
 
 
     # ---------------------------------------------------
@@ -113,9 +120,18 @@ def predict_same_day(active_signs):
 
     for sign in base_rates.index:
 
+        # ---------------------------------------------------
+        # BASELINE PROBABILITY (normalized)
+        # ---------------------------------------------------
+
         base_prob = base_rates.get(sign, 0)
 
-        log_prob = np.log(base_prob + 1e-9)
+        base_prob = base_prob / base_rates.mean()
+
+        log_prob = 0.5*np.log(base_prob + 1e-9)
+
+        if DEBUG:
+            debug_components = {"baseline": log_prob}
 
 
         # ---------------------------------------------------
@@ -132,9 +148,15 @@ def predict_same_day(active_signs):
 
                 log_prob += momentum_boost
 
+                if DEBUG:
+                    debug_components["momentum"] = momentum_boost
+
             else:
 
                 log_prob += 0.05
+
+                if DEBUG:
+                    debug_components["momentum"] = 0.05
 
 
         # ---------------------------------------------------
@@ -156,11 +178,21 @@ def predict_same_day(active_signs):
 
                 if presence_lift > 0:
 
-                    log_prob += coupling_weight * trigger_count * np.log(presence_lift)
+                    effect = coupling_weight * trigger_count * np.log(presence_lift)
+
+                    log_prob += effect
+
+                    if DEBUG:
+                        debug_components[f"coupling_{active_sign}"] = effect
 
                 if trigger_count >= 2 and cluster_lift > 0:
 
-                    log_prob += coupling_weight * 1.5 * np.log(cluster_lift)
+                    effect = coupling_weight * 1.5 * np.log(cluster_lift)
+
+                    log_prob += effect
+
+                    if DEBUG:
+                        debug_components[f"cluster_{active_sign}"] = effect
 
 
         # ---------------------------------------------------
@@ -171,7 +203,12 @@ def predict_same_day(active_signs):
 
             boost = 1 + 0.3 * (dominant_count - 2)
 
-            log_prob += np.log(boost)
+            effect = np.log(boost)
+
+            log_prob += effect
+
+            if DEBUG:
+                debug_components["dominant"] = effect
 
 
         # ---------------------------------------------------
@@ -182,7 +219,18 @@ def predict_same_day(active_signs):
 
             multiplier = moon_boost_table.loc[moon_sign, sign]
 
-            log_prob += np.log(multiplier)
+            multiplier = np.clip(multiplier, 0.9, 1.1)
+
+            effect = np.log(multiplier)
+
+            log_prob += effect
+
+            if DEBUG:
+                debug_components["moon"] = effect
+
+
+        if DEBUG and sign == "Gemini":
+            print("\nGemini breakdown:", debug_components)
 
 
         results.append({
