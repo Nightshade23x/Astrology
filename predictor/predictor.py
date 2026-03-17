@@ -10,7 +10,7 @@ import os
 
 SEASONS = [2023, 2024]
 
-DEBUG = True   # set True when you want to inspect model behaviour
+DEBUG = False
 
 
 # ---------------------------------------------------
@@ -56,7 +56,6 @@ def compute_moon_boosts():
     return boost
 
 
-# compute once for speed
 MOON_BOOST_TABLE = compute_moon_boosts()
 
 
@@ -69,101 +68,59 @@ def predict_same_day(active_signs):
     sign_counts = Counter(active_signs)
 
     reliability_df = multi_season_reliability(SEASONS)
-
     base_rates = reliability_df["Average"]
 
     coupling_df = get_cross_season_coupling(SEASONS)
-
     moon_boost_table = MOON_BOOST_TABLE
 
     today = datetime.now().strftime("%Y/%m/%d")
-
     moon_sign = get_moon_sign(today)
-
 
     if DEBUG:
         print("\nBaseline reliability:")
         print(base_rates.sort_values(ascending=False))
 
 
-    # ---------------------------------------------------
-    # COUPLING STRENGTH DEPENDS ON INPUT SIZE
-    # ---------------------------------------------------
-
-    n_signs = len(active_signs)
-
-    coupling_weight = min(n_signs / 3, 1)
-
-    momentum_weight = min(n_signs / 2, 1)
-
-
-    # ---------------------------------------------------
-    # DOMINANT SIGN DETECTION
-    # ---------------------------------------------------
-
-    dominant_sign = None
-    dominant_count = 0
-
-    for sign, count in sign_counts.items():
-
-        if count >= 3:
-
-            dominant_sign = sign
-
-            dominant_count = count
-
-            break
-
-
     results = []
-
 
     for sign in base_rates.index:
 
-        # ---------------------------------------------------
-        # BASELINE PROBABILITY (normalized)
-        # ---------------------------------------------------
-
-        base_prob = base_rates.get(sign, 0)
-
-        base_prob = base_prob / base_rates.mean()
-
-        log_prob = 0.5*np.log(base_prob + 1e-9)
-
-        if DEBUG:
-            debug_components = {"baseline": log_prob}
-
+        log_prob = 0
+        debug_components = {}
 
         # ---------------------------------------------------
-        # MOMENTUM EFFECT
+        # 1. INPUT PRIOR (MOST IMPORTANT FIX)
         # ---------------------------------------------------
 
         if sign in sign_counts:
+            prior = 0.8 * sign_counts[sign]   # strong influence
+            log_prob += prior
 
-            count = sign_counts[sign]
-
-            if count >= 2:
-
-                momentum_boost = momentum_weight * (0.8 * ((count - 1) ** 1.6))
-
-                log_prob += momentum_boost
-
-                if DEBUG:
-                    debug_components["momentum"] = momentum_boost
-
-            else:
-
-                log_prob += 0.05
-
-                if DEBUG:
-                    debug_components["momentum"] = 0.05
+            if DEBUG:
+                debug_components["prior"] = prior
 
 
         # ---------------------------------------------------
-        # COUPLING EFFECT
+        # 2. BASELINE (WEAKENED)
         # ---------------------------------------------------
 
-        for active_sign, trigger_count in sign_counts.items():
+        mean_base = base_rates.mean()
+
+        base_prob = base_rates.get(sign, 0) / mean_base
+
+        baseline_effect = np.log(base_prob + 1e-9) * 0.3   # reduced weight
+
+        log_prob += baseline_effect
+
+        if DEBUG:
+            debug_components["baseline"] = baseline_effect
+
+
+        # ---------------------------------------------------
+        # 3. COUPLING (CONTROLLED BUT USEFUL)
+        # ---------------------------------------------------
+
+        for active_sign, count in sign_counts.items():
 
             match = coupling_df[
                 (coupling_df["Trigger"] == active_sign) &
@@ -174,75 +131,50 @@ def predict_same_day(active_signs):
 
                 presence_lift = match["Presence_Lift"].values[0]
 
-                cluster_lift = match["Cluster_Lift"].values[0]
-
                 if presence_lift > 0:
 
-                    effect = coupling_weight * trigger_count * np.log(presence_lift)
+                    effect = 0.5 * count * np.log(presence_lift)
+
+                    effect = np.clip(effect, -0.5, 0.5)
 
                     log_prob += effect
 
                     if DEBUG:
                         debug_components[f"coupling_{active_sign}"] = effect
 
-                if trigger_count >= 2 and cluster_lift > 0:
-
-                    effect = coupling_weight * 1.5 * np.log(cluster_lift)
-
-                    log_prob += effect
-
-                    if DEBUG:
-                        debug_components[f"cluster_{active_sign}"] = effect
-
 
         # ---------------------------------------------------
-        # DOMINANT SIGN BOOST
-        # ---------------------------------------------------
-
-        if dominant_sign and sign == dominant_sign:
-
-            boost = 1 + 0.3 * (dominant_count - 2)
-
-            effect = np.log(boost)
-
-            log_prob += effect
-
-            if DEBUG:
-                debug_components["dominant"] = effect
-
-
-        # ---------------------------------------------------
-        # MOON BOOST
+        # 4. MOON BOOST (SMALL)
         # ---------------------------------------------------
 
         if moon_sign in moon_boost_table.index and sign in moon_boost_table.columns:
 
             multiplier = moon_boost_table.loc[moon_sign, sign]
-
             multiplier = np.clip(multiplier, 0.9, 1.1)
 
-            effect = np.log(multiplier)
+            moon_effect = np.log(multiplier)
 
-            log_prob += effect
+            log_prob += moon_effect
 
             if DEBUG:
-                debug_components["moon"] = effect
+                debug_components["moon"] = moon_effect
 
 
-        if DEBUG and sign == "Gemini":
-            print("\nGemini breakdown:", debug_components)
+        if DEBUG:
+            print(f"\n{sign} breakdown:", debug_components)
 
 
         results.append({
-
             "Sign": sign,
-
             "Log_Prob": log_prob
-
         })
 
 
     result_df = pd.DataFrame(results)
+
+    # ---------------------------------------------------
+    # SOFTMAX
+    # ---------------------------------------------------
 
     result_df["Raw"] = np.exp(result_df["Log_Prob"])
 
@@ -258,7 +190,7 @@ def predict_same_day(active_signs):
 
 
 # ---------------------------------------------------
-# SAVE MANUAL INPUT
+# SAVE INPUT
 # ---------------------------------------------------
 
 def save_manual_input(active_signs):
@@ -272,30 +204,23 @@ def save_manual_input(active_signs):
     rows = []
 
     for sign in active_signs:
-
         rows.append({
-
             "date": today,
-
             "Zodiac": sign,
-
             "performed": 1
-
         })
 
     df_new = pd.DataFrame(rows)
 
     if os.path.exists(path):
-
         df_existing = pd.read_csv(path)
-
         df_new = pd.concat([df_existing, df_new], ignore_index=True)
 
     df_new.to_csv(path, index=False)
 
 
 # ---------------------------------------------------
-# CLI RUNNER
+# CLI
 # ---------------------------------------------------
 
 def main():
@@ -314,22 +239,15 @@ def main():
     active_signs = []
 
     for s in raw_signs:
-
         norm = normalize_sign(s)
-
         if norm is not None:
-
             active_signs.append(norm)
 
     if len(active_signs) == 0:
-
         print("\nNo valid zodiac signs entered.\n")
-
         return
 
-
     prediction = predict_same_day(active_signs)
-
 
     print("\n==============================")
     print("Predicted Sign Probabilities")
@@ -337,11 +255,8 @@ def main():
 
     print(prediction.to_string(index=False))
 
-
     save_manual_input(active_signs)
 
 
-
 if __name__ == "__main__":
-
     main()
