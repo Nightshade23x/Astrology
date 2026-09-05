@@ -2,7 +2,7 @@ import argparse
 import json
 import os
 from pathlib import Path
-
+import time
 import pandas as pd
 import requests
 from dotenv import load_dotenv
@@ -635,6 +635,8 @@ def collect_season(season, max_requests):
         )
 
         requests_made += 1
+        # Respect API-Football's 10 requests/minute limit
+        time.sleep(6.5)
 
         remaining = headers.get(
             "x-ratelimit-requests-remaining"
