@@ -24,3 +24,5 @@ data/raw/
 
 # Logs
 *.log
+
+data/processed/player_match_stats_*.csv
