@@ -1,0 +1,26 @@
+player_id,player_name,status,wikidata_id,wikidata_label,birth_date,candidate_count
+617,Ederson,single_name_manual_review,,,,1
+879,Stephy Mavididi,matched,Q28748037,Stephy Mavididi,1998-05-31,1
+978,Kai Havertz,matched,Q27310755,Kai Havertz,1999-06-11,1
+1096,Dominik Szoboszlai,matched,Q30134278,Dominik Szoboszlai,2000-10-25,1
+1165,Matheus Cunha,ambiguous_candidates,,,,2
+1469,Danny Welbeck,matched,Q188457,Danny Welbeck,1990-11-26,1
+1946,Leandro Trossard,matched,Q6509762,Leandro Trossard,1994-12-04,1
+2032,Jørgen Strand Larsen,matched,Q28933132,Jørgen Strand Larsen,2000-02-06,1
+2601,Daichi Kamada,matched,Q20039495,Daichi Kamada,1996-08-05,1
+2919,Matz Sels,matched,Q6792066,Matz Sels,1992-02-26,1
+13736,Daniel Muñoz,matched,Q56703599,Daniel Muñoz,1996-05-25,2
+17579,Sammie Szmodics,matched,Q16237035,Sammie Szmodics,1995-09-24,1
+18744,Max Kilman,no_confident_football_candidate,,,,0
+18766,Dominic Calvert-Lewin,matched,Q19956709,Dominic Calvert-Lewin,1997-03-16,1
+18819,Michail Antonio,matched,Q1966430,Michail Antonio,1990-03-28,1
+18929,Dwight McNeil,matched,Q53652291,Dwight McNeil,1999-11-22,1
+18931,Chris Wood,ambiguous_candidates,,,,4
+18961,Dan Burn,matched,Q5213217,Dan Burn,1992-05-09,1
+19088,Dean Henderson,matched,Q28059260,Dean Henderson,1997-03-12,1
+19119,Leif Davis,matched,Q60194671,Leif Davis,1999-12-31,1
+19305,Ryan Yates,matched,Q28794002,Ryan Yates,1997-11-21,1
+19465,David Raya,matched,Q19665907,David Raya,1995-09-15,1
+106835,Kaoru Mitoma,matched,Q44395063,Kaoru Mitoma,1997-05-20,1
+144729,Taylor Harwood-Bellis,matched,Q68485418,Taylor Harwood-Bellis,2002-01-30,1
+182201,Tyrick Mitchell,matched,Q96943831,Tyrick Mitchell,1999-09-01,1

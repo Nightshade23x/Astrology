@@ -233,7 +233,23 @@ def collect_profiles(season):
         "total",
         1,
     )
+    # API-Football free plan only allows pages 1-3
+    FREE_PLAN_MAX_PAGE = 3
 
+    available_pages = total_pages
+
+    total_pages = min(
+        total_pages,
+        FREE_PLAN_MAX_PAGE,
+    )
+
+    print(
+        f"Pages available from API: {available_pages}"
+    )
+
+    print(
+        f"Pages accessible on current plan: {total_pages}"
+    )
     print(
         f"Total pages: {total_pages}"
     )
@@ -484,9 +500,7 @@ def update_reference(profiles):
         / "players.csv"
     )
 
-    players = pd.read_csv(
-        players_path
-    )
+    players = pd.read_csv(players_path)
 
     profile_subset = profiles[
         [
@@ -495,14 +509,10 @@ def update_reference(profiles):
         ]
     ].copy()
 
-    players = players.drop(
-        columns=[
-            "birth_date",
-            "zodiac",
-            "dob_source",
-            "dob_verified",
-        ],
-        errors="ignore",
+    profile_subset = profile_subset.rename(
+        columns={
+            "birth_date": "new_birth_date"
+        }
     )
 
     players = players.merge(
@@ -511,26 +521,64 @@ def update_reference(profiles):
         how="left",
     )
 
+    # Keep an existing DOB if we already have one.
+    # Otherwise use the newly retrieved API DOB.
+    if "birth_date" not in players.columns:
+        players["birth_date"] = None
+
+    players["birth_date"] = (
+        players["birth_date"]
+        .combine_first(
+            players["new_birth_date"]
+        )
+    )
+
+    players = players.drop(
+        columns=["new_birth_date"]
+    )
+
+    # Recalculate zodiac from the preserved DOB
     players["zodiac"] = (
         players["birth_date"]
         .apply(zodiac_from_date)
     )
 
-    players["dob_source"] = (
-        players["birth_date"]
-        .notna()
-        .map(
-            {
-                True: "API-Football",
-                False: None,
-            }
+    # Preserve an existing source where possible
+    if "dob_source" not in players.columns:
+        players["dob_source"] = pd.Series(
+            pd.NA,
+            index=players.index,
+            dtype="string",
         )
+    else:
+        players["dob_source"] = (
+            players["dob_source"]
+            .astype("string")
+        )
+
+    new_api_dob = (
+        players["birth_date"].notna()
+        & players["dob_source"].isna()
     )
 
-    # API source found, but we will reserve
-    # "verified" for any later manual checks.
-    players["dob_verified"] = False
+    players.loc[
+        new_api_dob,
+        "dob_source"
+    ] = "API-Football"
 
+    if "dob_verified" not in players.columns:
+        players["dob_verified"] = False
+    else:
+        players["dob_verified"] = (
+            players["dob_verified"]
+            .apply(
+                lambda x: (
+                    str(x).strip().lower() == "true"
+                    if pd.notna(x)
+                    else False
+                )
+            )
+        )
     players.to_csv(
         players_path,
         index=False,
