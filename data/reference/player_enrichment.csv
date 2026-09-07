@@ -39,7 +39,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 616,1998-11-07,Scorpio,API-Football,False
 617,1993-08-17,Leo,API-Football-ID,True
 626,1994-05-28,Gemini,Wikidata:Q2025900,False
-627,,,,False
+627,1990-05-28,Gemini,API-Football-ID,True
 629,1991-06-28,Cancer,Wikidata:Q357984,False
 631,2000-05-28,Gemini,Wikidata:Q30729096,False
 633,1990-10-24,Scorpio,Wikidata:Q161089,False
@@ -94,7 +94,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 1463,1999-08-20,Leo,Wikidata:Q40471152,False
 1468,,,,False
 1469,1990-11-26,Sagittarius,Wikidata:Q188457,False
-1485,,,,False
+1485,1994-09-08,Virgo,API-Football-ID,True
 1590,1993-01-17,Capricorn,Wikidata:Q6294052,False
 1600,,,,False
 1605,1995-10-21,Libra,Wikidata:Q5218462,False
@@ -146,13 +146,13 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 2937,1999-01-14,Capricorn,Wikidata:Q30007142,False
 2938,1994-11-01,Scorpio,Wikidata:Q2643777,False
 2939,,,,False
-2990,,,,False
+2990,1989-09-26,Libra,API-Football-ID,True
 2997,1985-04-18,Aries,Wikidata:Q40596,False
 2999,1996-04-12,Aries,Wikidata:Q16212492,False
 3339,2000-01-08,Capricorn,Wikidata:Q47490408,False
 3428,1991-09-11,Virgo,Wikidata:Q367861,False
-5996,,,,False
-6056,,,,False
+5996,2001-01-17,Capricorn,API-Football-ID,True
+6056,1998-06-28,Cancer,API-Football-ID,True
 6610,1997-05-10,Taurus,Wikidata:Q23413053,False
 6716,1998-12-24,Capricorn,Wikidata:Q33297140,False
 7029,2000-07-04,Cancer,Wikidata:Q105944501,False
@@ -191,7 +191,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 18742,,,,False
 18744,1997-05-23,Gemini,API-Football-ID,True
 18746,2000-01-27,Aquarius,Wikidata:Q28147578,False
-18753,,,,False
+18753,1996-01-25,Aquarius,API-Football-ID,True
 18755,1999-10-10,Libra,Wikidata:Q57315493,False
 18758,1988-10-11,Libra,Wikidata:Q316724,False
 18766,1997-03-16,Pisces,Wikidata:Q19956709,False
@@ -199,7 +199,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 18772,1988-01-03,Capricorn,Wikidata:Q29495,False
 18778,1997-12-09,Sagittarius,Wikidata:Q27974879,False
 18779,1997-10-01,Libra,Wikidata:Q23771218,False
-18784,,,,False
+18784,1996-11-23,Sagittarius,API-Football-ID,True
 18786,1996-12-16,Sagittarius,Wikidata:Q19587938,False
 18788,1987-01-11,Capricorn,Wikidata:Q6147586,False
 18805,1993-01-01,Capricorn,Wikidata:Q13427925,False
@@ -251,14 +251,14 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 19119,1999-12-31,Capricorn,Wikidata:Q60194671,False
 19128,1996-11-20,Scorpio,API-Football-ID,True
 19130,1995-12-02,Sagittarius,Wikidata:Q20641319,False
-19136,,,,False
+19136,2000-11-23,Sagittarius,API-Football-ID,True
 19143,1993-03-25,Aries,Wikidata:Q327227,False
 19145,1997-09-24,Libra,Wikidata:Q21620666,False
 19147,1990-05-06,Taurus,Wikidata:Q1705657,False
 19150,1996-10-22,Libra,Wikidata:Q18921915,False
 19152,1993-03-04,Pisces,Wikidata:Q5162304,False
 19163,1995-02-24,Pisces,Wikidata:Q15622117,False
-19170,,,,False
+19170,2002-07-26,Leo,API-Football-ID,True
 19179,1993-03-13,Pisces,Wikidata:Q16235643,False
 19182,1997-11-14,Scorpio,Wikidata:Q27019988,False
 19187,1995-09-10,Virgo,Wikidata:Q16056053,False
@@ -305,7 +305,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 19959,,,,False
 20007,1997-02-16,Aquarius,Wikidata:Q18637246,False
 20031,1996-02-24,Pisces,Wikidata:Q16245833,False
-20089,,,,False
+20089,1994-11-23,Sagittarius,API-Football-ID,True
 20093,,,,False
 20355,1998-05-14,Taurus,Wikidata:Q27967807,False
 20457,1995-10-21,Libra,Wikidata:Q17496350,False
@@ -390,7 +390,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 137302,2001-12-09,Sagittarius,Wikidata:Q66779547,False
 138417,2001-10-16,Libra,Wikidata:Q83264648,False
 138780,2001-04-13,Aries,Wikidata:Q72921909,False
-138787,,,,False
+138787,2001-02-24,Pisces,API-Football-ID,True
 138815,2000-09-30,Libra,Wikidata:Q80197171,False
 138816,2002-03-10,Pisces,Wikidata:Q69495231,False
 138822,2001-09-10,Virgo,Wikidata:Q87347516,False
@@ -441,7 +441,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 182201,1999-09-01,Virgo,Wikidata:Q96943831,False
 191971,2002-11-24,Sagittarius,Wikidata:Q81053047,False
 195103,2001-02-12,Aquarius,API-Football-ID,True
-195106,,,,False
+195106,2001-05-04,Taurus,API-Football-ID,True
 195717,,,,False
 195962,,,,False
 195993,2002-11-30,Sagittarius,Wikidata:Q88130791,False
@@ -456,9 +456,9 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 215874,2002-12-28,Capricorn,Wikidata:Q115208158,False
 237129,2002-09-14,Virgo,Wikidata:Q104877690,False
 263538,,,,False
-265784,,,,False
+265784,2001-07-16,Cancer,API-Football-ID,True
 265820,2003-10-06,Libra,Wikidata:Q103979811,False
-266657,,,,False
+266657,2004-04-10,Aries,API-Football-ID,True
 270139,2001-05-15,Taurus,Wikidata:Q110565461,False
 270507,2003-01-10,Capricorn,Wikidata:Q112081015,False
 270508,2004-03-26,Aries,Wikidata:Q106366721,False
@@ -524,7 +524,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 334035,2006-07-18,Cancer,Wikidata:Q118869958,False
 334037,2006-02-04,Aquarius,Wikidata:Q123002942,False
 336564,2004-11-28,Sagittarius,Wikidata:Q113464781,False
-336585,,,,False
+336585,2004-07-10,Cancer,API-Football-ID,True
 336671,2003-07-29,Leo,Wikidata:Q116700351,False
 340135,2005-01-14,Capricorn,Wikidata:Q121463467,False
 340136,,,,False
