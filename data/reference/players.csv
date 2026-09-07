@@ -6,7 +6,7 @@ player_id,player_name,teams,positions,first_seen,last_seen,appearances,starts,bi
 303467,Abdul Fatawu Issahaku,Leicester,F | M,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,10,5,2004-03-08,Pisces,Wikidata:Q105812639,False
 19484,Adam Armstrong,Southampton,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,7,4,1997-02-10,Aquarius,Wikidata:Q16023869,False
 295,Adam Lallana,Southampton,M,2024-08-31 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,3,1988-05-10,Taurus,API-Football,False
-18869,Adam Smith,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,5,,,,False
+18869,Adam Smith,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,5,1991-04-29,Taurus,API-Football-ID,True
 19265,Adam Webster,Brighton,D,2024-08-17 14:00:00+00:00,2024-10-06 15:30:00+00:00,3,2,,,,False
 288102,Adam Wharton,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-10-27 13:00:00+00:00,8,8,2004-02-06,Aquarius,Wikidata:Q113488911,False
 18753,Adama Traoré,Fulham,F | M,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,9,9,,,,False
@@ -52,7 +52,7 @@ player_id,player_name,teams,positions,first_seen,last_seen,appearances,starts,bi
 19959,Ben White,Arsenal,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,8,6,,,,False
 278118,Benjamin Nelson,Leicester,D,2024-08-19 19:00:00+00:00,2024-08-19 19:00:00+00:00,0,0,,,,False
 95,Benoît Badiashile,Chelsea,D,2024-08-18 15:30:00+00:00,2024-10-20 15:30:00+00:00,1,0,2001-03-26,Aries,API-Football,False
-636,Bernardo Silva,Manchester City,M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,10,9,,,,False
+636,Bernardo Silva,Manchester City,M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,10,9,1994-08-10,Leo,API-Football-ID,True
 1438,Bernd Leno,Fulham,G,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,9,9,1992-03-04,Pisces,Wikidata:Q309966,False
 125743,Beto,Everton,F,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,0,,,,False
 340573,Bilal El Khannouss,Leicester,M,2024-08-31 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,2,2004-05-10,Taurus,Wikidata:Q105955374,False
@@ -191,7 +191,7 @@ player_id,player_name,teams,positions,first_seen,last_seen,appearances,starts,bi
 61742,Hákon Rafn Valdimarsson,Brentford,G,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,0,0,,,,False
 138816,Ian Maatsen,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,8,0,2002-03-10,Pisces,Wikidata:Q69495231,False
 22149,Ibrahim Sangaré,Nottingham Forest,M,2024-08-17 14:00:00+00:00,2024-08-31 14:00:00+00:00,3,3,,,,False
-1145,Ibrahima Konaté,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,9,,,,False
+1145,Ibrahima Konaté,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,9,1999-05-25,Gemini,API-Football-ID,True
 2990,Idrissa Gueye,Everton,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,7,,,,False
 7600,Igor Júlio,Brighton,D,2024-08-24 11:30:00+00:00,2024-11-02 15:00:00+00:00,5,3,1998-02-07,Aquarius,Wikidata:Q25983385,False
 18592,Iliman Ndiaye,Everton,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,8,2000-03-06,Pisces,Wikidata:Q105956269,False
@@ -255,7 +255,7 @@ player_id,player_name,teams,positions,first_seen,last_seen,appearances,starts,bi
 19573,Joe Lumley,Southampton,G,2024-08-17 14:00:00+00:00,2024-08-24 14:00:00+00:00,0,0,1995-02-15,Aquarius,Wikidata:Q17811744,False
 1463,Joe Willock,Newcastle,M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,8,2,1999-08-20,Leo,Wikidata:Q40471152,False
 18847,Joel Ward,Crystal Palace,D,2024-08-24 14:00:00+00:00,2024-10-27 13:00:00+00:00,0,0,1989-10-29,Scorpio,Wikidata:Q2621755,False
-723,Joelinton,Newcastle,F | M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,10,,,,False
+723,Joelinton,Newcastle,F | M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,10,1996-08-14,Leo,API-Football-ID,True
 19191,John McGinn,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,7,6,1994-10-18,Libra,Wikidata:Q10547335,False
 18737,John Ruddy,Newcastle,G,2024-08-25 13:00:00+00:00,2024-10-27 13:00:00+00:00,0,0,1986-10-24,Scorpio,Wikidata:Q247312,False
 626,John Stones,Manchester City,D,2024-08-18 15:30:00+00:00,2024-10-26 14:00:00+00:00,6,2,1994-05-28,Gemini,Wikidata:Q2025900,False
@@ -270,7 +270,7 @@ player_id,player_name,teams,positions,first_seen,last_seen,appearances,starts,bi
 1590,José Sá,Wolves,G,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,5,5,1993-01-17,Capricorn,Wikidata:Q6294052,False
 141901,Jota Silva,Nottingham Forest,F,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,0,1999-08-01,Leo,Wikidata:Q105945662,False
 583,João Félix,Chelsea,F,2024-08-25 13:00:00+00:00,2024-10-27 13:00:00+00:00,5,0,1999-11-10,Scorpio,API-Football,False
-195103,João Gomes,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,10,10,,,,False
+195103,João Gomes,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,10,10,2001-02-12,Aquarius,API-Football-ID,True
 10329,João Pedro,Brighton,F | M,2024-08-17 14:00:00+00:00,2024-09-22 13:00:00+00:00,4,3,,,,False
 18755,João Virgínia,Everton,G,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,1999-10-10,Libra,Wikidata:Q57315493,False
 537,Joël Veltman,Brighton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,9,1992-01-15,Capricorn,API-Football,False
