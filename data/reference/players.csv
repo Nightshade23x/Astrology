@@ -1,540 +1,585 @@
 player_id,player_name,teams,positions,first_seen,last_seen,appearances,starts,birth_date,zodiac,dob_source,dob_verified
-18813,Aaron Cresswell,West Ham,D,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,4,0,1989-12-15,Sagittarius,Wikidata:Q3603066,False
-20355,Aaron Ramsdale,Arsenal | Southampton,G,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,8,8,1998-05-14,Taurus,Wikidata:Q27967807,False
-18846,Aaron Wan-Bissaka,West Ham,D | M,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,9,8,1997-11-26,Sagittarius,Wikidata:Q50137347,False
-18805,Abdoulaye Doucouré,Everton,M,2024-08-17 14:00:00+00:00,2024-10-26 16:30:00+00:00,8,7,1993-01-01,Capricorn,Wikidata:Q13427925,False
-303467,Abdul Fatawu Issahaku,Leicester,F | M,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,10,5,2004-03-08,Pisces,Wikidata:Q105812639,False
-19484,Adam Armstrong,Southampton,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,7,4,1997-02-10,Aquarius,Wikidata:Q16023869,False
-295,Adam Lallana,Southampton,M,2024-08-31 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,3,1988-05-10,Taurus,API-Football,False
-18869,Adam Smith,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,5,1991-04-29,Taurus,API-Football-ID,True
+18813,Aaron Cresswell,West Ham,D,2024-08-17 16:30:00+00:00,2024-12-09 20:00:00+00:00,5,0,1989-12-15,Sagittarius,Wikidata:Q3603066,False
+20355,Aaron Ramsdale,Arsenal | Southampton,G,2024-08-17 14:00:00+00:00,2024-11-09 15:00:00+00:00,9,9,1998-05-14,Taurus,Wikidata:Q27967807,False
+18846,Aaron Wan-Bissaka,West Ham,D | M,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,16,15,1997-11-26,Sagittarius,Wikidata:Q50137347,False
+18805,Abdoulaye Doucouré,Everton,M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,14,13,1993-01-01,Capricorn,Wikidata:Q13427925,False
+303467,Abdul Fatawu Issahaku,Leicester,F | M,2024-08-19 19:00:00+00:00,2024-11-10 14:00:00+00:00,11,6,2004-03-08,Pisces,Wikidata:Q105812639,False
+19484,Adam Armstrong,Southampton,F | M,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,13,10,1997-02-10,Aquarius,Wikidata:Q16023869,False
+295,Adam Lallana,Southampton,M,2024-08-31 14:00:00+00:00,2024-12-15 19:00:00+00:00,8,5,1988-05-10,Taurus,API-Football,False
+18869,Adam Smith,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,17,12,1991-04-29,Taurus,API-Football-ID,True
 19265,Adam Webster,Brighton,D,2024-08-17 14:00:00+00:00,2024-10-06 15:30:00+00:00,3,2,,,,False
 288102,Adam Wharton,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-10-27 13:00:00+00:00,8,8,2004-02-06,Aquarius,Wikidata:Q113488911,False
-18753,Adama Traoré,Fulham,F | M,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,9,9,,,,False
-284324,Alejandro Garnacho,Manchester United,F | M,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,6,2004-07-01,Cancer,Wikidata:Q111366053,False
-1455,Alex Iwobi,Fulham,D | F | M,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,9,9,1996-05-03,Taurus,Wikidata:Q21091691,False
-18935,Alex McCarthy,Southampton,G,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,2,2,1989-12-03,Sagittarius,Wikidata:Q887695,False
+18753,Adama Traoré,Fulham,F | M,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,15,10,,,,False
+284324,Alejandro Garnacho,Manchester United,F | M,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,16,10,2004-07-01,Cancer,Wikidata:Q111366053,False
+1455,Alex Iwobi,Fulham,D | F | M,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,16,16,1996-05-03,Taurus,Wikidata:Q21091691,False
+18935,Alex McCarthy,Southampton,G,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,4,4,1989-12-03,Sagittarius,Wikidata:Q887695,False
 318056,Alex Murphy,Newcastle,D,2024-08-25 13:00:00+00:00,2024-11-02 12:30:00+00:00,0,0,,,,False
 304853,Alex Scott,Bournemouth,M,2024-08-17 14:00:00+00:00,2024-10-19 16:30:00+00:00,8,2,,,,False
-2864,Alexander Isak,Newcastle,F,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,8,8,1999-09-21,Virgo,Wikidata:Q23759917,False
-6716,Alexis Mac Allister,Liverpool,M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,9,1998-12-24,Capricorn,Wikidata:Q33297140,False
+2864,Alexander Isak,Newcastle,F,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,15,15,1999-09-21,Virgo,Wikidata:Q23759917,False
+6716,Alexis Mac Allister,Liverpool,M,2024-08-17 11:30:00+00:00,2024-12-04 19:30:00+00:00,14,12,1998-12-24,Capricorn,Wikidata:Q33297140,False
 273757,Alfie Devine,Tottenham,M,2024-09-01 12:30:00+00:00,2024-09-01 12:30:00+00:00,0,0,2004-08-01,Leo,Wikidata:Q104772508,False
-283272,Alfie Pond,Wolves,D,2024-09-28 16:30:00+00:00,2024-11-02 17:30:00+00:00,0,0,2004-03-01,Pisces,Wikidata:Q110069543,False
-299813,Ali Al-Hamadi,Ipswich,F,2024-08-17 11:30:00+00:00,2024-10-26 14:00:00+00:00,3,0,2002-03-01,Pisces,Wikidata:Q80661874,False
-280,Alisson,Liverpool,G,2024-08-17 11:30:00+00:00,2024-10-05 11:30:00+00:00,6,6,1992-10-02,Libra,API-Football,False
-253,Alphonse Aréola,West Ham,G,2024-08-17 16:30:00+00:00,2024-10-27 13:00:00+00:00,8,8,1993-02-27,Pisces,API-Football,False
-50132,Altay Bayındır,Manchester United,G,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,0,0,1998-04-14,Aries,Wikidata:Q57415806,False
-157997,Amad Diallo,Manchester United,F | M,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,7,4,2002-07-11,Cancer,Wikidata:Q72603655,False
-162714,Amadou Onana,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,8,8,2001-08-16,Leo,Wikidata:Q99328435,False
-899,Andreas Pereira,Fulham,M,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,9,9,1996-01-01,Capricorn,Wikidata:Q17619350,False
+311817,Alfie Dorrington,Tottenham,D,2024-12-15 19:00:00+00:00,2024-12-15 19:00:00+00:00,1,0,,,,False
+283272,Alfie Pond,Wolves,D,2024-09-28 16:30:00+00:00,2024-11-23 15:00:00+00:00,1,0,2004-03-01,Pisces,Wikidata:Q110069543,False
+299813,Ali Al-Hamadi,Ipswich,F,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,8,0,2002-03-01,Pisces,Wikidata:Q80661874,False
+280,Alisson,Liverpool,G,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,7,7,1992-10-02,Libra,API-Football,False
+253,Alphonse Aréola,West Ham,G,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,8,8,1993-02-27,Pisces,API-Football,False
+50132,Altay Bayındır,Manchester United,G,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,0,0,1998-04-14,Aries,Wikidata:Q57415806,False
+157997,Amad Diallo,Manchester United,F | M,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,15,10,2002-07-11,Cancer,Wikidata:Q72603655,False
+162714,Amadou Onana,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,12,11,2001-08-16,Leo,Wikidata:Q99328435,False
+407032,Amara Nallo,Liverpool,D,2024-12-04 19:30:00+00:00,2024-12-04 19:30:00+00:00,0,0,,,,False
+899,Andreas Pereira,Fulham,M,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,15,13,1996-01-01,Capricorn,Wikidata:Q17619350,False
 147835,Andrew Omobamidele,Nottingham Forest,D,2024-08-17 14:00:00+00:00,2024-10-21 19:00:00+00:00,0,0,2002-06-23,Cancer,Wikidata:Q104849454,False
-289,Andrew Robertson,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,9,8,1994-03-11,Pisces,API-Football,False
-265784,André,Wolves,M,2024-08-31 14:00:00+00:00,2024-11-02 17:30:00+00:00,7,5,,,,False
-526,André Onana,Manchester United,G,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,9,1996-04-02,Aries,API-Football,False
-68466,Andy Irving,West Ham,M,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,3,0,2000-05-13,Taurus,Wikidata:Q47510489,False
-153430,Anthony Elanga,Nottingham Forest,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,7,2002-04-27,Taurus,Wikidata:Q106805131,False
-138787,Anthony Gordon,Newcastle,F,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,9,9,,,,False
-19281,Antoine Semenyo,Bournemouth,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,2000-01-07,Capricorn,Wikidata:Q52990659,False
-19549,Antonee Robinson,Fulham,D,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,9,9,1997-08-08,Leo,Wikidata:Q35778151,False
-9971,Antony,Manchester United,F,2024-08-16 19:00:00+00:00,2024-10-19 14:00:00+00:00,2,0,,,,False
-328089,Archie Gray,Tottenham,M,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,4,0,,,,False
-616,Arijanet Murić,Ipswich,G,2024-08-24 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,9,1998-11-07,Scorpio,API-Football,False
-367634,Asher Agbinone,Crystal Palace,M,2024-09-01 12:30:00+00:00,2024-11-02 17:30:00+00:00,1,0,2005-09-27,Libra,Wikidata:Q130608565,False
-894,Ashley Young,Everton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,8,8,1985-07-09,Cancer,Wikidata:Q10602,False
-18858,Asmir Begović,Everton,G,2024-09-21 14:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,1987-06-20,Gemini,Wikidata:Q431368,False
-21998,Axel Disasi,Chelsea,D,2024-09-01 12:30:00+00:00,2024-10-20 15:30:00+00:00,2,1,1998-03-11,Pisces,Wikidata:Q23887767,False
-19182,Axel Tuanzebe,Ipswich,D,2024-08-17 11:30:00+00:00,2024-09-29 13:00:00+00:00,6,6,1997-11-14,Scorpio,Wikidata:Q27019988,False
-402329,Ayden Heaven,Arsenal,D,2024-09-15 13:00:00+00:00,2024-09-15 13:00:00+00:00,0,0,2006-09-22,Virgo,Wikidata:Q130319703,False
-129058,Bart Verbruggen,Brighton,G,2024-08-31 11:30:00+00:00,2024-11-02 15:00:00+00:00,8,8,2002-08-18,Leo,Wikidata:Q98682558,False
-19485,Ben Brereton Díaz,Southampton,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,4,1999-04-18,Aries,Wikidata:Q28606351,False
-164,Ben Davies,Tottenham,D,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,0,0,1993-04-24,Taurus,API-Football,False
-18823,Ben Johnson,Ipswich,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,5,3,2000-01-24,Aquarius,Wikidata:Q61906182,False
-18917,Ben Mee,Brentford,D,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,1,0,,,,False
-19959,Ben White,Arsenal,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,8,6,,,,False
+289,Andrew Robertson,Liverpool,D,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,14,13,1994-03-11,Pisces,API-Football,False
+265784,André,Wolves,M,2024-08-31 14:00:00+00:00,2024-12-22 14:00:00+00:00,13,11,,,,False
+526,André Onana,Manchester United,G,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,17,17,1996-04-02,Aries,API-Football,False
+68466,Andy Irving,West Ham,M,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,5,0,2000-05-13,Taurus,Wikidata:Q47510489,False
+153430,Anthony Elanga,Nottingham Forest,F | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,17,11,2002-04-27,Taurus,Wikidata:Q106805131,False
+138787,Anthony Gordon,Newcastle,F,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,16,15,,,,False
+19281,Antoine Semenyo,Bournemouth,F | M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,16,16,2000-01-07,Capricorn,Wikidata:Q52990659,False
+19549,Antonee Robinson,Fulham,D,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,16,16,1997-08-08,Leo,Wikidata:Q35778151,False
+9971,Antony,Manchester United,F,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,4,0,,,,False
+328089,Archie Gray,Tottenham,D | M,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,9,2,,,,False
+616,Arijanet Murić,Ipswich,G,2024-08-24 14:00:00+00:00,2024-12-21 15:00:00+00:00,16,16,1998-11-07,Scorpio,API-Football,False
+138822,Armando Broja,Everton,F,2024-12-04 19:30:00+00:00,2024-12-14 15:00:00+00:00,2,0,,,,False
+367634,Asher Agbinone,Crystal Palace,M,2024-09-01 12:30:00+00:00,2024-12-21 17:30:00+00:00,2,0,2005-09-27,Libra,Wikidata:Q130608565,False
+894,Ashley Young,Everton,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,14,14,1985-07-09,Cancer,Wikidata:Q10602,False
+18858,Asmir Begović,Everton,G,2024-09-21 14:00:00+00:00,2024-12-01 13:30:00+00:00,0,0,1987-06-20,Gemini,Wikidata:Q431368,False
+21998,Axel Disasi,Chelsea,D,2024-09-01 12:30:00+00:00,2024-12-22 14:00:00+00:00,4,3,1998-03-11,Pisces,Wikidata:Q23887767,False
+19182,Axel Tuanzebe,Ipswich,D,2024-08-17 11:30:00+00:00,2024-11-30 15:00:00+00:00,9,9,1997-11-14,Scorpio,Wikidata:Q27019988,False
+402329,Ayden Heaven,Arsenal,D,2024-09-15 13:00:00+00:00,2024-12-08 14:00:00+00:00,0,0,2006-09-22,Virgo,Wikidata:Q130319703,False
+129058,Bart Verbruggen,Brighton,G,2024-08-31 11:30:00+00:00,2024-12-21 15:00:00+00:00,15,15,2002-08-18,Leo,Wikidata:Q98682558,False
+388777,Bastien Meupiyou,Wolves,D,2024-12-14 15:00:00+00:00,2024-12-22 14:00:00+00:00,0,0,,,,False
+19485,Ben Brereton Díaz,Southampton,F | M,2024-08-17 14:00:00+00:00,2024-12-07 15:00:00+00:00,10,4,1999-04-18,Aries,Wikidata:Q28606351,False
+380715,Ben Broggio,Aston Villa,M,2024-11-23 15:00:00+00:00,2024-11-23 15:00:00+00:00,0,0,,,,False
+164,Ben Davies,Tottenham,D,2024-08-19 19:00:00+00:00,2024-12-05 20:15:00+00:00,4,3,1993-04-24,Taurus,API-Football,False
+18823,Ben Johnson,Ipswich,D | M,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,9,5,2000-01-24,Aquarius,Wikidata:Q61906182,False
+18917,Ben Mee,Brentford,D,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,4,1,,,,False
+19959,Ben White,Arsenal,D,2024-08-17 14:00:00+00:00,2024-11-10 16:30:00+00:00,9,7,,,,False
+402432,Ben Winterburn,Bournemouth,M,2024-11-30 15:00:00+00:00,2024-12-22 14:00:00+00:00,0,0,,,,False
 278118,Benjamin Nelson,Leicester,D,2024-08-19 19:00:00+00:00,2024-08-19 19:00:00+00:00,0,0,,,,False
-95,Benoît Badiashile,Chelsea,D,2024-08-18 15:30:00+00:00,2024-10-20 15:30:00+00:00,1,0,2001-03-26,Aries,API-Football,False
-636,Bernardo Silva,Manchester City,M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,10,9,1994-08-10,Leo,API-Football-ID,True
-1438,Bernd Leno,Fulham,G,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,9,9,1992-03-04,Pisces,Wikidata:Q309966,False
-125743,Beto,Everton,F,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,0,,,,False
-340573,Bilal El Khannouss,Leicester,M,2024-08-31 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,2,2004-05-10,Taurus,Wikidata:Q105955374,False
+95,Benoît Badiashile,Chelsea,D,2024-08-18 15:30:00+00:00,2024-12-08 16:30:00+00:00,4,2,2001-03-26,Aries,API-Football,False
+636,Bernardo Silva,Manchester City,M,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,17,15,1994-08-10,Leo,API-Football-ID,True
+1438,Bernd Leno,Fulham,G,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,16,16,1992-03-04,Pisces,Wikidata:Q309966,False
+125743,Beto,Everton,F,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,10,1,,,,False
+340573,Bilal El Khannouss,Leicester,M,2024-08-31 14:00:00+00:00,2024-12-22 14:00:00+00:00,12,7,2004-05-10,Taurus,Wikidata:Q105955374,False
 130423,Billy Gilmour,Brighton,M,2024-08-17 14:00:00+00:00,2024-08-24 11:30:00+00:00,2,1,2001-06-11,Gemini,Wikidata:Q42847487,False
-19004,Bobby Decordova-Reid,Leicester,F | M,2024-08-19 19:00:00+00:00,2024-10-25 19:00:00+00:00,6,2,1993-02-02,Aquarius,Wikidata:Q10514792,False
-1904,Boubacar Kamara,Aston Villa,M,2024-10-19 14:00:00+00:00,2024-10-26 14:00:00+00:00,1,0,1999-11-23,Sagittarius,Wikidata:Q29962926,False
+19004,Bobby Decordova-Reid,Leicester,F | M,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,12,2,1993-02-02,Aquarius,Wikidata:Q10514792,False
+1904,Boubacar Kamara,Aston Villa,M,2024-10-19 14:00:00+00:00,2024-12-21 12:30:00+00:00,8,5,1999-11-23,Sagittarius,Wikidata:Q29962926,False
 157912,Boubacar Traoré,Wolves,M,2024-08-25 13:00:00+00:00,2024-08-25 13:00:00+00:00,0,0,,,,False
-22233,Boubakary Soumaré,Leicester,M,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,4,0,1999-02-27,Pisces,Wikidata:Q43369896,False
-328225,Brajan Gruda,Brighton,M,2024-10-06 15:30:00+00:00,2024-11-02 15:00:00+00:00,3,0,2004-05-31,Gemini,Wikidata:Q116432094,False
-156428,Brandon Austin,Tottenham,G,2024-08-19 19:00:00+00:00,2024-08-19 19:00:00+00:00,0,0,1999-01-08,Capricorn,Wikidata:Q107316392,False
-129711,Brennan Johnson,Tottenham,F,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,8,2001-05-23,Gemini,Wikidata:Q66108160,False
-1485,Bruno Fernandes,Manchester United,F | M,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,9,,,,False
-10135,Bruno Guimarães,Newcastle,M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,10,1997-11-16,Scorpio,Wikidata:Q58323172,False
-20589,Bryan Mbeumo,Brentford,F | M,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,9,9,1999-08-07,Leo,Wikidata:Q49561427,False
-1460,Bukayo Saka,Arsenal,F | M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,9,9,2001-09-05,Virgo,Wikidata:Q59306386,False
-380679,Caleb Kporha,Crystal Palace,D,2024-10-05 11:30:00+00:00,2024-11-02 17:30:00+00:00,0,0,2006-07-15,Cancer,Wikidata:Q131109014,False
-30427,Caleb Okoli,Leicester,D,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,7,7,2001-07-13,Cancer,Wikidata:Q99519583,False
-2298,Callum Hudson-Odoi,Nottingham Forest,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,8,2000-11-07,Scorpio,Wikidata:Q42396622,False
-152967,Calvin Bassey,Fulham,D,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,9,9,1999-12-31,Capricorn,Wikidata:Q97059010,False
-137302,Cameron Archer,Southampton,F,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,5,2001-12-09,Sagittarius,Wikidata:Q66779547,False
-20457,Cameron Burgess,Ipswich,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,3,3,1995-10-21,Libra,Wikidata:Q17496350,False
-281,Caoimhin Kelleher,Liverpool,G,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,4,4,1998-11-23,Sagittarius,API-Football,False
+22233,Boubakary Soumaré,Leicester,M,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,10,6,1999-02-27,Pisces,Wikidata:Q43369896,False
+328225,Brajan Gruda,Brighton,M,2024-10-06 15:30:00+00:00,2024-12-21 15:00:00+00:00,7,1,2004-05-31,Gemini,Wikidata:Q116432094,False
+156428,Brandon Austin,Tottenham,G,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,0,0,1999-01-08,Capricorn,Wikidata:Q107316392,False
+129711,Brennan Johnson,Tottenham,F,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,16,13,2001-05-23,Gemini,Wikidata:Q66108160,False
+1485,Bruno Fernandes,Manchester United,F | M,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,17,17,,,,False
+10135,Bruno Guimarães,Newcastle,M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,17,17,1997-11-16,Scorpio,Wikidata:Q58323172,False
+20589,Bryan Mbeumo,Brentford,F | M,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,17,17,1999-08-07,Leo,Wikidata:Q49561427,False
+1460,Bukayo Saka,Arsenal,F | M,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,16,16,2001-09-05,Virgo,Wikidata:Q59306386,False
+380679,Caleb Kporha,Crystal Palace,D,2024-10-05 11:30:00+00:00,2024-12-21 17:30:00+00:00,2,0,2006-07-15,Cancer,Wikidata:Q131109014,False
+30427,Caleb Okoli,Leicester,D,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,10,9,2001-07-13,Cancer,Wikidata:Q99519583,False
+361679,Callum Bates,Everton,M,2024-11-09 15:00:00+00:00,2024-11-23 15:00:00+00:00,0,0,,,,False
+2298,Callum Hudson-Odoi,Nottingham Forest,F | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,16,14,2000-11-07,Scorpio,Wikidata:Q42396622,False
+380689,Callum Olusesi,Tottenham,M,2024-11-23 17:30:00+00:00,2024-12-15 19:00:00+00:00,0,0,,,,False
+2939,Callum Wilson,Newcastle,F,2024-11-25 20:00:00+00:00,2024-12-07 15:00:00+00:00,4,0,,,,False
+152967,Calvin Bassey,Fulham,D,2024-08-16 19:00:00+00:00,2024-12-08 14:00:00+00:00,15,15,1999-12-31,Capricorn,Wikidata:Q97059010,False
+137302,Cameron Archer,Southampton,F,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,16,9,2001-12-09,Sagittarius,Wikidata:Q66779547,False
+20457,Cameron Burgess,Ipswich,D,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,9,9,1995-10-21,Libra,Wikidata:Q17496350,False
+281,Caoimhin Kelleher,Liverpool,G,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,8,8,1998-11-23,Sagittarius,API-Football,False
 278088,Carl Rushworth,Brighton,G,2024-08-17 14:00:00+00:00,2024-08-24 11:30:00+00:00,0,0,2001-07-02,Cancer,Wikidata:Q107985580,False
 195993,Carlos Alcaraz,Southampton,M,2024-08-17 14:00:00+00:00,2024-08-17 14:00:00+00:00,1,0,2002-11-30,Sagittarius,Wikidata:Q88130791,False
-356041,Carlos Baleba,Brighton,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,8,7,2004-01-03,Capricorn,Wikidata:Q113472432,False
-282126,Carlos Borges,Wolves,F | M,2024-09-15 15:30:00+00:00,2024-11-02 17:30:00+00:00,5,1,,,,False
-10373,Carlos Miguel,Nottingham Forest,G,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,,,,False
-930,Carlos Soler,West Ham,M,2024-09-14 14:00:00+00:00,2024-11-02 15:00:00+00:00,7,1,1997-01-02,Capricorn,Wikidata:Q26707913,False
-747,Casemiro,Manchester United,M,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,8,5,,,,False
-270507,Cesare Casadei,Chelsea,M,2024-09-01 12:30:00+00:00,2024-09-14 19:00:00+00:00,0,0,2003-01-10,Capricorn,Wikidata:Q112081015,False
+356041,Carlos Baleba,Brighton,M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,14,12,2004-01-03,Capricorn,Wikidata:Q113472432,False
+282126,Carlos Borges,Wolves,F | M,2024-09-15 15:30:00+00:00,2024-12-22 14:00:00+00:00,7,1,,,,False
+10373,Carlos Miguel,Nottingham Forest,G,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,0,0,,,,False
+930,Carlos Soler,West Ham,M,2024-09-14 14:00:00+00:00,2024-12-16 20:00:00+00:00,13,6,1997-01-02,Capricorn,Wikidata:Q26707913,False
+104,Carlos Vinícius,Fulham,F,2024-12-05 19:30:00+00:00,2024-12-14 15:00:00+00:00,0,0,,,,False
+747,Casemiro,Manchester United,M,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,12,9,,,,False
+270507,Cesare Casadei,Chelsea,M,2024-09-01 12:30:00+00:00,2024-12-22 14:00:00+00:00,0,0,2003-01-10,Capricorn,Wikidata:Q112081015,False
 278898,Chadi Riad,Crystal Palace,D,2024-08-18 13:00:00+00:00,2024-08-24 14:00:00+00:00,1,1,2003-06-17,Gemini,Wikidata:Q104784108,False
-18918,Charlie Taylor,Southampton,D,2024-08-17 14:00:00+00:00,2024-10-19 14:00:00+00:00,5,2,,,,False
-3339,Cheick Doucouré,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-11-02 17:30:00+00:00,4,1,2000-01-08,Capricorn,Wikidata:Q47490408,False
+18918,Charlie Taylor,Southampton,D,2024-08-17 14:00:00+00:00,2024-12-07 15:00:00+00:00,6,2,,,,False
+3339,Cheick Doucouré,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,9,3,2000-01-08,Capricorn,Wikidata:Q47490408,False
 19365,Chiedozie Ogbene,Ipswich,F | M,2024-08-31 14:00:00+00:00,2024-10-26 14:00:00+00:00,5,3,1997-05-01,Taurus,Wikidata:Q51727160,False
 195962,Chiquinho,Wolves,F,2024-08-17 14:00:00+00:00,2024-08-17 14:00:00+00:00,1,0,,,,False
-126949,Chris Richards,Crystal Palace,D,2024-08-18 13:00:00+00:00,2024-09-21 16:30:00+00:00,4,4,,,,False
-18931,Chris Wood,Nottingham Forest,F,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,,,,False
-174,Christian Eriksen,Manchester United,M,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,7,5,1992-02-14,Aquarius,API-Football,False
-30407,Christian Nørgaard,Brentford,M,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,7,7,1994-03-10,Pisces,Wikidata:Q5109980,False
-19541,Christian Walton,Ipswich,G,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,1,1,1995-11-09,Scorpio,Wikidata:Q18387424,False
-269,Christopher Nkunku,Chelsea,F | M,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,9,1,1997-11-14,Scorpio,API-Football,False
+126949,Chris Richards,Crystal Palace,D,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,7,5,,,,False
+18931,Chris Wood,Nottingham Forest,F,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,17,16,1991-12-07,Sagittarius,API-Football-ID,True
+174,Christian Eriksen,Manchester United,M,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,9,6,1992-02-14,Aquarius,API-Football,False
+30407,Christian Nørgaard,Brentford,M,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,14,14,1994-03-10,Pisces,Wikidata:Q5109980,False
+19541,Christian Walton,Ipswich,G,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,1,1,1995-11-09,Scorpio,Wikidata:Q18387424,False
+269,Christopher Nkunku,Chelsea,F | M,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,16,2,1997-11-14,Scorpio,API-Football,False
 158702,Cieran Slicker,Ipswich,G,2024-08-17 11:30:00+00:00,2024-10-26 14:00:00+00:00,0,0,2002-09-15,Virgo,Wikidata:Q105477368,False
-247,Cody Gakpo,Liverpool,F | M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,3,1999-05-07,Taurus,API-Football,False
-152982,Cole Palmer,Chelsea,M,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,9,9,2002-05-06,Taurus,Wikidata:Q99760796,False
-180317,Conor Bradley,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,5,0,2003-07-09,Cancer,Wikidata:Q107031318,False
-20007,Conor Chaplin,Ipswich,F | M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,9,3,1997-02-16,Aquarius,Wikidata:Q18637246,False
-18741,Conor Coady,Leicester,D,2024-09-14 14:00:00+00:00,2024-11-02 15:00:00+00:00,1,0,1993-02-25,Pisces,Wikidata:Q723606,False
-19152,Conor Townsend,Ipswich,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,1,0,1993-03-04,Pisces,Wikidata:Q5162304,False
-19147,Craig Dawson,Wolves,D,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,9,7,1990-05-06,Taurus,Wikidata:Q1705657,False
-30776,Cristian Romero,Tottenham,D,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,9,,,,False
-37724,Crysencio Summerville,West Ham,F,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,9,2,2001-10-30,Scorpio,Wikidata:Q60664537,False
-293,Curtis Jones,Liverpool,M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,7,3,2001-01-30,Aquarius,API-Football,False
-2601,Daichi Kamada,Crystal Palace,F | M,2024-08-18 13:00:00+00:00,2024-11-02 17:30:00+00:00,10,6,1996-08-05,Leo,Wikidata:Q20039495,False
-18961,Dan Burn,Newcastle,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,10,1992-05-09,Taurus,Wikidata:Q5213217,False
-284797,Dango Ouattara,Bournemouth,F | M,2024-08-17 14:00:00+00:00,2024-10-26 14:00:00+00:00,8,4,2002-02-11,Aquarius,Wikidata:Q108000402,False
-19341,Daniel Bentley,Wolves,G,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,0,0,,,,False
-17736,Daniel Iversen,Leicester,G,2024-08-31 14:00:00+00:00,2024-08-31 14:00:00+00:00,0,0,1997-07-19,Cancer,Wikidata:Q38776669,False
+247,Cody Gakpo,Liverpool,F | M,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,15,7,1999-05-07,Taurus,API-Football,False
+152982,Cole Palmer,Chelsea,M,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,17,17,2002-05-06,Taurus,Wikidata:Q99760796,False
+180317,Conor Bradley,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-24 14:00:00+00:00,7,1,2003-07-09,Cancer,Wikidata:Q107031318,False
+20007,Conor Chaplin,Ipswich,F | M,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,15,7,1997-02-16,Aquarius,Wikidata:Q18637246,False
+18741,Conor Coady,Leicester,D,2024-09-14 14:00:00+00:00,2024-12-22 14:00:00+00:00,6,5,1993-02-25,Pisces,Wikidata:Q723606,False
+19152,Conor Townsend,Ipswich,D,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,1,0,1993-03-04,Pisces,Wikidata:Q5162304,False
+19147,Craig Dawson,Wolves,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,13,9,1990-05-06,Taurus,Wikidata:Q1705657,False
+30776,Cristian Romero,Tottenham,D,2024-08-19 19:00:00+00:00,2024-12-08 16:30:00+00:00,12,12,,,,False
+37724,Crysencio Summerville,West Ham,F | M,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,16,6,2001-10-30,Scorpio,Wikidata:Q60664537,False
+293,Curtis Jones,Liverpool,M,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,12,7,2001-01-30,Aquarius,API-Football,False
+2601,Daichi Kamada,Crystal Palace,F | M,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,13,8,1996-08-05,Leo,Wikidata:Q20039495,False
+18961,Dan Burn,Newcastle,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,16,16,1992-05-09,Taurus,Wikidata:Q5213217,False
+284797,Dango Ouattara,Bournemouth,F | M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,14,6,2002-02-11,Aquarius,Wikidata:Q108000402,False
+19341,Daniel Bentley,Wolves,G,2024-08-17 14:00:00+00:00,2024-12-14 15:00:00+00:00,0,0,,,,False
+17736,Daniel Iversen,Leicester,G,2024-08-31 14:00:00+00:00,2024-12-22 14:00:00+00:00,0,0,1997-07-19,Cancer,Wikidata:Q38776669,False
 296458,Daniel Jebbison,Bournemouth,F,2024-08-17 14:00:00+00:00,2024-08-25 13:00:00+00:00,2,0,2003-08-13,Leo,Wikidata:Q106766809,False
-13736,Daniel Muñoz,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-11-02 17:30:00+00:00,10,10,1996-05-25,Gemini,Wikidata:Q56703599,False
+13736,Daniel Muñoz,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-12-15 14:00:00+00:00,16,16,1996-05-25,Gemini,Wikidata:Q56703599,False
 1605,Daniel Podence,Wolves,M,2024-08-17 14:00:00+00:00,2024-08-25 13:00:00+00:00,2,0,1995-10-21,Libra,Wikidata:Q5218462,False
 275170,Danilo,Nottingham Forest,M,2024-08-17 14:00:00+00:00,2024-08-17 14:00:00+00:00,1,1,,,,False
-18955,Danny Ings,West Ham,F,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,4,0,1992-07-23,Leo,Wikidata:Q5220475,False
-18146,Danny Ward,Leicester,G,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,,,,False
-1469,Danny Welbeck,Brighton,F,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1990-11-26,Sagittarius,Wikidata:Q188457,False
-17597,Dara O'Shea,Ipswich,D,2024-08-31 14:00:00+00:00,2024-11-02 15:00:00+00:00,7,7,1999-03-04,Pisces,Wikidata:Q56331751,False
-51617,Darwin Núñez,Liverpool,F,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,7,3,1999-06-24,Cancer,Wikidata:Q46372260,False
-18870,David Brooks,Bournemouth,M,2024-08-31 14:00:00+00:00,2024-11-02 15:00:00+00:00,3,0,,,,False
-19465,David Raya,Arsenal,G,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,10,1995-09-15,Virgo,Wikidata:Q19665907,False
-19088,Dean Henderson,Crystal Palace,G,2024-08-18 13:00:00+00:00,2024-11-02 17:30:00+00:00,10,10,1997-03-12,Pisces,Wikidata:Q28059260,False
-361497,Dean Huijsen,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,4,2,2005-04-14,Aries,Wikidata:Q112184628,False
-2937,Declan Rice,Arsenal,M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,9,9,1999-01-14,Capricorn,Wikidata:Q30007142,False
-30435,Dejan Kulusevski,Tottenham,F | M,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,8,2000-04-25,Taurus,Wikidata:Q59914139,False
-204039,Destiny Udogie,Tottenham,D,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,9,2002-11-28,Sagittarius,Wikidata:Q73825355,False
-21090,Diego Carlos,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,4,3,,,,False
-886,Diogo Dalot,Manchester United,D,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,9,1999-03-18,Pisces,Wikidata:Q26255506,False
-2678,Diogo Jota,Liverpool,F,2024-08-17 11:30:00+00:00,2024-10-20 15:30:00+00:00,7,7,1996-12-04,Sagittarius,Wikidata:Q19518278,False
-19235,Djed Spence,Tottenham,D,2024-08-19 19:00:00+00:00,2024-10-06 15:30:00+00:00,3,0,2000-08-09,Leo,Wikidata:Q56222532,False
-18766,Dominic Calvert-Lewin,Everton,F,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1997-03-16,Pisces,Wikidata:Q19956709,False
-18883,Dominic Solanke,Tottenham,F,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,7,7,1997-09-14,Virgo,Wikidata:Q18336397,False
-1096,Dominik Szoboszlai,Liverpool,M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,8,2000-10-25,Scorpio,Wikidata:Q30134278,False
-18929,Dwight McNeil,Everton,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1999-11-22,Sagittarius,Wikidata:Q53652291,False
-19586,Eberechi Eze,Crystal Palace,F,2024-08-18 13:00:00+00:00,2024-10-27 13:00:00+00:00,9,9,1998-06-29,Cancer,Wikidata:Q28445512,False
-617,Ederson,Manchester City,G,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,10,10,,,,False
-2869,Edson Álvarez,West Ham,D | M,2024-08-24 14:00:00+00:00,2024-11-02 15:00:00+00:00,8,5,1997-10-24,Scorpio,Wikidata:Q27859514,False
-1468,Edward Nketiah,Arsenal | Crystal Palace,F,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,7,6,,,,False
-138908,Elliot Anderson,Nottingham Forest,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,8,2002-11-06,Scorpio,Wikidata:Q104762954,False
-2284,Emerson Palmieri,West Ham,D | M,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,10,10,1994-08-03,Leo,Wikidata:Q5370912,False
+18955,Danny Ings,West Ham,F,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,9,1,1992-07-23,Leo,Wikidata:Q5220475,False
+18146,Danny Ward,Leicester,G,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,2,1,,,,False
+1469,Danny Welbeck,Brighton,F,2024-08-17 14:00:00+00:00,2024-12-08 14:00:00+00:00,14,13,1990-11-26,Sagittarius,Wikidata:Q188457,False
+17597,Dara O'Shea,Ipswich,D,2024-08-31 14:00:00+00:00,2024-12-21 15:00:00+00:00,14,14,1999-03-04,Pisces,Wikidata:Q56331751,False
+51617,Darwin Núñez,Liverpool,F,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,12,6,1999-06-24,Cancer,Wikidata:Q46372260,False
+18870,David Brooks,Bournemouth,M,2024-08-31 14:00:00+00:00,2024-12-22 14:00:00+00:00,10,1,,,,False
+19465,David Raya,Arsenal,G,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,17,17,1995-09-15,Virgo,Wikidata:Q19665907,False
+19088,Dean Henderson,Crystal Palace,G,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,17,17,1997-03-12,Pisces,Wikidata:Q28059260,False
+361497,Dean Huijsen,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,11,6,2005-04-14,Aries,Wikidata:Q112184628,False
+2937,Declan Rice,Arsenal,M,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,15,14,1999-01-14,Capricorn,Wikidata:Q30007142,False
+30435,Dejan Kulusevski,Tottenham,F | M,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,16,14,2000-04-25,Taurus,Wikidata:Q59914139,False
+204039,Destiny Udogie,Tottenham,D,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,16,16,2002-11-28,Sagittarius,Wikidata:Q73825355,False
+21090,Diego Carlos,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-12-14 17:30:00+00:00,9,7,,,,False
+886,Diogo Dalot,Manchester United,D | M,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,17,17,1999-03-18,Pisces,Wikidata:Q26255506,False
+2678,Diogo Jota,Liverpool,F,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,8,7,1996-12-04,Sagittarius,Wikidata:Q19518278,False
+284409,Divin Mubama,Manchester City,M,2024-12-15 16:30:00+00:00,2024-12-15 16:30:00+00:00,0,0,,,,False
+19235,Djed Spence,Tottenham,D,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,5,1,2000-08-09,Leo,Wikidata:Q56222532,False
+18766,Dominic Calvert-Lewin,Everton,F,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,16,15,1997-03-16,Pisces,Wikidata:Q19956709,False
+18883,Dominic Solanke,Tottenham,F,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,13,13,1997-09-14,Virgo,Wikidata:Q18336397,False
+1096,Dominik Szoboszlai,Liverpool,M,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,15,11,2000-10-25,Scorpio,Wikidata:Q30134278,False
+18929,Dwight McNeil,Everton,M,2024-08-17 14:00:00+00:00,2024-12-04 19:30:00+00:00,13,13,1999-11-22,Sagittarius,Wikidata:Q53652291,False
+19586,Eberechi Eze,Crystal Palace,F,2024-08-18 13:00:00+00:00,2024-12-15 14:00:00+00:00,13,13,1998-06-29,Cancer,Wikidata:Q28445512,False
+617,Ederson,Manchester City,G,2024-08-18 15:30:00+00:00,2024-12-15 16:30:00+00:00,13,13,1993-08-17,Leo,API-Football-ID,True
+162075,Edmond-Paris Maghoma,Brentford,M,2024-11-04 20:00:00+00:00,2024-12-21 15:00:00+00:00,3,0,,,,False
+2869,Edson Álvarez,West Ham,D | M,2024-08-24 14:00:00+00:00,2024-12-21 15:00:00+00:00,13,9,1997-10-24,Scorpio,Wikidata:Q27859514,False
+1468,Edward Nketiah,Arsenal | Crystal Palace,F,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,12,6,,,,False
+138908,Elliot Anderson,Nottingham Forest,M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,16,12,2002-11-06,Scorpio,Wikidata:Q104762954,False
+2284,Emerson Palmieri,West Ham,D | M,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,16,15,1994-08-03,Leo,Wikidata:Q5370912,False
 2855,Emil Krafth,Newcastle,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,3,2,1994-08-02,Leo,Wikidata:Q5371332,False
-1161,Emile Smith Rowe,Fulham,M,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,9,8,2000-07-28,Leo,Wikidata:Q55820249,False
-19071,Emiliano Buendía,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,4,0,1996-12-25,Capricorn,Wikidata:Q18637343,False
-19599,Emiliano Martínez,Aston Villa,G,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,9,9,,,,False
-47499,Enes Ünal,Bournemouth,F,2024-09-14 19:00:00+00:00,2024-11-02 15:00:00+00:00,7,1,1997-05-10,Taurus,Wikidata:Q14637461,False
-5996,Enzo Fernández,Chelsea,M,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,8,6,,,,False
-380492,Eric da Silva Moreira,Nottingham Forest,F,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,1,0,2006-05-03,Taurus,Wikidata:Q118611497,False
-1100,Erling Haaland,Manchester City,F,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,10,10,2000-07-21,Cancer,Wikidata:Q28967995,False
-313236,Ethan Nwaneri,Arsenal,M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,5,0,2007-03-21,Aries,Wikidata:Q114027518,False
-19789,Ethan Pinnock,Brentford,D,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,9,9,1993-05-29,Gemini,Wikidata:Q36999329,False
-362270,Ethan Wheatley,Manchester United,F,2024-09-01 15:00:00+00:00,2024-10-27 13:00:00+00:00,0,0,2006-01-20,Aquarius,Wikidata:Q125585047,False
-129643,Evan Ferguson,Brighton,F,2024-09-14 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,1,2004-10-19,Libra,Wikidata:Q68650133,False
-152856,Evanilson,Bournemouth,F,2024-08-25 13:00:00+00:00,2024-11-02 15:00:00+00:00,9,8,,,,False
-19354,Ezri Konsa,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,8,8,1997-10-23,Scorpio,Wikidata:Q27063854,False
-2806,Fabian Schär,Newcastle,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,8,8,1991-12-20,Sagittarius,Wikidata:Q673691,False
-153066,Fabio Carvalho,Brentford,F | M,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,9,2,,,,False
-311334,Facundo Buonanotte,Leicester,F | M,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,9,7,2004-12-23,Capricorn,Wikidata:Q113028093,False
-30410,Federico Chiesa,Liverpool,F,2024-09-21 14:00:00+00:00,2024-09-28 16:30:00+00:00,1,0,1997-10-25,Scorpio,Wikidata:Q26704703,False
+1161,Emile Smith Rowe,Fulham,M,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,16,14,2000-07-28,Leo,Wikidata:Q55820249,False
+19071,Emiliano Buendía,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,8,0,1996-12-25,Capricorn,Wikidata:Q18637343,False
+19599,Emiliano Martínez,Aston Villa,G,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,17,17,1992-09-02,Virgo,API-Football-ID,True
+47499,Enes Ünal,Bournemouth,F,2024-09-14 19:00:00+00:00,2024-12-22 14:00:00+00:00,14,1,1997-05-10,Taurus,Wikidata:Q14637461,False
+5996,Enzo Fernández,Chelsea,M,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,16,12,,,,False
+380492,Eric da Silva Moreira,Nottingham Forest,F,2024-08-17 14:00:00+00:00,2024-12-04 19:30:00+00:00,2,0,2006-05-03,Taurus,Wikidata:Q118611497,False
+1100,Erling Haaland,Manchester City,F,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,17,17,2000-07-21,Cancer,Wikidata:Q28967995,False
+313236,Ethan Nwaneri,Arsenal,M,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,10,0,2007-03-21,Aries,Wikidata:Q114027518,False
+19789,Ethan Pinnock,Brentford,D,2024-08-18 13:00:00+00:00,2024-12-15 19:00:00+00:00,16,16,1993-05-29,Gemini,Wikidata:Q36999329,False
+362270,Ethan Wheatley,Manchester United,F,2024-09-01 15:00:00+00:00,2024-11-03 16:30:00+00:00,0,0,2006-01-20,Aquarius,Wikidata:Q125585047,False
+129643,Evan Ferguson,Brighton,F,2024-09-14 14:00:00+00:00,2024-12-21 15:00:00+00:00,12,2,2004-10-19,Libra,Wikidata:Q68650133,False
+152856,Evanilson,Bournemouth,F,2024-08-25 13:00:00+00:00,2024-12-22 14:00:00+00:00,16,15,1999-10-06,Libra,API-Football-ID,True
+405530,Ezra Mayers,West Ham,D,2024-11-30 17:30:00+00:00,2024-11-30 17:30:00+00:00,0,0,,,,False
+19354,Ezri Konsa,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,15,15,1997-10-23,Scorpio,Wikidata:Q27063854,False
+2806,Fabian Schär,Newcastle,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,15,15,1991-12-20,Sagittarius,Wikidata:Q673691,False
+153066,Fabio Carvalho,Brentford,F | M,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,16,3,2002-08-30,Virgo,API-Football-ID,True
+311334,Facundo Buonanotte,Leicester,F | M,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,14,10,2004-12-23,Capricorn,Wikidata:Q113028093,False
+30410,Federico Chiesa,Liverpool,F,2024-09-21 14:00:00+00:00,2024-12-14 15:00:00+00:00,1,0,1997-10-25,Scorpio,Wikidata:Q26704703,False
 1361,Ferdi Kadıoğlu,Brighton,D | M,2024-09-14 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,5,1999-10-07,Libra,Wikidata:Q26719541,False
-286616,Filip Jørgensen,Chelsea,G,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,0,0,2002-04-16,Aries,Wikidata:Q108776426,False
-19733,Flynn Downes,Southampton,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1999-01-20,Aquarius,Wikidata:Q34994628,False
+286616,Filip Jørgensen,Chelsea,G,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,1,1,2002-04-16,Aries,Wikidata:Q108776426,False
+19733,Flynn Downes,Southampton,D | M,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,14,14,1999-01-20,Aquarius,Wikidata:Q34994628,False
 340136,Franco Umeh,Crystal Palace,F,2024-09-01 12:30:00+00:00,2024-11-02 17:30:00+00:00,0,0,,,,False
 15799,Frank Onyeka,Brentford,M,2024-08-18 13:00:00+00:00,2024-08-25 15:30:00+00:00,2,0,1998-01-01,Capricorn,Wikidata:Q56292818,False
-18932,Fraser Forster,Tottenham,G,2024-08-24 14:00:00+00:00,2024-10-27 13:00:00+00:00,0,0,1988-03-17,Pisces,Wikidata:Q348813,False
-643,Gabriel Jesus,Arsenal,F,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,8,1,1997-04-03,Aries,Wikidata:Q19708656,False
-22224,Gabriel Magalhães,Arsenal,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,10,,,,False
-127769,Gabriel Martinelli,Arsenal,F | M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,7,2001-06-18,Gemini,Wikidata:Q61460651,False
+18932,Fraser Forster,Tottenham,G,2024-08-24 14:00:00+00:00,2024-12-15 19:00:00+00:00,4,4,1988-03-17,Pisces,Wikidata:Q348813,False
+643,Gabriel Jesus,Arsenal,F,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,14,3,1997-04-03,Aries,Wikidata:Q19708656,False
+22224,Gabriel Magalhães,Arsenal,D,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,15,15,1997-12-19,Sagittarius,API-Football-ID,True
+127769,Gabriel Martinelli,Arsenal,F | M,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,15,11,2001-06-18,Gemini,Wikidata:Q61460651,False
 17739,George Edmundson,Ipswich,D,2024-08-24 14:00:00+00:00,2024-08-24 14:00:00+00:00,1,0,1997-08-31,Virgo,Wikidata:Q21005715,False
-8794,George Hirst,Ipswich,F,2024-09-14 14:00:00+00:00,2024-11-02 15:00:00+00:00,7,1,,,,False
-90590,Georginio Rutter,Brighton,F | M,2024-08-24 11:30:00+00:00,2024-11-02 15:00:00+00:00,9,7,2002-04-20,Taurus,Wikidata:Q74051767,False
-925,Gonçalo Guedes,Wolves,F,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,7,0,1996-11-29,Sagittarius,Wikidata:Q16729477,False
-31354,Guglielmo Vicario,Tottenham,G,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,9,1996-10-07,Libra,Wikidata:Q44083681,False
-2476,Guido Rodríguez,West Ham,M,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,10,10,1994-04-12,Aries,Wikidata:Q18224850,False
+8794,George Hirst,Ipswich,F,2024-09-14 14:00:00+00:00,2024-11-10 14:00:00+00:00,8,1,,,,False
+90590,Georginio Rutter,Brighton,F | M,2024-08-24 11:30:00+00:00,2024-12-21 15:00:00+00:00,16,13,2002-04-20,Taurus,Wikidata:Q74051767,False
+440159,Godwill Kukonki,Manchester United,D,2024-12-04 20:15:00+00:00,2024-12-04 20:15:00+00:00,0,0,,,,False
+925,Gonçalo Guedes,Wolves,F,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,14,2,1996-11-29,Sagittarius,Wikidata:Q16729477,False
+31354,Guglielmo Vicario,Tottenham,G,2024-08-19 19:00:00+00:00,2024-11-23 17:30:00+00:00,12,12,1996-10-07,Libra,Wikidata:Q44083681,False
+2476,Guido Rodríguez,West Ham,M,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,15,11,1994-04-12,Aries,Wikidata:Q18224850,False
 31057,Hamed Junior Traorè,Bournemouth,M,2024-08-17 14:00:00+00:00,2024-08-17 14:00:00+00:00,0,0,2000-02-16,Aquarius,Wikidata:Q43559571,False
-18779,Hamza Choudhury,Leicester,M,2024-08-19 19:00:00+00:00,2024-09-28 14:00:00+00:00,1,0,1997-10-01,Libra,Wikidata:Q23771218,False
-405360,Harrison Armstrong,Everton,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,1,0,2007-01-19,Capricorn,Wikidata:Q129702132,False
-19480,Harrison Reed,Fulham,M,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,7,0,1995-01-27,Aquarius,Wikidata:Q15054978,False
-403064,Harry Amass,Manchester United,D,2024-10-27 13:00:00+00:00,2024-10-27 13:00:00+00:00,0,0,2007-03-16,Pisces,Wikidata:Q119971486,False
-138836,Harry Clarke,Ipswich,D,2024-10-05 14:00:00+00:00,2024-10-26 14:00:00+00:00,2,1,,,,False
-2935,Harry Maguire,Manchester United,D,2024-08-16 19:00:00+00:00,2024-10-06 13:00:00+00:00,5,3,1993-03-05,Pisces,Wikidata:Q165772,False
-17365,Harry Toffolo,Nottingham Forest,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,1,0,1995-08-19,Leo,Wikidata:Q18638102,False
-19221,Harry Wilson,Fulham,M,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,5,0,,,,False
-182,Harry Winks,Leicester,M,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,9,8,1996-02-02,Aquarius,API-Football,False
-18778,Harvey Barnes,Newcastle,F | M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,5,1997-12-09,Sagittarius,Wikidata:Q27974879,False
-180316,Harvey Davies,Liverpool,G,2024-10-27 15:30:00+00:00,2024-10-27 15:30:00+00:00,0,0,2003-09-23,Libra,Wikidata:Q115145113,False
-19035,Harvey Elliott,Liverpool,M,2024-08-17 11:30:00+00:00,2024-09-01 15:00:00+00:00,1,0,,,,False
-24888,Hee-Chan Hwang,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-10-05 14:00:00+00:00,6,2,,,,False
-186,Heung-min Son,Tottenham,F,2024-08-19 19:00:00+00:00,2024-10-19 11:30:00+00:00,6,6,1992-07-08,Cancer,API-Football,False
-61742,Hákon Rafn Valdimarsson,Brentford,G,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,0,0,,,,False
-138816,Ian Maatsen,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,8,0,2002-03-10,Pisces,Wikidata:Q69495231,False
+18779,Hamza Choudhury,Leicester,M,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,3,1,1997-10-01,Libra,Wikidata:Q23771218,False
+405360,Harrison Armstrong,Everton,M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,2,0,2007-01-19,Capricorn,Wikidata:Q129702132,False
+19480,Harrison Reed,Fulham,M,2024-08-16 19:00:00+00:00,2024-11-09 15:00:00+00:00,8,0,1995-01-27,Aquarius,Wikidata:Q15054978,False
+403064,Harry Amass,Manchester United,D,2024-10-27 13:00:00+00:00,2024-11-03 16:30:00+00:00,0,0,2007-03-16,Pisces,Wikidata:Q119971486,False
+138836,Harry Clarke,Ipswich,D,2024-10-05 14:00:00+00:00,2024-12-21 15:00:00+00:00,6,4,,,,False
+2935,Harry Maguire,Manchester United,D,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,10,6,1993-03-05,Pisces,Wikidata:Q165772,False
+17365,Harry Toffolo,Nottingham Forest,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,2,0,1995-08-19,Leo,Wikidata:Q18638102,False
+19221,Harry Wilson,Fulham,M,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,12,2,,,,False
+182,Harry Winks,Leicester,M,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,12,10,1996-02-02,Aquarius,API-Football,False
+18778,Harvey Barnes,Newcastle,F | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,17,6,1997-12-09,Sagittarius,Wikidata:Q27974879,False
+180316,Harvey Davies,Liverpool,G,2024-10-27 15:30:00+00:00,2024-12-01 16:00:00+00:00,0,0,2003-09-23,Libra,Wikidata:Q115145113,False
+19035,Harvey Elliott,Liverpool,M,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,3,0,,,,False
+24888,Hee-Chan Hwang,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,11,2,,,,False
+304316,Henry Cartwright,Leicester,M,2024-12-14 15:00:00+00:00,2024-12-14 15:00:00+00:00,0,0,,,,False
+186,Heung-min Son,Tottenham,F | M,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,13,12,1992-07-08,Cancer,API-Football,False
+61742,Hákon Rafn Valdimarsson,Brentford,G,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,0,0,,,,False
+138816,Ian Maatsen,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,13,2,2002-03-10,Pisces,Wikidata:Q69495231,False
 22149,Ibrahim Sangaré,Nottingham Forest,M,2024-08-17 14:00:00+00:00,2024-08-31 14:00:00+00:00,3,3,,,,False
-1145,Ibrahima Konaté,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,9,1999-05-25,Gemini,API-Football-ID,True
-2990,Idrissa Gueye,Everton,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,7,,,,False
-7600,Igor Júlio,Brighton,D,2024-08-24 11:30:00+00:00,2024-11-02 15:00:00+00:00,5,3,1998-02-07,Aquarius,Wikidata:Q25983385,False
-18592,Iliman Ndiaye,Everton,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,8,2000-03-06,Pisces,Wikidata:Q105956269,False
-161671,Illia Zabarnyi,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,2002-09-01,Virgo,Wikidata:Q99360090,False
-273758,Imari Samuels,Brighton,D,2024-09-28 14:00:00+00:00,2024-09-28 14:00:00+00:00,0,0,2003-02-05,Aquarius,Wikidata:Q118470954,False
-2218,Ismaïla Sarr,Crystal Palace,F,2024-08-18 13:00:00+00:00,2024-11-02 17:30:00+00:00,10,3,1998-02-25,Pisces,Wikidata:Q26924482,False
+1145,Ibrahima Konaté,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-24 14:00:00+00:00,12,11,1999-05-25,Gemini,API-Football-ID,True
+2990,Idrissa Gueye,Everton,M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,15,13,,,,False
+7600,Igor Júlio,Brighton,D,2024-08-24 11:30:00+00:00,2024-12-21 15:00:00+00:00,10,7,1998-02-07,Aquarius,Wikidata:Q25983385,False
+196156,Igor Thiago,Brentford,F,2024-11-23 15:00:00+00:00,2024-12-07 15:00:00+00:00,4,1,,,,False
+18592,Iliman Ndiaye,Everton,F | M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,16,14,2000-03-06,Pisces,Wikidata:Q105956269,False
+161671,Illia Zabarnyi,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,17,17,2002-09-01,Virgo,Wikidata:Q99360090,False
+273758,Imari Samuels,Brighton,D,2024-09-28 14:00:00+00:00,2024-11-23 15:00:00+00:00,0,0,2003-02-05,Aquarius,Wikidata:Q118470954,False
+2218,Ismaïla Sarr,Crystal Palace,F,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,17,10,1998-02-25,Pisces,Wikidata:Q26924482,False
 407033,Ismeal Kabia,Arsenal,F,2024-09-15 13:00:00+00:00,2024-10-19 16:30:00+00:00,0,0,2005-12-10,Sagittarius,Wikidata:Q130304859,False
-18814,Issa Diop,Fulham,D,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,7,4,1997-01-09,Capricorn,Wikidata:Q21621180,False
+18814,Issa Diop,Fulham,D,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,11,8,1997-01-09,Capricorn,Wikidata:Q21621180,False
 140947,Issa Kaboré,Manchester City,D,2024-08-24 14:00:00+00:00,2024-08-24 14:00:00+00:00,0,0,2001-05-12,Taurus,Wikidata:Q67175861,False
-19136,Jack Clarke,Ipswich,F | M,2024-08-31 14:00:00+00:00,2024-11-02 15:00:00+00:00,8,3,,,,False
-383770,Jack Fletcher,Manchester United,F,2024-10-19 14:00:00+00:00,2024-10-27 13:00:00+00:00,0,0,,,,False
-19187,Jack Grealish,Manchester City,F | M,2024-08-18 15:30:00+00:00,2024-10-20 13:00:00+00:00,7,4,1995-09-10,Virgo,Wikidata:Q16056053,False
-19128,Jack Harrison,Everton,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,7,,,,False
-305730,Jack Hinshelwood,Brighton,D | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,9,2005-04-11,Aries,Wikidata:Q118791841,False
-18940,Jack Stephens,Southampton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,6,,,,False
-18397,Jack Taylor,Ipswich,M,2024-08-17 11:30:00+00:00,2024-10-19 14:00:00+00:00,6,0,,,,False
-127579,Jacob Greaves,Ipswich,D,2024-08-17 11:30:00+00:00,2024-10-05 14:00:00+00:00,7,7,2000-09-12,Virgo,Wikidata:Q66685109,False
-19163,Jacob Murphy,Newcastle,F | M,2024-08-17 14:00:00+00:00,2024-10-27 13:00:00+00:00,9,6,1995-02-24,Pisces,Wikidata:Q15622117,False
-19192,Jacob Ramsey,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,8,5,2001-05-28,Gemini,Wikidata:Q63228677,False
-382355,Jacob Wright,Manchester City,M,2024-11-02 15:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,,,,False
-138931,Jaden Philogene-Bidace,Aston Villa,F | M,2024-08-17 16:30:00+00:00,2024-10-19 14:00:00+00:00,5,1,2002-02-08,Aquarius,Wikidata:Q106916429,False
-18,Jadon Sancho,Chelsea,F | M,2024-09-14 19:00:00+00:00,2024-10-27 13:00:00+00:00,5,4,2000-03-25,Aries,API-Football,False
-404656,Jahmai Simpson-Pusey,Manchester City,D,2024-11-02 15:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,2005-11-04,Scorpio,Wikidata:Q130740691,False
+19136,Jack Clarke,Ipswich,F | M,2024-08-31 14:00:00+00:00,2024-12-21 15:00:00+00:00,14,4,,,,False
+383770,Jack Fletcher,Manchester United,F,2024-10-19 14:00:00+00:00,2024-11-03 16:30:00+00:00,0,0,,,,False
+19187,Jack Grealish,Manchester City,F | M,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,13,6,1995-09-10,Virgo,Wikidata:Q16056053,False
+19128,Jack Harrison,Everton,F | M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,15,9,1996-11-20,Scorpio,API-Football-ID,True
+305730,Jack Hinshelwood,Brighton,D | M,2024-08-17 14:00:00+00:00,2024-11-09 17:30:00+00:00,10,10,2005-04-11,Aries,Wikidata:Q118791841,False
+18940,Jack Stephens,Southampton,D,2024-08-17 14:00:00+00:00,2024-12-04 19:30:00+00:00,10,10,,,,False
+18397,Jack Taylor,Ipswich,M,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,12,1,,,,False
+127579,Jacob Greaves,Ipswich,D,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,8,8,2000-09-12,Virgo,Wikidata:Q66685109,False
+19163,Jacob Murphy,Newcastle,F | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,14,10,1995-02-24,Pisces,Wikidata:Q15622117,False
+19192,Jacob Ramsey,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-11-09 20:00:00+00:00,10,7,2001-05-28,Gemini,Wikidata:Q63228677,False
+379618,Jacob Slater,Brighton,D,2024-11-29 20:00:00+00:00,2024-11-29 20:00:00+00:00,0,0,,,,False
+382355,Jacob Wright,Manchester City,M,2024-11-02 15:00:00+00:00,2024-12-07 15:00:00+00:00,0,0,,,,False
+138931,Jaden Philogene-Bidace,Aston Villa,F | M,2024-08-17 16:30:00+00:00,2024-12-07 15:00:00+00:00,11,2,2002-02-08,Aquarius,Wikidata:Q106916429,False
+18,Jadon Sancho,Chelsea,F | M,2024-09-14 19:00:00+00:00,2024-12-22 14:00:00+00:00,11,8,2000-03-25,Aries,API-Football,False
+404656,Jahmai Simpson-Pusey,Manchester City,D,2024-11-02 15:00:00+00:00,2024-12-21 12:30:00+00:00,1,1,2005-11-04,Scorpio,Wikidata:Q130740691,False
 196855,Jaidon Anthony,Bournemouth,F,2024-08-17 14:00:00+00:00,2024-08-25 13:00:00+00:00,0,0,1999-12-01,Sagittarius,Wikidata:Q103417114,False
-270139,Jake O'Brien,Everton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,1,0,2001-05-15,Taurus,Wikidata:Q110565461,False
-61431,Jakub Kiwior,Arsenal,D,2024-08-24 16:30:00+00:00,2024-11-02 12:30:00+00:00,4,0,2000-02-15,Aquarius,Wikidata:Q61744153,False
-40911,Jakub Moder,Brighton,M,2024-09-14 14:00:00+00:00,2024-11-02 15:00:00+00:00,1,0,1999-04-07,Aries,Wikidata:Q52044004,False
-19719,James Bree,Southampton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,1,0,1997-10-11,Libra,Wikidata:Q16887631,False
+270139,Jake O'Brien,Everton,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,2,0,2001-05-15,Taurus,Wikidata:Q110565461,False
+61431,Jakub Kiwior,Arsenal,D,2024-08-24 16:30:00+00:00,2024-12-21 17:30:00+00:00,8,2,2000-02-15,Aquarius,Wikidata:Q61744153,False
+40911,Jakub Moder,Brighton,M,2024-09-14 14:00:00+00:00,2024-12-15 14:00:00+00:00,2,0,1999-04-07,Aries,Wikidata:Q52044004,False
+19719,James Bree,Southampton,D,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,3,2,1997-10-11,Libra,Wikidata:Q16887631,False
 895,James Garner,Everton,D | M,2024-08-31 14:00:00+00:00,2024-10-05 16:30:00+00:00,4,2,,,,False
-20093,James Hill,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,,,,False
-19760,James Justin,Leicester,D,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,9,9,1998-02-23,Pisces,Wikidata:Q26251403,False
-18784,James Maddison,Tottenham,M,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,9,,,,False
-158697,James McAtee,Manchester City,M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,1,0,2002-10-18,Libra,Wikidata:Q108653498,False
+20093,James Hill,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,2,0,,,,False
+19760,James Justin,Leicester,D | M,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,16,16,1998-02-23,Pisces,Wikidata:Q26251403,False
+18784,James Maddison,Tottenham,M,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,16,13,,,,False
+158697,James McAtee,Manchester City,M,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,2,0,2002-10-18,Libra,Wikidata:Q108653498,False
 296,James Milner,Brighton,M,2024-08-17 14:00:00+00:00,2024-08-31 11:30:00+00:00,3,3,1986-01-04,Capricorn,API-Football,False
-2936,James Tarkowski,Everton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1992-11-19,Scorpio,Wikidata:Q6144020,False
-2938,James Ward-Prowse,Nottingham Forest | West Ham,M,2024-08-17 16:30:00+00:00,2024-10-25 19:00:00+00:00,5,4,1994-11-01,Scorpio,Wikidata:Q2643777,False
-18788,Jamie Vardy,Leicester,F,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1987-01-11,Capricorn,Wikidata:Q6147586,False
-2999,Jan Bednarek,Southampton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1996-04-12,Aries,Wikidata:Q16212492,False
-38695,Jan Paul van Hecke,Brighton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,8,7,2000-06-08,Gemini,Wikidata:Q66828825,False
-18943,Jannik Vestergaard,Leicester,D,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,3,3,1992-08-03,Leo,Wikidata:Q66358,False
-158698,Jarell Quansah,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,1,1,2003-01-29,Aquarius,Wikidata:Q112813857,False
-17661,Jarrad Branthwaite,Everton,D,2024-09-28 14:00:00+00:00,2024-11-02 15:00:00+00:00,3,1,2002-06-27,Cancer,Wikidata:Q70780349,False
-19428,Jarrod Bowen,West Ham,F | M,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,10,10,1996-12-20,Sagittarius,Wikidata:Q26704890,False
-18960,Jason Steele,Brighton,G,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,2,2,1990-08-18,Leo,Wikidata:Q509809,False
+2936,James Tarkowski,Everton,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,16,16,1992-11-19,Scorpio,Wikidata:Q6144020,False
+2938,James Ward-Prowse,Nottingham Forest | West Ham,M,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,7,5,1994-11-01,Scorpio,Wikidata:Q2643777,False
+18788,Jamie Vardy,Leicester,F,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,16,16,1987-01-11,Capricorn,Wikidata:Q6147586,False
+2999,Jan Bednarek,Southampton,D,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,12,12,1996-04-12,Aries,Wikidata:Q16212492,False
+38695,Jan Paul van Hecke,Brighton,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,15,14,2000-06-08,Gemini,Wikidata:Q66828825,False
+18943,Jannik Vestergaard,Leicester,D,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,9,8,1992-08-03,Leo,Wikidata:Q66358,False
+158698,Jarell Quansah,Liverpool,D,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,4,2,2003-01-29,Aquarius,Wikidata:Q112813857,False
+17661,Jarrad Branthwaite,Everton,D,2024-09-28 14:00:00+00:00,2024-12-22 14:00:00+00:00,9,7,2002-06-27,Cancer,Wikidata:Q70780349,False
+19428,Jarrod Bowen,West Ham,F | M,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,17,17,1996-12-20,Sagittarius,Wikidata:Q26704890,False
+18960,Jason Steele,Brighton,G,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,2,2,1990-08-18,Leo,Wikidata:Q509809,False
 191971,Jay Stansfield,Fulham,F,2024-08-16 19:00:00+00:00,2024-08-24 14:00:00+00:00,1,0,2002-11-24,Sagittarius,Wikidata:Q81053047,False
-350625,Jayden Meghoma,Brentford,D,2024-09-14 14:00:00+00:00,2024-10-26 14:00:00+00:00,0,0,2006-06-28,Cancer,Wikidata:Q121307507,False
-138,Jean-Clair Todibo,West Ham,D,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,7,4,1999-12-30,Capricorn,API-Football,False
-25927,Jean-Philippe Mateta,Crystal Palace,F,2024-08-18 13:00:00+00:00,2024-11-02 17:30:00+00:00,10,8,1997-06-28,Cancer,Wikidata:Q26964668,False
-20665,Jean-Ricner Bellegarde,Wolves,M,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,9,6,1998-06-27,Cancer,Wikidata:Q26251607,False
-2490,Jefferson Lerma,Crystal Palace,D | M,2024-08-18 13:00:00+00:00,2024-10-27 13:00:00+00:00,7,5,1994-10-25,Scorpio,Wikidata:Q16300824,False
-18843,Jeffrey Schlupp,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-11-02 17:30:00+00:00,7,0,1992-12-23,Capricorn,Wikidata:Q323046,False
-15797,Jens Cajuste,Ipswich,M,2024-08-24 14:00:00+00:00,2024-11-02 15:00:00+00:00,4,2,1999-08-10,Leo,Wikidata:Q42393774,False
+389031,Jayce Fitzgerald,Manchester United,M,2024-11-03 16:30:00+00:00,2024-11-03 16:30:00+00:00,0,0,,,,False
+350625,Jayden Meghoma,Brentford,D,2024-09-14 14:00:00+00:00,2024-12-21 15:00:00+00:00,1,0,2006-06-28,Cancer,Wikidata:Q121307507,False
+138,Jean-Clair Todibo,West Ham,D,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,12,7,1999-12-30,Capricorn,API-Football,False
+25927,Jean-Philippe Mateta,Crystal Palace,F,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,17,15,1997-06-28,Cancer,Wikidata:Q26964668,False
+20665,Jean-Ricner Bellegarde,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,15,9,1998-06-27,Cancer,Wikidata:Q26251607,False
+2490,Jefferson Lerma,Crystal Palace,D | M,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,13,9,1994-10-25,Scorpio,Wikidata:Q16300824,False
+18843,Jeffrey Schlupp,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,11,0,1992-12-23,Capricorn,Wikidata:Q323046,False
+15797,Jens Cajuste,Ipswich,M,2024-08-24 14:00:00+00:00,2024-12-21 15:00:00+00:00,11,8,1999-08-10,Leo,Wikidata:Q42393774,False
 297641,Jenson Metcalfe,Everton,M,2024-08-17 14:00:00+00:00,2024-08-24 14:00:00+00:00,0,0,2004-09-06,Virgo,Wikidata:Q129256414,False
 202086,Jeremy Sarmiento,Brighton,M,2024-08-17 14:00:00+00:00,2024-08-17 14:00:00+00:00,1,0,2002-06-16,Gemini,Wikidata:Q108659564,False
-15884,Jesper Lindstrøm,Everton,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,3,2000-02-29,Pisces,Wikidata:Q65967193,False
-13489,Jhon Durán,Aston Villa,F,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,9,0,2003-12-13,Sagittarius,Wikidata:Q64748320,False
-2729,Joachim Andersen,Crystal Palace | Fulham,D,2024-08-18 13:00:00+00:00,2024-10-19 14:00:00+00:00,6,6,1996-05-31,Gemini,Wikidata:Q15943423,False
-19825,Joe Aribo,Southampton,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,5,1996-07-21,Cancer,Wikidata:Q27469960,False
+15884,Jesper Lindstrøm,Everton,M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,12,6,2000-02-29,Pisces,Wikidata:Q65967193,False
+13489,Jhon Durán,Aston Villa,F,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,17,3,2003-12-13,Sagittarius,Wikidata:Q64748320,False
+2729,Joachim Andersen,Crystal Palace | Fulham,D,2024-08-18 13:00:00+00:00,2024-11-23 15:00:00+00:00,9,9,1996-05-31,Gemini,Wikidata:Q15943423,False
+19825,Joe Aribo,Southampton,M,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,15,8,1996-07-21,Cancer,Wikidata:Q27469960,False
 7029,Joe Gauci,Aston Villa,G,2024-08-17 16:30:00+00:00,2024-10-19 14:00:00+00:00,0,0,2000-07-04,Cancer,Wikidata:Q105944501,False
-284,Joe Gomez,Liverpool,D,2024-08-25 15:30:00+00:00,2024-11-02 15:00:00+00:00,3,0,1997-05-23,Gemini,API-Football,False
-19573,Joe Lumley,Southampton,G,2024-08-17 14:00:00+00:00,2024-08-24 14:00:00+00:00,0,0,1995-02-15,Aquarius,Wikidata:Q17811744,False
-1463,Joe Willock,Newcastle,M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,8,2,1999-08-20,Leo,Wikidata:Q40471152,False
-18847,Joel Ward,Crystal Palace,D,2024-08-24 14:00:00+00:00,2024-10-27 13:00:00+00:00,0,0,1989-10-29,Scorpio,Wikidata:Q2621755,False
-723,Joelinton,Newcastle,F | M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,10,1996-08-14,Leo,API-Football-ID,True
-19191,John McGinn,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,7,6,1994-10-18,Libra,Wikidata:Q10547335,False
+284,Joe Gomez,Liverpool,D,2024-08-25 15:30:00+00:00,2024-12-14 15:00:00+00:00,6,3,1997-05-23,Gemini,API-Football,False
+19573,Joe Lumley,Southampton,G,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,3,3,1995-02-15,Aquarius,Wikidata:Q17811744,False
+322305,Joe O'Brien Whitmarsh ,Southampton,M,2024-12-04 19:30:00+00:00,2024-12-04 19:30:00+00:00,0,0,,,,False
+1463,Joe Willock,Newcastle,M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,14,6,1999-08-20,Leo,Wikidata:Q40471152,False
+18847,Joel Ward,Crystal Palace,D,2024-08-24 14:00:00+00:00,2024-12-21 17:30:00+00:00,0,0,1989-10-29,Scorpio,Wikidata:Q2621755,False
+723,Joelinton,Newcastle,F | M,2024-08-17 14:00:00+00:00,2024-12-14 15:00:00+00:00,16,16,1996-08-14,Leo,API-Football-ID,True
+19191,John McGinn,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,15,13,1994-10-18,Libra,Wikidata:Q10547335,False
 18737,John Ruddy,Newcastle,G,2024-08-25 13:00:00+00:00,2024-10-27 13:00:00+00:00,0,0,1986-10-24,Scorpio,Wikidata:Q247312,False
-626,John Stones,Manchester City,D,2024-08-18 15:30:00+00:00,2024-10-26 14:00:00+00:00,6,2,1994-05-28,Gemini,Wikidata:Q2025900,False
-18772,Jonny Evans,Manchester United,D,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,4,2,1988-01-03,Capricorn,Wikidata:Q29495,False
-3428,Jordan Ayew,Crystal Palace | Leicester,F | M,2024-08-18 13:00:00+00:00,2024-11-02 15:00:00+00:00,10,4,1991-09-11,Virgo,Wikidata:Q367861,False
-2932,Jordan Pickford,Everton,G,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1994-03-07,Pisces,Wikidata:Q13014035,False
-131,Jorge Cuenca,Fulham,D,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,1,0,1999-11-17,Scorpio,API-Football,False
-2289,Jorginho,Arsenal,M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,3,2,,,,False
-380696,Josh Nichols,Arsenal,D,2024-09-28 14:00:00+00:00,2024-10-27 15:30:00+00:00,0,0,2006-07-26,Leo,Wikidata:Q130668046,False
-389315,Joshua King,Fulham,M,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,0,0,,,,False
-70100,Joshua Zirkzee,Manchester United,F,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,4,2001-05-22,Gemini,Wikidata:Q65675442,False
-1590,José Sá,Wolves,G,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,5,5,1993-01-17,Capricorn,Wikidata:Q6294052,False
-141901,Jota Silva,Nottingham Forest,F,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,0,1999-08-01,Leo,Wikidata:Q105945662,False
-583,João Félix,Chelsea,F,2024-08-25 13:00:00+00:00,2024-10-27 13:00:00+00:00,5,0,1999-11-10,Scorpio,API-Football,False
-195103,João Gomes,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,10,10,2001-02-12,Aquarius,API-Football-ID,True
-10329,João Pedro,Brighton,F | M,2024-08-17 14:00:00+00:00,2024-09-22 13:00:00+00:00,4,3,,,,False
-18755,João Virgínia,Everton,G,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,1999-10-10,Libra,Wikidata:Q57315493,False
-537,Joël Veltman,Brighton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,9,1992-01-15,Capricorn,API-Football,False
-129033,Joško Gvardiol,Manchester City,D,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,10,9,2002-01-23,Aquarius,Wikidata:Q73400656,False
-51051,Julian Araujo,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,7,5,2001-08-13,Leo,Wikidata:Q57242266,False
-70747,Julio Enciso,Brighton,M,2024-08-24 11:30:00+00:00,2024-11-02 15:00:00+00:00,7,0,,,,False
-38746,Jurriën Timber,Arsenal,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,8,7,2001-06-17,Gemini,Wikidata:Q53952196,False
-286458,Justin Devenny,Crystal Palace,M,2024-09-01 12:30:00+00:00,2024-11-02 17:30:00+00:00,0,0,2003-10-11,Libra,Wikidata:Q122089959,False
-792,Justin Kluivert,Bournemouth,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,7,1999-05-05,Taurus,Wikidata:Q26934107,False
-1422,Jérémy Doku,Manchester City,F | M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,8,5,2002-05-27,Gemini,Wikidata:Q59209505,False
-2032,Jørgen Strand Larsen,Wolves,F,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,10,10,2000-02-06,Aquarius,Wikidata:Q28933132,False
+626,John Stones,Manchester City,D,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,8,4,1994-05-28,Gemini,Wikidata:Q2025900,False
+18772,Jonny Evans,Manchester United,D,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,6,3,1988-01-03,Capricorn,Wikidata:Q29495,False
+3428,Jordan Ayew,Crystal Palace | Leicester,F | M,2024-08-18 13:00:00+00:00,2024-12-22 14:00:00+00:00,16,8,1991-09-11,Virgo,Wikidata:Q367861,False
+2932,Jordan Pickford,Everton,G,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,16,16,1994-03-07,Pisces,Wikidata:Q13014035,False
+131,Jorge Cuenca,Fulham,D,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,4,1,1999-11-17,Scorpio,API-Football,False
+2289,Jorginho,Arsenal,M,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,8,5,,,,False
+366735,Josh Acheampong,Chelsea,D,2024-12-15 19:00:00+00:00,2024-12-22 14:00:00+00:00,0,0,,,,False
+380696,Josh Nichols,Arsenal,D,2024-09-28 14:00:00+00:00,2024-11-30 17:30:00+00:00,0,0,2006-07-26,Leo,Wikidata:Q130668046,False
+278128,Josh Wilson-Esbrand,Manchester City,D,2024-11-09 17:30:00+00:00,2024-12-07 15:00:00+00:00,0,0,,,,False
+389315,Joshua King,Fulham,M,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,1,0,,,,False
+70100,Joshua Zirkzee,Manchester United,F,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,17,6,2001-05-22,Gemini,Wikidata:Q65675442,False
+1590,José Sá,Wolves,G,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,10,10,1993-01-17,Capricorn,Wikidata:Q6294052,False
+141901,Jota Silva,Nottingham Forest,F | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,16,3,1999-08-01,Leo,Wikidata:Q105945662,False
+583,João Félix,Chelsea,F | M,2024-08-25 13:00:00+00:00,2024-12-22 14:00:00+00:00,9,2,1999-11-10,Scorpio,API-Football,False
+195103,João Gomes,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,16,16,2001-02-12,Aquarius,API-Football-ID,True
+10329,João Pedro,Brighton,F | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,11,9,,,,False
+18755,João Virgínia,Everton,G,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,0,0,1999-10-10,Libra,Wikidata:Q57315493,False
+537,Joël Veltman,Brighton,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,12,12,1992-01-15,Capricorn,API-Football,False
+129033,Joško Gvardiol,Manchester City,D,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,16,15,2002-01-23,Aquarius,Wikidata:Q73400656,False
+51051,Julian Araujo,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-11-09 15:00:00+00:00,8,5,2001-08-13,Leo,Wikidata:Q57242266,False
+70747,Julio Enciso,Brighton,M,2024-08-24 11:30:00+00:00,2024-12-21 15:00:00+00:00,9,0,,,,False
+38746,Jurriën Timber,Arsenal,D,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,15,14,2001-06-17,Gemini,Wikidata:Q53952196,False
+286458,Justin Devenny,Crystal Palace,F | M,2024-09-01 12:30:00+00:00,2024-12-21 17:30:00+00:00,7,2,2003-10-11,Libra,Wikidata:Q122089959,False
+792,Justin Kluivert,Bournemouth,F | M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,17,14,1999-05-05,Taurus,Wikidata:Q26934107,False
+1422,Jérémy Doku,Manchester City,F | M,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,13,7,2002-05-27,Gemini,Wikidata:Q59209505,False
+2032,Jørgen Strand Larsen,Wolves,F,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,17,17,2000-02-06,Aquarius,Wikidata:Q28933132,False
 312260,Kadan Young,Aston Villa,F,2024-09-14 16:30:00+00:00,2024-10-06 13:00:00+00:00,0,0,2006-01-19,Capricorn,Wikidata:Q118870489,False
 301295,Kaden Rodney,Crystal Palace,M,2024-09-01 12:30:00+00:00,2024-09-01 12:30:00+00:00,0,0,2004-10-07,Libra,Wikidata:Q113586426,False
-288116,Kaelan Casey,West Ham,D,2024-08-31 16:30:00+00:00,2024-11-02 15:00:00+00:00,0,0,2004-10-28,Scorpio,Wikidata:Q115048295,False
-978,Kai Havertz,Arsenal,F,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,10,1999-06-11,Gemini,Wikidata:Q27310755,False
-19130,Kalvin Phillips,Ipswich,M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,7,7,1995-12-02,Sagittarius,Wikidata:Q20641319,False
-199837,Kamaldeen Sulemana,Southampton,M,2024-10-19 14:00:00+00:00,2024-10-26 14:00:00+00:00,2,0,2002-02-15,Aquarius,Wikidata:Q86269576,False
-106835,Kaoru Mitoma,Brighton,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,9,1997-05-20,Taurus,Wikidata:Q44395063,False
-283290,Kasey McAteer,Leicester,M,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,4,0,2001-11-22,Sagittarius,Wikidata:Q110086287,False
-106725,Keane Lewis-Potter,Brentford,D | F | M,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,9,7,2001-02-22,Pisces,Wikidata:Q62269289,False
-657,Kenny Tete,Fulham,D,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,9,9,1995-10-09,Libra,Wikidata:Q14495103,False
-2273,Kepa Arrizabalaga,Bournemouth,G,2024-08-31 14:00:00+00:00,2024-10-19 16:30:00+00:00,5,5,1994-10-03,Libra,Wikidata:Q3195361,False
-629,Kevin De Bruyne,Manchester City,M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,4,4,1991-06-28,Cancer,Wikidata:Q357984,False
-178077,Kevin Schade,Brentford,F | M,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,9,5,2001-11-27,Sagittarius,Wikidata:Q103845834,False
-169,Kieran Trippier,Newcastle,D,2024-08-17 14:00:00+00:00,2024-10-05 16:30:00+00:00,5,3,1990-09-19,Virgo,API-Football,False
-148099,Kiernan Dewsbury-Hall,Chelsea,M,2024-08-18 15:30:00+00:00,2024-10-20 15:30:00+00:00,3,0,1998-09-06,Virgo,Wikidata:Q83632882,False
+288116,Kaelan Casey,West Ham,D,2024-08-31 16:30:00+00:00,2024-12-16 20:00:00+00:00,1,0,2004-10-28,Scorpio,Wikidata:Q115048295,False
+978,Kai Havertz,Arsenal,F | M,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,16,16,1999-06-11,Gemini,Wikidata:Q27310755,False
+19130,Kalvin Phillips,Ipswich,M,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,8,7,1995-12-02,Sagittarius,Wikidata:Q20641319,False
+199837,Kamaldeen Sulemana,Southampton,F | M,2024-10-19 14:00:00+00:00,2024-12-15 19:00:00+00:00,6,1,2002-02-15,Aquarius,Wikidata:Q86269576,False
+106835,Kaoru Mitoma,Brighton,F | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,17,16,1997-05-20,Taurus,Wikidata:Q44395063,False
+283290,Kasey McAteer,Leicester,M,2024-08-19 19:00:00+00:00,2024-12-14 15:00:00+00:00,9,4,2001-11-22,Sagittarius,Wikidata:Q110086287,False
+106725,Keane Lewis-Potter,Brentford,D | F | M,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,17,15,2001-02-22,Pisces,Wikidata:Q62269289,False
+657,Kenny Tete,Fulham,D,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,15,15,1995-10-09,Libra,Wikidata:Q14495103,False
+2273,Kepa Arrizabalaga,Bournemouth,G,2024-08-31 14:00:00+00:00,2024-12-22 14:00:00+00:00,12,12,1994-10-03,Libra,Wikidata:Q3195361,False
+629,Kevin De Bruyne,Manchester City,M,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,10,7,1991-06-28,Cancer,Wikidata:Q357984,False
+178077,Kevin Schade,Brentford,F | M,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,17,8,2001-11-27,Sagittarius,Wikidata:Q103845834,False
+1117,Kieran Tierney,Arsenal,D,2024-11-30 17:30:00+00:00,2024-12-21 17:30:00+00:00,0,0,,,,False
+169,Kieran Trippier,Newcastle,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,9,3,1990-09-19,Virgo,API-Football,False
+148099,Kiernan Dewsbury-Hall,Chelsea,M,2024-08-18 15:30:00+00:00,2024-12-15 19:00:00+00:00,5,0,1998-09-06,Virgo,Wikidata:Q83632882,False
 201368,Killian Cahill,Brighton,G,2024-10-26 14:00:00+00:00,2024-10-26 14:00:00+00:00,0,0,,,,False
-356237,Kim Ji-Soo,Brentford,D,2024-09-21 14:00:00+00:00,2024-10-05 14:00:00+00:00,0,0,,,,False
-284322,Kobbie Mainoo,Manchester United,M,2024-08-16 19:00:00+00:00,2024-10-06 13:00:00+00:00,7,7,2005-04-19,Aries,Wikidata:Q114703020,False
-1445,Konstantinos Mavropanos,West Ham,D,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,9,7,1997-12-11,Sagittarius,Wikidata:Q47015833,False
-1600,Konstantinos Tsimikas,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,6,2,,,,False
-342320,Kosta Nedeljković,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-10-06 13:00:00+00:00,3,0,2005-12-16,Sagittarius,Wikidata:Q119719443,False
-1119,Kristoffer Ajer,Brentford,D,2024-08-18 13:00:00+00:00,2024-10-19 14:00:00+00:00,8,8,1998-04-17,Aries,Wikidata:Q18157457,False
-627,Kyle Walker,Manchester City,D,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,6,4,,,,False
-171,Kyle Walker-Peters,Southampton,D | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,8,8,1997-04-13,Aries,API-Football,False
-284457,Lamare Bogarde,Aston Villa,D,2024-08-31 14:00:00+00:00,2024-10-06 13:00:00+00:00,2,2,2004-01-05,Capricorn,Wikidata:Q104737263,False
-1946,Leandro Trossard,Arsenal,F | M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,7,1994-12-04,Sagittarius,Wikidata:Q6509762,False
-19119,Leif Davis,Ipswich,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,10,1999-12-31,Capricorn,Wikidata:Q60194671,False
-983,Leon Bailey,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,8,6,1997-08-09,Leo,Wikidata:Q20890178,False
-270508,Lesley Ugochukwu,Southampton,M,2024-08-24 14:00:00+00:00,2024-11-02 15:00:00+00:00,4,2,2004-03-26,Aries,Wikidata:Q106366721,False
-152953,Levi Colwill,Chelsea,D,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,9,9,2003-02-26,Pisces,Wikidata:Q107766903,False
-18872,Lewis Cook,Bournemouth,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,,,,False
-18963,Lewis Dunk,Brighton,D,2024-08-17 14:00:00+00:00,2024-10-19 14:00:00+00:00,8,8,1991-11-21,Scorpio,Wikidata:Q6536506,False
-284492,Lewis Hall,Newcastle,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,7,2004-09-08,Virgo,Wikidata:Q110487162,False
-328105,Lewis Miley,Newcastle,M,2024-10-19 14:00:00+00:00,2024-11-02 12:30:00+00:00,0,0,2006-05-01,Taurus,Wikidata:Q118780753,False
-161948,Liam Delap,Ipswich,F,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,9,2003-02-08,Aquarius,Wikidata:Q99584177,False
-2467,Lisandro Martínez,Manchester United,D,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,8,8,1998-01-18,Capricorn,Wikidata:Q30881092,False
-19263,Lloyd Kelly,Newcastle,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,7,3,1998-10-06,Libra,Wikidata:Q35851317,False
-347316,Lucas Bergvall,Tottenham,M,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,5,0,2006-02-02,Aquarius,Wikidata:Q115371638,False
-2724,Lucas Digne,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,9,9,1993-07-20,Cancer,Wikidata:Q72648,False
-1646,Lucas Paquetá,West Ham,F | M,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,10,9,1997-08-27,Virgo,Wikidata:Q30089624,False
-2489,Luis Díaz,Liverpool,F | M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,7,,,,False
-404574,Luis Guilherme,West Ham,F,2024-08-31 16:30:00+00:00,2024-11-02 15:00:00+00:00,1,0,,,,False
+356237,Kim Ji-Soo,Brentford,D,2024-09-21 14:00:00+00:00,2024-12-21 15:00:00+00:00,0,0,,,,False
+284322,Kobbie Mainoo,Manchester United,M,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,11,10,2005-04-19,Aries,Wikidata:Q114703020,False
+1445,Konstantinos Mavropanos,West Ham,D,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,14,11,1997-12-11,Sagittarius,Wikidata:Q47015833,False
+1600,Konstantinos Tsimikas,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-09 20:00:00+00:00,6,2,,,,False
+342320,Kosta Nedeljković,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,3,0,2005-12-16,Sagittarius,Wikidata:Q119719443,False
+1119,Kristoffer Ajer,Brentford,D,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,10,9,1998-04-17,Aries,Wikidata:Q18157457,False
+627,Kyle Walker,Manchester City,D,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,13,9,,,,False
+171,Kyle Walker-Peters,Southampton,D | M,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,14,14,1997-04-13,Aries,API-Football,False
+284457,Lamare Bogarde,Aston Villa,D,2024-08-31 14:00:00+00:00,2024-12-21 12:30:00+00:00,3,3,2004-01-05,Capricorn,Wikidata:Q104737263,False
+1946,Leandro Trossard,Arsenal,F | M,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,17,10,1994-12-04,Sagittarius,Wikidata:Q6509762,False
+19119,Leif Davis,Ipswich,D,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,17,17,1999-12-31,Capricorn,Wikidata:Q60194671,False
+342970,Leny Yoro,Manchester United,D,2024-12-04 20:15:00+00:00,2024-12-22 14:00:00+00:00,4,1,,,,False
+983,Leon Bailey,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,14,10,1997-08-09,Leo,Wikidata:Q20890178,False
+270508,Lesley Ugochukwu,Southampton,M,2024-08-24 14:00:00+00:00,2024-11-24 14:00:00+00:00,6,2,2004-03-26,Aries,Wikidata:Q106366721,False
+152953,Levi Colwill,Chelsea,D,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,16,16,2003-02-26,Pisces,Wikidata:Q107766903,False
+18872,Lewis Cook,Bournemouth,M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,16,14,1997-02-03,Aquarius,API-Football-ID,True
+18963,Lewis Dunk,Brighton,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,13,12,1991-11-21,Scorpio,Wikidata:Q6536506,False
+284492,Lewis Hall,Newcastle,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,17,14,2004-09-08,Virgo,Wikidata:Q110487162,False
+328105,Lewis Miley,Newcastle,M,2024-10-19 14:00:00+00:00,2024-12-21 15:00:00+00:00,1,0,2006-05-01,Taurus,Wikidata:Q118780753,False
+288118,Lewis Orford,West Ham,M,2024-12-16 20:00:00+00:00,2024-12-16 20:00:00+00:00,0,0,,,,False
+161948,Liam Delap,Ipswich,F,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,16,15,2003-02-08,Aquarius,Wikidata:Q99584177,False
+2467,Lisandro Martínez,Manchester United,D,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,14,14,1998-01-18,Capricorn,Wikidata:Q30881092,False
+19263,Lloyd Kelly,Newcastle,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,8,4,1998-10-06,Libra,Wikidata:Q35851317,False
+465310,Luca Williams-Barnett,Tottenham,F,2024-12-01 13:30:00+00:00,2024-12-01 13:30:00+00:00,0,0,,,,False
+347316,Lucas Bergvall,Tottenham,M,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,10,1,2006-02-02,Aquarius,Wikidata:Q115371638,False
+2724,Lucas Digne,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,17,15,1993-07-20,Cancer,Wikidata:Q72648,False
+1646,Lucas Paquetá,West Ham,F | M,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,17,14,1997-08-27,Virgo,Wikidata:Q30089624,False
+2489,Luis Díaz,Liverpool,F | M,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,15,10,1997-01-13,Capricorn,API-Football-ID,True
+404574,Luis Guilherme,West Ham,F,2024-08-31 16:30:00+00:00,2024-12-21 15:00:00+00:00,2,0,,,,False
 37161,Luis Sinisterra,Bournemouth,F | M,2024-08-17 14:00:00+00:00,2024-10-19 16:30:00+00:00,8,1,1999-06-17,Gemini,Wikidata:Q26838145,False
-152969,Luke Thomas,Leicester,D,2024-10-25 19:00:00+00:00,2024-10-25 19:00:00+00:00,0,0,,,,False
-17714,Luke Woolfenden,Ipswich,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,5,4,1998-10-21,Libra,Wikidata:Q35554570,False
-15870,Mads Hermansen,Leicester,G,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,2000-07-11,Cancer,Wikidata:Q65229910,False
-15745,Mads Roerslev,Brentford,D,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,8,3,1999-06-24,Cancer,Wikidata:Q29319616,False
+149564,Luke Cundle,Wolves,M,2024-11-23 15:00:00+00:00,2024-12-22 14:00:00+00:00,0,0,,,,False
+891,Luke Shaw,Manchester United,D,2024-11-24 16:30:00+00:00,2024-12-01 13:30:00+00:00,2,0,,,,False
+152969,Luke Thomas,Leicester,D | M,2024-10-25 19:00:00+00:00,2024-12-22 14:00:00+00:00,1,1,,,,False
+17714,Luke Woolfenden,Ipswich,D,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,5,4,1998-10-21,Libra,Wikidata:Q35554570,False
+15870,Mads Hermansen,Leicester,G,2024-08-19 19:00:00+00:00,2024-12-14 15:00:00+00:00,16,16,2000-07-11,Cancer,Wikidata:Q65229910,False
+15745,Mads Roerslev,Brentford,D | M,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,13,5,1999-06-24,Cancer,Wikidata:Q29319616,False
+392607,Maeson King,Tottenham,D,2024-12-15 19:00:00+00:00,2024-12-15 19:00:00+00:00,0,0,,,,False
+459203,Malachi Hardy,Tottenham,D,2024-11-23 17:30:00+00:00,2024-12-15 19:00:00+00:00,0,0,,,,False
 380697,Maldini Kacurri,Arsenal,D,2024-09-15 13:00:00+00:00,2024-09-28 14:00:00+00:00,0,0,2005-10-04,Libra,Wikidata:Q130305495,False
-161907,Malo Gusto,Chelsea,D,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,7,7,2003-05-19,Taurus,Wikidata:Q78752401,False
-5,Manuel Akanji,Manchester City,D,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,9,9,1995-07-19,Cancer,API-Football,False
-51494,Manuel Ugarte,Manchester United,M,2024-09-14 11:30:00+00:00,2024-10-27 13:00:00+00:00,4,1,2001-04-11,Aries,Wikidata:Q27960175,False
-47380,Marc Cucurella,Chelsea,D,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,8,7,,,,False
-392270,Marc Guiu,Chelsea,F,2024-08-18 15:30:00+00:00,2024-09-14 19:00:00+00:00,1,0,2006-01-04,Capricorn,Wikidata:Q118472572,False
-67971,Marc Guéhi,Crystal Palace,D,2024-08-18 13:00:00+00:00,2024-11-02 17:30:00+00:00,10,10,2000-07-13,Cancer,Wikidata:Q44737396,False
-6610,Marcos Senesi,Bournemouth,D,2024-08-25 13:00:00+00:00,2024-11-02 15:00:00+00:00,8,8,1997-05-10,Taurus,Wikidata:Q23413053,False
-19012,Marcus Bettinelli,Chelsea,G,2024-10-20 15:30:00+00:00,2024-10-20 15:30:00+00:00,0,0,1992-05-24,Gemini,Wikidata:Q16200385,False
+161907,Malo Gusto,Chelsea,D,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,14,12,2003-05-19,Taurus,Wikidata:Q78752401,False
+5,Manuel Akanji,Manchester City,D,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,13,13,1995-07-19,Cancer,API-Football,False
+51494,Manuel Ugarte,Manchester United,M,2024-09-14 11:30:00+00:00,2024-12-22 14:00:00+00:00,12,7,2001-04-11,Aries,Wikidata:Q27960175,False
+47380,Marc Cucurella,Chelsea,D,2024-08-18 15:30:00+00:00,2024-12-15 19:00:00+00:00,15,13,,,,False
+392270,Marc Guiu,Chelsea,F,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,1,0,2006-01-04,Capricorn,Wikidata:Q118472572,False
+67971,Marc Guéhi,Crystal Palace,D | M,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,17,17,2000-07-13,Cancer,Wikidata:Q44737396,False
+6610,Marcos Senesi,Bournemouth,D,2024-08-25 13:00:00+00:00,2024-11-30 15:00:00+00:00,11,11,1997-05-10,Taurus,Wikidata:Q23413053,False
+19012,Marcus Bettinelli,Chelsea,G,2024-10-20 15:30:00+00:00,2024-11-23 12:30:00+00:00,0,0,1992-05-24,Gemini,Wikidata:Q16200385,False
 20031,Marcus Harness,Ipswich,M,2024-08-17 11:30:00+00:00,2024-08-24 14:00:00+00:00,2,0,1996-02-24,Pisces,Wikidata:Q16245833,False
-909,Marcus Rashford,Manchester United,F | M,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,8,1997-10-31,Scorpio,Wikidata:Q22951255,False
-19245,Marcus Tavernier,Bournemouth,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,9,1999-03-22,Aries,Wikidata:Q37996874,False
-18947,Mario Lemina,Wolves,M,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,10,9,1993-09-01,Virgo,Wikidata:Q13780454,False
-26232,Mark Flekken,Brentford,G,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,9,9,1993-06-13,Gemini,Wikidata:Q5811691,False
+909,Marcus Rashford,Manchester United,F | M,2024-08-16 19:00:00+00:00,2024-12-07 17:30:00+00:00,15,12,1997-10-31,Scorpio,Wikidata:Q22951255,False
+19245,Marcus Tavernier,Bournemouth,M,2024-08-17 14:00:00+00:00,2024-12-08 14:00:00+00:00,15,13,1999-03-22,Aries,Wikidata:Q37996874,False
+18947,Mario Lemina,Wolves,D | M,2024-08-17 14:00:00+00:00,2024-12-14 15:00:00+00:00,16,15,1993-09-01,Virgo,Wikidata:Q13780454,False
+26232,Mark Flekken,Brentford,G,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,17,17,1993-06-13,Gemini,Wikidata:Q5811691,False
 340135,Mark O'Mahony,Brighton,F,2024-08-17 14:00:00+00:00,2024-08-17 14:00:00+00:00,0,0,2005-01-14,Capricorn,Wikidata:Q121463467,False
-18860,Mark Travers,Bournemouth,G,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,3,3,1999-05-18,Taurus,Wikidata:Q59913688,False
-18886,Martin Dúbravka,Newcastle,G,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,0,0,1989-01-15,Capricorn,Wikidata:Q510401,False
-37127,Martin Ødegaard,Arsenal,M,2024-08-17 14:00:00+00:00,2024-08-31 11:30:00+00:00,3,3,1998-12-17,Sagittarius,Wikidata:Q16902219,False
+18860,Mark Travers,Bournemouth,G,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,3,3,1999-05-18,Taurus,Wikidata:Q59913688,False
+359386,Martial Godo,Fulham,F,2024-12-08 14:00:00+00:00,2024-12-14 15:00:00+00:00,0,0,,,,False
+18886,Martin Dúbravka,Newcastle,G,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,2,2,1989-01-15,Capricorn,Wikidata:Q510401,False
+37127,Martin Ødegaard,Arsenal,M,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,10,10,1998-12-17,Sagittarius,Wikidata:Q16902219,False
 19150,Mason Holgate,Everton,D,2024-08-17 14:00:00+00:00,2024-08-24 14:00:00+00:00,1,0,1996-10-22,Libra,Wikidata:Q18921915,False
-19220,Mason Mount,Manchester United,M,2024-08-16 19:00:00+00:00,2024-09-29 15:30:00+00:00,3,2,1999-01-10,Capricorn,Wikidata:Q38000669,False
-2752,Massimo Luongo,Ipswich,M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,4,2,1992-09-25,Libra,Wikidata:Q6784737,False
-2291,Mateo Kovačić,Manchester City,M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,10,9,1994-05-06,Taurus,Wikidata:Q701297,False
-336585,Mateus Fernandes,Southampton,M,2024-08-24 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,7,,,,False
-1165,Matheus Cunha,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,10,9,,,,False
-41621,Matheus Nunes,Manchester City,M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,7,2,,,,False
-47438,Mathias Jensen,Brentford,M,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,4,3,,,,False
-92993,Mats Wieffer,Brighton,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,7,2,1999-11-16,Scorpio,Wikidata:Q58767078,False
-18742,Matt Doherty,Wolves,D,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,4,2,,,,False
-18941,Matt Targett,Newcastle,D,2024-08-17 14:00:00+00:00,2024-09-01 12:30:00+00:00,0,0,1995-09-18,Virgo,Wikidata:Q18128628,False
-50999,Matt Turner,Crystal Palace,G,2024-09-14 14:00:00+00:00,2024-11-02 17:30:00+00:00,0,0,,,,False
-532,Matthijs de Ligt,Manchester United,D,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,6,1999-08-12,Leo,API-Football,False
-19298,Matty Cash,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,5,5,1997-08-07,Leo,Wikidata:Q23041943,False
-2919,Matz Sels,Nottingham Forest,G,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1992-02-26,Pisces,Wikidata:Q6792066,False
-19070,Max Aarons,Bournemouth,D,2024-08-31 14:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,2000-01-04,Capricorn,Wikidata:Q56641599,False
-18744,Max Kilman,West Ham,D,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,10,10,,,,False
-20995,Maxence Lacroix,Crystal Palace,D,2024-09-14 14:00:00+00:00,2024-11-02 17:30:00+00:00,7,7,2000-04-06,Aries,Wikidata:Q60286976,False
-665,Maxwel Cornet,Southampton,F | M,2024-09-14 11:30:00+00:00,2024-10-26 14:00:00+00:00,2,1,1996-09-27,Libra,Wikidata:Q15081929,False
-2934,Michael Keane,Everton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,9,,,,False
-18819,Michail Antonio,West Ham,F,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,10,8,1990-03-28,Aries,Wikidata:Q1966430,False
-152849,Micky van de Ven,Tottenham,D,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,8,8,2001-04-19,Aries,Wikidata:Q69812902,False
-2507,Miguel Almirón,Newcastle,F | M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,5,1,1994-02-10,Aquarius,Wikidata:Q16145667,False
-47311,Mikel Merino,Arsenal,M,2024-10-05 14:00:00+00:00,2024-11-02 12:30:00+00:00,4,3,1996-06-22,Cancer,Wikidata:Q17612631,False
-380690,Mikey Moore,Tottenham,F | M,2024-09-21 14:00:00+00:00,2024-10-27 13:00:00+00:00,4,1,2007-08-11,Leo,Wikidata:Q119700600,False
-15908,Mikkel Damsgaard,Brentford,M,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,9,7,2000-07-03,Cancer,Wikidata:Q45034698,False
-206254,Miloš Kerkez,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,2003-11-07,Scorpio,Wikidata:Q110874376,False
-306,Mohamed Salah,Liverpool,M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,10,1992-06-15,Gemini,API-Football,False
-15911,Mohammed Kudus,West Ham,F | M,2024-08-17 16:30:00+00:00,2024-10-19 11:30:00+00:00,8,8,2000-08-02,Leo,Wikidata:Q56877051,False
-116117,Moisés Caicedo,Chelsea,M,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,9,9,2001-11-02,Scorpio,Wikidata:Q87715532,False
-67943,Morato,Nottingham Forest,D,2024-09-14 14:00:00+00:00,2024-10-25 19:00:00+00:00,5,0,,,,False
-18746,Morgan Gibbs-White,Nottingham Forest,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,7,7,2000-01-27,Aquarius,Wikidata:Q28147578,False
-19170,Morgan Rogers,Aston Villa,F | M,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,9,9,,,,False
-363695,Murillo,Nottingham Forest,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,,,,False
-63577,Mykhaylo Mudryk,Chelsea,M,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,5,1,2001-01-05,Capricorn,Wikidata:Q58494476,False
-313245,Myles Lewis-Skelly,Arsenal,M,2024-08-31 11:30:00+00:00,2024-11-02 12:30:00+00:00,2,0,2006-09-26,Libra,Wikidata:Q118571844,False
+19220,Mason Mount,Manchester United,F | M,2024-08-16 19:00:00+00:00,2024-12-15 16:30:00+00:00,8,4,1999-01-10,Capricorn,Wikidata:Q38000669,False
+2752,Massimo Luongo,Ipswich,M,2024-08-17 11:30:00+00:00,2024-11-30 15:00:00+00:00,5,2,1992-09-25,Libra,Wikidata:Q6784737,False
+2291,Mateo Kovačić,Manchester City,M,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,13,11,1994-05-06,Taurus,Wikidata:Q701297,False
+336585,Mateus Fernandes,Southampton,M,2024-08-24 14:00:00+00:00,2024-12-15 19:00:00+00:00,15,13,,,,False
+1165,Matheus Cunha,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,17,16,1999-05-27,Gemini,API-Football-ID,True
+41621,Matheus Nunes,Manchester City,D | M,2024-08-18 15:30:00+00:00,2024-12-15 16:30:00+00:00,12,6,,,,False
+47438,Mathias Jensen,Brentford,M,2024-08-18 13:00:00+00:00,2024-11-30 15:00:00+00:00,8,6,,,,False
+92993,Mats Wieffer,Brighton,M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,13,4,1999-11-16,Scorpio,Wikidata:Q58767078,False
+18742,Matt Doherty,Wolves,D | M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,10,6,,,,False
+19030,Matt O'Riley,Brighton,F | M,2024-11-09 17:30:00+00:00,2024-12-21 15:00:00+00:00,5,2,,,,False
+18941,Matt Targett,Newcastle,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,0,0,1995-09-18,Virgo,Wikidata:Q18128628,False
+50999,Matt Turner,Crystal Palace,G,2024-09-14 14:00:00+00:00,2024-12-21 17:30:00+00:00,0,0,,,,False
+532,Matthijs de Ligt,Manchester United,D,2024-08-16 19:00:00+00:00,2024-12-15 16:30:00+00:00,16,13,1999-08-12,Leo,API-Football,False
+19298,Matty Cash,Aston Villa,D | M,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,11,10,1997-08-07,Leo,Wikidata:Q23041943,False
+2919,Matz Sels,Nottingham Forest,G,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,17,17,1992-02-26,Pisces,Wikidata:Q6792066,False
+19070,Max Aarons,Bournemouth,D,2024-08-31 14:00:00+00:00,2024-12-22 14:00:00+00:00,1,0,2000-01-04,Capricorn,Wikidata:Q56641599,False
+18744,Max Kilman,West Ham,D,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,17,17,1997-05-23,Gemini,API-Football-ID,True
+20995,Maxence Lacroix,Crystal Palace,D,2024-09-14 14:00:00+00:00,2024-12-21 17:30:00+00:00,14,14,2000-04-06,Aries,Wikidata:Q60286976,False
+665,Maxwel Cornet,Southampton,F | M,2024-09-14 11:30:00+00:00,2024-12-04 19:30:00+00:00,2,1,1996-09-27,Libra,Wikidata:Q15081929,False
+382170,Maxwell Kinsey-Wellings,Bournemouth,D,2024-11-23 15:00:00+00:00,2024-12-22 14:00:00+00:00,0,0,,,,False
+2934,Michael Keane,Everton,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,9,9,,,,False
+18819,Michail Antonio,West Ham,F,2024-08-17 16:30:00+00:00,2024-12-03 20:15:00+00:00,14,11,1990-03-28,Aries,Wikidata:Q1966430,False
+152849,Micky van de Ven,Tottenham,D,2024-08-19 19:00:00+00:00,2024-12-08 16:30:00+00:00,9,9,2001-04-19,Aries,Wikidata:Q69812902,False
+2507,Miguel Almirón,Newcastle,F | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,7,1,1994-02-10,Aquarius,Wikidata:Q16145667,False
+47311,Mikel Merino,Arsenal,M,2024-10-05 14:00:00+00:00,2024-12-21 17:30:00+00:00,10,5,1996-06-22,Cancer,Wikidata:Q17612631,False
+380690,Mikey Moore,Tottenham,F | M,2024-09-21 14:00:00+00:00,2024-11-03 14:00:00+00:00,4,1,2007-08-11,Leo,Wikidata:Q119700600,False
+15908,Mikkel Damsgaard,Brentford,F | M,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,17,14,2000-07-03,Cancer,Wikidata:Q45034698,False
+206254,Miloš Kerkez,Bournemouth,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,17,17,2003-11-07,Scorpio,Wikidata:Q110874376,False
+306,Mohamed Salah,Liverpool,F | M,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,15,15,1992-06-15,Gemini,API-Football,False
+15911,Mohammed Kudus,West Ham,F | M,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,12,12,2000-08-02,Leo,Wikidata:Q56877051,False
+116117,Moisés Caicedo,Chelsea,D | M,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,17,17,2001-11-02,Scorpio,Wikidata:Q87715532,False
+67943,Morato,Nottingham Forest,D,2024-09-14 14:00:00+00:00,2024-12-21 15:00:00+00:00,10,1,,,,False
+18746,Morgan Gibbs-White,Nottingham Forest,M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,13,13,2000-01-27,Aquarius,Wikidata:Q28147578,False
+19170,Morgan Rogers,Aston Villa,F | M,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,17,17,,,,False
+363695,Murillo,Nottingham Forest,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,17,17,2002-07-04,Cancer,API-Football-ID,True
+63577,Mykhaylo Mudryk,Chelsea,M,2024-08-18 15:30:00+00:00,2024-12-01 13:30:00+00:00,7,1,2001-01-05,Capricorn,Wikidata:Q58494476,False
+313245,Myles Lewis-Skelly,Arsenal,D | M,2024-08-31 11:30:00+00:00,2024-12-21 17:30:00+00:00,4,2,2006-09-26,Libra,Wikidata:Q118571844,False
 180308,Myles Peart-Harris,Brentford,M,2024-08-18 13:00:00+00:00,2024-08-18 13:00:00+00:00,0,0,2002-09-18,Virgo,Wikidata:Q108653513,False
 152418,Naouirou Ahamada,Crystal Palace,M,2024-08-24 14:00:00+00:00,2024-08-24 14:00:00+00:00,0,0,2002-03-29,Aries,Wikidata:Q74050891,False
-18861,Nathan Aké,Manchester City,D,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,2,1,1995-02-18,Aquarius,Wikidata:Q1755683,False
-126791,Nathan Broadhead,Ipswich,F,2024-10-19 14:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,1998-04-05,Aries,Wikidata:Q44963860,False
+18861,Nathan Aké,Manchester City,D,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,5,3,1995-02-18,Aquarius,Wikidata:Q1755683,False
+126791,Nathan Broadhead,Ipswich,F,2024-10-19 14:00:00+00:00,2024-12-21 15:00:00+00:00,3,0,1998-04-05,Aries,Wikidata:Q44963860,False
 153407,Nathan Butler-Oyedeji,Arsenal,F,2024-10-05 14:00:00+00:00,2024-10-05 14:00:00+00:00,0,0,2003-01-04,Capricorn,Wikidata:Q116687539,False
-19495,Nathan Collins,Brentford,D,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,9,9,,,,False
-138417,Nathan Patterson,Everton,D,2024-10-19 14:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,2001-10-16,Libra,Wikidata:Q83264648,False
-19248,Nathan Wood,Southampton,D,2024-08-17 14:00:00+00:00,2024-09-21 14:00:00+00:00,0,0,,,,False
-18862,Nathaniel Clyne,Crystal Palace,D,2024-08-18 13:00:00+00:00,2024-11-02 17:30:00+00:00,4,2,1991-04-05,Aries,Wikidata:Q714067,False
+19495,Nathan Collins,Brentford,D,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,17,17,2001-04-30,Taurus,API-Football-ID,True
+138417,Nathan Patterson,Everton,D,2024-10-19 14:00:00+00:00,2024-12-22 14:00:00+00:00,1,0,2001-10-16,Libra,Wikidata:Q83264648,False
+19248,Nathan Wood,Southampton,D,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,3,2,,,,False
+18862,Nathaniel Clyne,Crystal Palace,D | M,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,8,4,1991-04-05,Aries,Wikidata:Q714067,False
 19364,Neal Maupay,Everton,F,2024-08-17 14:00:00+00:00,2024-08-24 14:00:00+00:00,0,0,1996-08-14,Leo,Wikidata:Q1101455,False
-138780,Neco Williams,Nottingham Forest,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,3,2001-04-13,Aries,Wikidata:Q72921909,False
-912,Neto,Arsenal | Bournemouth,G,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,2,2,,,,False
-18911,Nick Pope,Newcastle,G,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,10,1992-04-19,Aries,Wikidata:Q15999945,False
-25391,Niclas Füllkrug,West Ham,F,2024-08-17 16:30:00+00:00,2024-08-31 16:30:00+00:00,3,0,1993-02-09,Aquarius,Wikidata:Q326159,False
-307123,Nico O'Reilly,Manchester City,M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,0,0,2005-03-21,Aries,Wikidata:Q118645253,False
-283058,Nicolas Jackson,Chelsea,F,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,9,9,2001-06-20,Gemini,Wikidata:Q100144350,False
-6056,Nicolás Domínguez,Nottingham Forest,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,8,5,,,,False
-2817,Nikola Milenković,Nottingham Forest,D,2024-08-24 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,9,1997-10-12,Libra,Wikidata:Q23887939,False
-136723,Noni Madueke,Chelsea,F | M,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,8,8,2002-03-10,Pisces,Wikidata:Q66801705,False
-545,Noussair Mazraoui,Manchester United,D,2024-08-16 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,8,1997-11-14,Scorpio,API-Football,False
-130,Nélson Semedo,Wolves,D | M,2024-08-31 14:00:00+00:00,2024-11-02 17:30:00+00:00,8,8,1993-11-16,Scorpio,API-Football,False
-1135,Odsonne Édouard,Crystal Palace | Leicester,F,2024-08-18 13:00:00+00:00,2024-10-25 19:00:00+00:00,5,1,1998-01-16,Capricorn,Wikidata:Q19963405,False
-557,Odysseas Vlachodimos,Newcastle,G,2024-10-05 16:30:00+00:00,2024-10-27 13:00:00+00:00,0,0,1994-04-26,Taurus,API-Football,False
-2771,Ola Aina,Nottingham Forest,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1996-10-08,Libra,Wikidata:Q20730338,False
-641,Oleksandr Zinchenko,Arsenal,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,3,1,1996-12-15,Sagittarius,Wikidata:Q19636859,False
-180,Oliver Skipp,Leicester,M,2024-08-24 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,5,2000-09-16,Virgo,API-Football,False
-148270,Oliwier Zych,Aston Villa,G,2024-08-31 14:00:00+00:00,2024-08-31 14:00:00+00:00,0,0,2004-06-28,Cancer,Wikidata:Q105104357,False
-19366,Ollie Watkins,Aston Villa,F,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,9,9,1995-12-30,Capricorn,Wikidata:Q16911979,False
-284428,Omari Hutchinson,Ipswich,M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,9,9,2003-10-29,Scorpio,Wikidata:Q111145131,False
-24882,Orel Mangala,Everton,M,2024-09-14 16:30:00+00:00,2024-11-02 15:00:00+00:00,7,4,1998-03-18,Pisces,Wikidata:Q26838752,False
-2056,Pablo Sarabia,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,4,1,1992-05-11,Taurus,Wikidata:Q510165,False
-237129,Pape Matar Sarr,Tottenham,M,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,2,2002-09-14,Virgo,Wikidata:Q104877690,False
-46815,Pau Torres,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,9,9,,,,False
-15812,Paul Onuachu,Southampton,F,2024-09-30 19:00:00+00:00,2024-11-02 15:00:00+00:00,4,0,1994-05-28,Gemini,Wikidata:Q15729123,False
-449245,Pedro Lima,Wolves,D,2024-10-20 13:00:00+00:00,2024-10-26 14:00:00+00:00,0,0,2006-07-01,Cancer,Wikidata:Q125548367,False
-1864,Pedro Neto,Chelsea,F | M,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,9,3,2000-03-09,Pisces,Wikidata:Q30036972,False
-47519,Pedro Porro,Tottenham,D,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,9,9,1999-09-13,Virgo,Wikidata:Q44080929,False
-46731,Pervis Estupiñán,Brighton,D,2024-08-31 11:30:00+00:00,2024-11-02 15:00:00+00:00,7,4,1998-01-21,Aquarius,Wikidata:Q20994068,False
-631,Phil Foden,Manchester City,M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,7,3,2000-05-28,Gemini,Wikidata:Q30729096,False
-2734,Philip Billing,Bournemouth,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,2,0,1996-06-11,Gemini,Wikidata:Q16727516,False
-162498,Radu Drăguşin,Tottenham,D,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,2,1,2002-02-03,Aquarius,Wikidata:Q86835512,False
-645,Raheem Sterling,Arsenal,F | M,2024-09-15 13:00:00+00:00,2024-11-02 12:30:00+00:00,4,2,1994-12-08,Sagittarius,Wikidata:Q312157,False
-196298,Ramón Sosa,Nottingham Forest,F,2024-08-31 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,0,1999-08-31,Virgo,Wikidata:Q110160871,False
-288006,Rasmus Højlund,Manchester United,F,2024-09-21 16:30:00+00:00,2024-10-27 13:00:00+00:00,5,3,2003-02-04,Aquarius,Wikidata:Q66467324,False
-21138,Rayan Aït Nouri,Wolves,D | M,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,10,10,2001-06-06,Gemini,Wikidata:Q50825738,False
-2887,Raúl Jiménez,Fulham,F,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,9,6,,,,False
-19545,Reece James,Chelsea,D,2024-10-20 15:30:00+00:00,2024-10-27 13:00:00+00:00,2,2,,,,False
-727,Reiss Nelson,Arsenal | Fulham,F,2024-08-17 14:00:00+00:00,2024-10-26 16:30:00+00:00,7,0,1999-12-10,Sagittarius,Wikidata:Q35039261,False
-19684,Remi Matthews,Crystal Palace,G,2024-09-01 12:30:00+00:00,2024-11-02 17:30:00+00:00,0,0,1994-02-10,Aquarius,Wikidata:Q21061926,False
-336671,Renato Veiga,Chelsea,M,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,5,1,2003-07-29,Leo,Wikidata:Q116700351,False
+138780,Neco Williams,Nottingham Forest,D | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,14,7,2001-04-13,Aries,Wikidata:Q72921909,False
+912,Neto,Arsenal | Bournemouth,G,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,2,2,,,,False
+18911,Nick Pope,Newcastle,G,2024-08-17 14:00:00+00:00,2024-12-07 15:00:00+00:00,15,15,1992-04-19,Aries,Wikidata:Q15999945,False
+25391,Niclas Füllkrug,West Ham,F,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,6,1,1993-02-09,Aquarius,Wikidata:Q326159,False
+307123,Nico O'Reilly,Manchester City,M,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,0,0,2005-03-21,Aries,Wikidata:Q118645253,False
+283058,Nicolas Jackson,Chelsea,F,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,16,16,2001-06-20,Gemini,Wikidata:Q100144350,False
+6056,Nicolás Domínguez,Nottingham Forest,M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,15,9,,,,False
+2817,Nikola Milenković,Nottingham Forest,D,2024-08-24 14:00:00+00:00,2024-12-21 15:00:00+00:00,16,16,1997-10-12,Libra,Wikidata:Q23887939,False
+136723,Noni Madueke,Chelsea,F | M,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,16,13,2002-03-10,Pisces,Wikidata:Q66801705,False
+545,Noussair Mazraoui,Manchester United,D | M,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,17,15,1997-11-14,Scorpio,API-Football,False
+130,Nélson Semedo,Wolves,D | M,2024-08-31 14:00:00+00:00,2024-12-22 14:00:00+00:00,14,14,1993-11-16,Scorpio,API-Football,False
+1135,Odsonne Édouard,Crystal Palace | Leicester,F,2024-08-18 13:00:00+00:00,2024-11-10 14:00:00+00:00,6,1,1998-01-16,Capricorn,Wikidata:Q19963405,False
+557,Odysseas Vlachodimos,Newcastle,G,2024-10-05 16:30:00+00:00,2024-12-21 15:00:00+00:00,0,0,1994-04-26,Taurus,API-Football,False
+2771,Ola Aina,Nottingham Forest,D | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,17,17,1996-10-08,Libra,Wikidata:Q20730338,False
+641,Oleksandr Zinchenko,Arsenal,D,2024-08-17 14:00:00+00:00,2024-12-04 20:15:00+00:00,6,2,1996-12-15,Sagittarius,Wikidata:Q19636859,False
+327730,Oliver Scarles,West Ham,D,2024-11-09 15:00:00+00:00,2024-12-21 15:00:00+00:00,2,0,,,,False
+180,Oliver Skipp,Leicester,M,2024-08-24 14:00:00+00:00,2024-12-22 14:00:00+00:00,11,7,2000-09-16,Virgo,API-Football,False
+148270,Oliwier Zych,Aston Villa,G,2024-08-31 14:00:00+00:00,2024-12-14 17:30:00+00:00,0,0,2004-06-28,Cancer,Wikidata:Q105104357,False
+19366,Ollie Watkins,Aston Villa,F,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,17,14,1995-12-30,Capricorn,Wikidata:Q16911979,False
+284428,Omari Hutchinson,Ipswich,M,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,16,16,2003-10-29,Scorpio,Wikidata:Q111145131,False
+24882,Orel Mangala,Everton,M,2024-09-14 16:30:00+00:00,2024-12-22 14:00:00+00:00,13,8,1998-03-18,Pisces,Wikidata:Q26838752,False
+2056,Pablo Sarabia,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-11-30 15:00:00+00:00,5,2,1992-05-11,Taurus,Wikidata:Q510165,False
+237129,Pape Matar Sarr,Tottenham,M,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,16,9,2002-09-14,Virgo,Wikidata:Q104877690,False
+1098,Patson Daka,Leicester,F,2024-11-23 12:30:00+00:00,2024-12-22 14:00:00+00:00,5,0,,,,False
+46815,Pau Torres,Aston Villa,D,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,16,16,1997-01-16,Capricorn,API-Football-ID,True
+15812,Paul Onuachu,Southampton,F,2024-09-30 19:00:00+00:00,2024-12-15 19:00:00+00:00,6,1,1994-05-28,Gemini,Wikidata:Q15729123,False
+449245,Pedro Lima,Wolves,D,2024-10-20 13:00:00+00:00,2024-12-22 14:00:00+00:00,0,0,2006-07-01,Cancer,Wikidata:Q125548367,False
+1864,Pedro Neto,Chelsea,F | M,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,14,8,2000-03-09,Pisces,Wikidata:Q30036972,False
+47519,Pedro Porro,Tottenham,D,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,16,14,1999-09-13,Virgo,Wikidata:Q44080929,False
+46731,Pervis Estupiñán,Brighton,D | M,2024-08-31 11:30:00+00:00,2024-12-21 15:00:00+00:00,14,11,1998-01-21,Aquarius,Wikidata:Q20994068,False
+631,Phil Foden,Manchester City,F | M,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,12,8,2000-05-28,Gemini,Wikidata:Q30729096,False
+2734,Philip Billing,Bournemouth,M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,7,0,1996-06-11,Gemini,Wikidata:Q16727516,False
+162498,Radu Drăguşin,Tottenham,D,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,9,7,2002-02-03,Aquarius,Wikidata:Q86835512,False
+645,Raheem Sterling,Arsenal,F | M,2024-09-15 13:00:00+00:00,2024-12-14 15:00:00+00:00,6,2,1994-12-08,Sagittarius,Wikidata:Q312157,False
+196298,Ramón Sosa,Nottingham Forest,F,2024-08-31 14:00:00+00:00,2024-12-14 17:30:00+00:00,10,0,1999-08-31,Virgo,Wikidata:Q110160871,False
+288006,Rasmus Højlund,Manchester United,F,2024-09-21 16:30:00+00:00,2024-12-22 14:00:00+00:00,12,8,2003-02-04,Aquarius,Wikidata:Q66467324,False
+21138,Rayan Aït Nouri,Wolves,D | M,2024-08-17 14:00:00+00:00,2024-12-14 15:00:00+00:00,16,16,2001-06-06,Gemini,Wikidata:Q50825738,False
+2887,Raúl Jiménez,Fulham,F,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,16,12,1991-05-05,Taurus,API-Football-ID,True
+19545,Reece James,Chelsea,D,2024-10-20 15:30:00+00:00,2024-11-10 16:30:00+00:00,4,3,,,,False
+727,Reiss Nelson,Arsenal | Fulham,F | M,2024-08-17 14:00:00+00:00,2024-12-05 19:30:00+00:00,12,5,1999-12-10,Sagittarius,Wikidata:Q35039261,False
+19684,Remi Matthews,Crystal Palace,G,2024-09-01 12:30:00+00:00,2024-11-23 15:00:00+00:00,0,0,1994-02-10,Aquarius,Wikidata:Q21061926,False
+336671,Renato Veiga,Chelsea,M,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,7,1,2003-07-29,Leo,Wikidata:Q116700351,False
 18771,Ricardo Pereira,Leicester,D,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,2,2,1993-10-06,Libra,Wikidata:Q3718523,False
-157052,Riccardo Calafiori,Arsenal,D,2024-08-17 14:00:00+00:00,2024-10-19 16:30:00+00:00,6,4,2002-05-19,Taurus,Wikidata:Q97999586,False
-2413,Richarlison,Tottenham,F,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,4,0,,,,False
-284230,Rico Lewis,Manchester City,D | M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,9,8,2004-11-21,Scorpio,Wikidata:Q113509374,False
+157052,Riccardo Calafiori,Arsenal,D,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,9,6,2002-05-19,Taurus,Wikidata:Q97999586,False
+2413,Richarlison,Tottenham,F,2024-08-19 19:00:00+00:00,2024-11-03 14:00:00+00:00,5,0,,,,False
+284230,Rico Lewis,Manchester City,D | M,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,15,13,2004-11-21,Scorpio,Wikidata:Q113509374,False
 1440,Rob Holding,Crystal Palace,D,2024-08-24 14:00:00+00:00,2024-08-24 14:00:00+00:00,0,0,1995-09-20,Virgo,Wikidata:Q21061767,False
-18959,Robert Sánchez,Chelsea,G,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,9,9,1997-11-18,Scorpio,Wikidata:Q56043276,False
-766,Robin Olsen,Aston Villa,G,2024-10-26 14:00:00+00:00,2024-10-26 14:00:00+00:00,0,0,1990-01-08,Capricorn,Wikidata:Q6799321,False
+18959,Robert Sánchez,Chelsea,G,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,16,16,1997-11-18,Scorpio,Wikidata:Q56043276,False
+766,Robin Olsen,Aston Villa,G,2024-10-26 14:00:00+00:00,2024-12-21 12:30:00+00:00,1,0,1990-01-08,Capricorn,Wikidata:Q6799321,False
 44,Rodri,Manchester City,M,2024-08-31 16:30:00+00:00,2024-09-22 15:30:00+00:00,2,1,1996-06-22,Cancer,API-Football,False
-863,Rodrigo Bentancur,Tottenham,M,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,8,5,1997-06-25,Cancer,Wikidata:Q18817134,False
-282770,Rodrigo Gomes,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,4,1,,,,False
-195106,Rodrigo Muniz,Fulham,F,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,8,3,,,,False
+863,Rodrigo Bentancur,Tottenham,M,2024-08-19 19:00:00+00:00,2024-11-10 14:00:00+00:00,10,7,1997-06-25,Cancer,Wikidata:Q18817134,False
+282770,Rodrigo Gomes,Wolves,F | M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,10,4,,,,False
+195106,Rodrigo Muniz,Fulham,F,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,15,4,,,,False
 389306,Roman Dixon,Everton,D,2024-09-21 14:00:00+00:00,2024-10-19 14:00:00+00:00,0,0,2004-09-06,Virgo,Wikidata:Q129689290,False
 297640,Roman Quintyne,Everton,D,2024-08-24 14:00:00+00:00,2024-09-14 16:30:00+00:00,1,1,,,,False
-282125,Roméo Lavia,Chelsea,M,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,4,3,2004-01-06,Capricorn,Wikidata:Q108649714,False
-2287,Ross Barkley,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,8,1,1993-12-05,Sagittarius,Wikidata:Q326240,False
+282125,Roméo Lavia,Chelsea,M,2024-08-18 15:30:00+00:00,2024-12-08 16:30:00+00:00,9,7,2004-01-06,Capricorn,Wikidata:Q108649714,False
+159420,Ronnie Edwards,Southampton,D,2024-11-29 20:00:00+00:00,2024-12-07 15:00:00+00:00,1,0,,,,False
+2287,Ross Barkley,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,13,2,1993-12-05,Sagittarius,Wikidata:Q326240,False
 45078,Ross Stewart,Southampton,F,2024-09-14 11:30:00+00:00,2024-10-05 14:00:00+00:00,4,1,,,,False
-1125,Ryan Christie,Bournemouth,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,8,1995-02-22,Pisces,Wikidata:Q16236700,False
-18873,Ryan Fraser,Southampton,M,2024-09-14 11:30:00+00:00,2024-10-19 14:00:00+00:00,4,2,1994-02-24,Pisces,Wikidata:Q44527,False
-542,Ryan Gravenberch,Liverpool,M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,10,2002-05-16,Taurus,API-Football,False
-19587,Ryan Manning,Southampton,D | M,2024-10-05 14:00:00+00:00,2024-11-02 15:00:00+00:00,4,4,1996-06-14,Gemini,Wikidata:Q28101945,False
-19032,Ryan Sessegnon,Fulham,M,2024-08-24 14:00:00+00:00,2024-10-26 16:30:00+00:00,0,0,2000-05-18,Taurus,Wikidata:Q26250297,False
-382925,Ryan Trevitt,Brentford,M,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,1,0,2003-03-12,Pisces,Wikidata:Q113586549,False
-19305,Ryan Yates,Nottingham Forest,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,6,1997-11-21,Scorpio,Wikidata:Q28794002,False
-567,Rúben Dias,Manchester City,D,2024-08-18 15:30:00+00:00,2024-10-26 14:00:00+00:00,9,8,1997-05-14,Taurus,API-Football,False
+343209,Ruairi McConville,Brighton,D,2024-11-23 15:00:00+00:00,2024-12-15 14:00:00+00:00,0,0,,,,False
+1125,Ryan Christie,Bournemouth,M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,16,14,1995-02-22,Pisces,Wikidata:Q16236700,False
+18873,Ryan Fraser,Southampton,D | M,2024-09-14 11:30:00+00:00,2024-12-15 19:00:00+00:00,7,4,1994-02-24,Pisces,Wikidata:Q44527,False
+542,Ryan Gravenberch,Liverpool,M,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,15,15,2002-05-16,Taurus,API-Football,False
+19587,Ryan Manning,Southampton,D | M,2024-10-05 14:00:00+00:00,2024-12-15 19:00:00+00:00,9,9,1996-06-14,Gemini,Wikidata:Q28101945,False
+19032,Ryan Sessegnon,Fulham,M,2024-08-24 14:00:00+00:00,2024-12-14 15:00:00+00:00,1,0,2000-05-18,Taurus,Wikidata:Q26250297,False
+382925,Ryan Trevitt,Brentford,M,2024-08-18 13:00:00+00:00,2024-12-15 19:00:00+00:00,1,0,2003-03-12,Pisces,Wikidata:Q113586549,False
+19305,Ryan Yates,Nottingham Forest,M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,17,12,1997-11-21,Scorpio,Wikidata:Q28794002,False
+567,Rúben Dias,Manchester City,D,2024-08-18 15:30:00+00:00,2024-12-15 16:30:00+00:00,13,12,1997-05-14,Taurus,API-Football,False
 278074,Salah Oulad M'Hand,Arsenal,M,2024-08-31 11:30:00+00:00,2024-08-31 11:30:00+00:00,0,0,,,,False
-19143,Sam Johnstone,Crystal Palace | Wolves,G,2024-08-18 13:00:00+00:00,2024-10-05 14:00:00+00:00,5,5,1993-03-25,Aries,Wikidata:Q327227,False
-19558,Sam Morsy,Ipswich,M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,9,9,1991-09-10,Virgo,Wikidata:Q7407943,False
-17579,Sammie Szmodics,Ipswich,M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,6,1995-09-24,Libra,Wikidata:Q16237035,False
-334035,Samuel Amo-Ameyaw,Southampton,F,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,1,0,2006-07-18,Cancer,Wikidata:Q118869958,False
+19143,Sam Johnstone,Crystal Palace | Wolves,G,2024-08-18 13:00:00+00:00,2024-12-22 14:00:00+00:00,7,7,1993-03-25,Aries,Wikidata:Q327227,False
+19558,Sam Morsy,Ipswich,M,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,16,16,1991-09-10,Virgo,Wikidata:Q7407943,False
+327733,Sam Rak-Sakyi,Chelsea,M,2024-12-15 19:00:00+00:00,2024-12-15 19:00:00+00:00,0,0,,,,False
+17579,Sammie Szmodics,Ipswich,M,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,15,11,1995-09-24,Libra,Wikidata:Q16237035,False
+384981,Samuel Amissah,Fulham,D,2024-12-01 13:30:00+00:00,2024-12-01 13:30:00+00:00,0,0,,,,False
+334035,Samuel Amo-Ameyaw,Southampton,F | M,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,2,0,2006-07-18,Cancer,Wikidata:Q118869958,False
 278085,Samuel Edozie,Southampton,M,2024-08-17 14:00:00+00:00,2024-08-24 14:00:00+00:00,2,0,2003-01-28,Aquarius,Wikidata:Q105478432,False
-1934,Sander Berge,Fulham,M,2024-08-31 14:00:00+00:00,2024-10-26 16:30:00+00:00,7,3,1998-02-14,Aquarius,Wikidata:Q20675980,False
-31146,Sandro Tonali,Newcastle,M,2024-09-01 12:30:00+00:00,2024-11-02 12:30:00+00:00,8,4,2000-05-08,Taurus,Wikidata:Q43402334,False
-135334,Santiago Bueno,Wolves,D,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,5,4,1998-11-09,Scorpio,Wikidata:Q25367692,False
-266657,Savinho,Manchester City,F | M,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,7,6,,,,False
-2823,Saša Lukić,Fulham,M,2024-08-16 19:00:00+00:00,2024-10-05 14:00:00+00:00,7,7,1996-08-13,Leo,Wikidata:Q19594166,False
-19197,Scott Carson,Manchester City,G,2024-09-22 15:30:00+00:00,2024-10-26 14:00:00+00:00,0,0,1985-09-03,Virgo,Wikidata:Q295627,False
+1934,Sander Berge,Fulham,M,2024-08-31 14:00:00+00:00,2024-12-14 15:00:00+00:00,13,9,1998-02-14,Aquarius,Wikidata:Q20675980,False
+31146,Sandro Tonali,Newcastle,M,2024-09-01 12:30:00+00:00,2024-12-21 15:00:00+00:00,15,8,2000-05-08,Taurus,Wikidata:Q43402334,False
+135334,Santiago Bueno,Wolves,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,10,9,1998-11-09,Scorpio,Wikidata:Q25367692,False
+266657,Savinho,Manchester City,F | M,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,14,9,,,,False
+2823,Saša Lukić,Fulham,M,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,11,11,1996-08-13,Leo,Wikidata:Q19594166,False
+19197,Scott Carson,Manchester City,G,2024-09-22 15:30:00+00:00,2024-12-21 12:30:00+00:00,0,0,1985-09-03,Virgo,Wikidata:Q295627,False
 903,Scott McTominay,Manchester United,M,2024-08-16 19:00:00+00:00,2024-08-24 11:30:00+00:00,2,0,1996-12-08,Sagittarius,Wikidata:Q29624459,False
-18901,Sean Longstaff,Newcastle,M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,9,5,1997-10-30,Scorpio,Wikidata:Q28542599,False
-36922,Sepp van den Berg,Brentford,D,2024-08-25 15:30:00+00:00,2024-10-26 14:00:00+00:00,7,6,2001-12-20,Sagittarius,Wikidata:Q50398907,False
+18901,Sean Longstaff,Newcastle,M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,16,8,1997-10-30,Scorpio,Wikidata:Q28542599,False
+36922,Sepp van den Berg,Brentford,D,2024-08-25 15:30:00+00:00,2024-12-15 19:00:00+00:00,14,13,2001-12-20,Sagittarius,Wikidata:Q50398907,False
+739,Sergio Reguilón,Tottenham,D,2024-12-01 13:30:00+00:00,2024-12-08 16:30:00+00:00,0,0,,,,False
 284523,Sil Swinkels,Aston Villa,D,2024-08-31 14:00:00+00:00,2024-10-06 13:00:00+00:00,0,0,2004-01-06,Capricorn,Wikidata:Q101627158,False
-301771,Simon Adingra,Brighton,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,6,1,2002-01-01,Capricorn,Wikidata:Q107742783,False
-25004,Stefan Ortega,Manchester City,G,2024-08-18 15:30:00+00:00,2024-11-02 15:00:00+00:00,0,0,1992-11-06,Scorpio,Wikidata:Q821646,False
-879,Stephy Mavididi,Leicester,F | M,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,10,7,1998-05-31,Gemini,Wikidata:Q28748037,False
-19312,Steven Benda,Fulham,G,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,0,0,1998-10-01,Libra,Wikidata:Q70276774,False
-18758,Séamus Coleman,Everton,D,2024-08-31 14:00:00+00:00,2024-11-02 15:00:00+00:00,1,1,1988-10-11,Libra,Wikidata:Q316724,False
-8598,Taiwo Awoniyi,Nottingham Forest,F,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,7,1,1997-08-12,Leo,Wikidata:Q20932574,False
+301771,Simon Adingra,Brighton,F | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,11,3,2002-01-01,Capricorn,Wikidata:Q107742783,False
+25004,Stefan Ortega,Manchester City,G,2024-08-18 15:30:00+00:00,2024-12-21 12:30:00+00:00,4,4,1992-11-06,Scorpio,Wikidata:Q821646,False
+879,Stephy Mavididi,Leicester,F | M,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,16,9,1998-05-31,Gemini,Wikidata:Q28748037,False
+19312,Steven Benda,Fulham,G,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,0,0,1998-10-01,Libra,Wikidata:Q70276774,False
+18758,Séamus Coleman,Everton,D,2024-08-31 14:00:00+00:00,2024-12-22 14:00:00+00:00,2,1,1988-10-11,Libra,Wikidata:Q316724,False
+8598,Taiwo Awoniyi,Nottingham Forest,F,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,12,2,1997-08-12,Leo,Wikidata:Q20932574,False
 2597,Takehiro Tomiyasu,Arsenal,D,2024-10-05 14:00:00+00:00,2024-10-05 14:00:00+00:00,1,0,1998-11-05,Scorpio,Wikidata:Q21286402,False
-138815,Tariq Lamptey,Brighton,D,2024-08-24 11:30:00+00:00,2024-11-02 15:00:00+00:00,1,0,2000-09-30,Libra,Wikidata:Q80197171,False
-144729,Taylor Harwood-Bellis,Southampton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,9,2002-01-30,Aquarius,Wikidata:Q68485418,False
+138815,Tariq Lamptey,Brighton,D,2024-08-24 11:30:00+00:00,2024-12-21 15:00:00+00:00,6,3,2000-09-30,Libra,Wikidata:Q80197171,False
+144729,Taylor Harwood-Bellis,Southampton,D,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,15,14,2002-01-30,Aquarius,Wikidata:Q68485418,False
 215874,Thomas Cannon,Leicester,F,2024-08-19 19:00:00+00:00,2024-08-19 19:00:00+00:00,0,0,2002-12-28,Capricorn,Wikidata:Q115208158,False
-49,Thomas Partey,Arsenal,D | M,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,10,1993-06-13,Gemini,API-Football,False
+49,Thomas Partey,Arsenal,D | M,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,16,14,1993-06-13,Gemini,API-Football,False
 284500,Tim Iroegbunam,Everton,M,2024-08-17 14:00:00+00:00,2024-10-05 16:30:00+00:00,6,4,2003-06-30,Cancer,Wikidata:Q111027477,False
-1166,Timo Werner,Tottenham,F,2024-08-19 19:00:00+00:00,2024-10-27 13:00:00+00:00,7,2,1996-03-06,Pisces,Wikidata:Q3529022,False
-2920,Timothy Castagne,Fulham,D,2024-08-16 19:00:00+00:00,2024-10-05 14:00:00+00:00,1,0,1995-12-05,Sagittarius,Wikidata:Q18041089,False
-284400,Toby Collyer,Manchester United,M,2024-08-16 19:00:00+00:00,2024-09-14 11:30:00+00:00,1,0,2004-01-03,Capricorn,Wikidata:Q121437419,False
-19025,Tom Cairney,Fulham,M,2024-08-16 19:00:00+00:00,2024-10-26 16:30:00+00:00,6,0,1991-01-20,Aquarius,Wikidata:Q1061904,False
-2931,Tom Heaton,Manchester United,G,2024-09-01 15:00:00+00:00,2024-09-01 15:00:00+00:00,0,0,1986-04-15,Aries,Wikidata:Q357912,False
-144732,Tommy Doyle,Wolves,M,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,8,2,,,,False
+1166,Timo Werner,Tottenham,F,2024-08-19 19:00:00+00:00,2024-12-15 19:00:00+00:00,13,3,1996-03-06,Pisces,Wikidata:Q3529022,False
+2920,Timothy Castagne,Fulham,D,2024-08-16 19:00:00+00:00,2024-12-14 15:00:00+00:00,6,1,1995-12-05,Sagittarius,Wikidata:Q18041089,False
+284400,Toby Collyer,Manchester United,M,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,1,0,2004-01-03,Capricorn,Wikidata:Q121437419,False
+19025,Tom Cairney,Fulham,M,2024-08-16 19:00:00+00:00,2024-12-01 13:30:00+00:00,10,0,1991-01-20,Aquarius,Wikidata:Q1061904,False
+389302,Tom Edozie,Wolves,F,2024-11-23 15:00:00+00:00,2024-11-23 15:00:00+00:00,0,0,,,,False
+2931,Tom Heaton,Manchester United,G,2024-09-01 15:00:00+00:00,2024-11-10 14:00:00+00:00,0,0,1986-04-15,Aries,Wikidata:Q357912,False
+144732,Tommy Doyle,Wolves,M,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,13,2,,,,False
 342243,Tommy Setford,Arsenal,G,2024-08-31 11:30:00+00:00,2024-10-19 16:30:00+00:00,0,0,2006-03-13,Pisces,Wikidata:Q123512560,False
-1243,Tomáš Souček,West Ham,M,2024-08-17 16:30:00+00:00,2024-10-27 13:00:00+00:00,9,6,1995-02-27,Pisces,Wikidata:Q20860081,False
-388510,Tony Yogane,Brentford,M,2024-09-21 14:00:00+00:00,2024-09-28 14:00:00+00:00,0,0,2005-09-24,Libra,Wikidata:Q130316133,False
-19145,Tosin Adarabioyo,Chelsea,D,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,4,2,1997-09-24,Libra,Wikidata:Q21620666,False
-41606,Toti Gomes,Wolves,D,2024-08-17 14:00:00+00:00,2024-11-02 17:30:00+00:00,8,8,1999-01-16,Capricorn,Wikidata:Q64747505,False
-283,Trent Alexander-Arnold,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,10,1998-10-07,Libra,API-Football,False
-19720,Trevoh Chalobah,Crystal Palace,D,2024-09-28 14:00:00+00:00,2024-11-02 17:30:00+00:00,4,4,1999-07-05,Cancer,Wikidata:Q36696865,False
-1150,Tyler Adams,Bournemouth,M,2024-10-19 16:30:00+00:00,2024-11-02 15:00:00+00:00,2,0,1999-02-14,Aquarius,Wikidata:Q19871581,False
-304317,Tyler Dibling,Southampton,F | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,10,6,2006-03-12,Pisces,Wikidata:Q115973966,False
-162590,Tyler Morton,Liverpool,M,2024-10-20 15:30:00+00:00,2024-11-02 15:00:00+00:00,0,0,2002-10-31,Scorpio,Wikidata:Q108653507,False
-182201,Tyrick Mitchell,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-11-02 17:30:00+00:00,10,10,1999-09-01,Virgo,Wikidata:Q96943831,False
-19179,Tyrone Mings,Aston Villa,D,2024-10-26 14:00:00+00:00,2024-10-26 14:00:00+00:00,0,0,1993-03-13,Pisces,Wikidata:Q16235643,False
-158694,Valentino Livramento,Newcastle,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,10,7,2002-11-12,Scorpio,Wikidata:Q107930811,False
+1243,Tomáš Souček,West Ham,M,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,16,13,1995-02-27,Pisces,Wikidata:Q20860081,False
+388510,Tony Yogane,Brentford,M,2024-09-21 14:00:00+00:00,2024-12-21 15:00:00+00:00,0,0,2005-09-24,Libra,Wikidata:Q130316133,False
+19145,Tosin Adarabioyo,Chelsea,D,2024-08-18 15:30:00+00:00,2024-12-22 14:00:00+00:00,7,5,1997-09-24,Libra,Wikidata:Q21620666,False
+41606,Toti Gomes,Wolves,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,15,14,1999-01-16,Capricorn,Wikidata:Q64747505,False
+283,Trent Alexander-Arnold,Liverpool,D,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,14,13,1998-10-07,Libra,API-Football,False
+19720,Trevoh Chalobah,Crystal Palace,D,2024-09-28 14:00:00+00:00,2024-12-21 17:30:00+00:00,10,10,1999-07-05,Cancer,Wikidata:Q36696865,False
+397997,Trey Nyoni,Liverpool,M,2024-12-01 16:00:00+00:00,2024-12-14 15:00:00+00:00,0,0,,,,False
+1150,Tyler Adams,Bournemouth,M,2024-10-19 16:30:00+00:00,2024-12-22 14:00:00+00:00,8,5,1999-02-14,Aquarius,Wikidata:Q19871581,False
+304317,Tyler Dibling,Southampton,F | M,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,15,10,2006-03-12,Pisces,Wikidata:Q115973966,False
+162590,Tyler Morton,Liverpool,M,2024-10-20 15:30:00+00:00,2024-12-14 15:00:00+00:00,0,0,2002-10-31,Scorpio,Wikidata:Q108653507,False
+37145,Tyrell Malacia,Manchester United,D | M,2024-11-24 16:30:00+00:00,2024-12-22 14:00:00+00:00,2,2,,,,False
+182201,Tyrick Mitchell,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,17,17,1999-09-01,Virgo,Wikidata:Q96943831,False
+334037,Tyrique George,Chelsea,F,2024-12-15 19:00:00+00:00,2024-12-22 14:00:00+00:00,0,0,,,,False
+19179,Tyrone Mings,Aston Villa,D,2024-10-26 14:00:00+00:00,2024-12-21 12:30:00+00:00,1,1,1993-03-13,Pisces,Wikidata:Q16235643,False
+158694,Valentino Livramento,Newcastle,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,17,14,2002-11-12,Scorpio,Wikidata:Q107930811,False
 319572,Valentín Barco,Brighton,D,2024-08-17 14:00:00+00:00,2024-08-17 14:00:00+00:00,0,0,2004-07-23,Leo,Wikidata:Q107542811,False
-158710,Victor Kristiansen,Leicester,D | M,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,9,9,2002-12-16,Sagittarius,Wikidata:Q104773462,False
-889,Victor Lindelöf,Manchester United,D,2024-09-29 15:30:00+00:00,2024-10-27 13:00:00+00:00,3,0,1994-07-17,Cancer,Wikidata:Q4125587,False
-290,Virgil van Dijk,Liverpool,D,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,10,10,1991-07-08,Cancer,API-Football,False
-2165,Vitaliy Mykolenko,Everton,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,8,8,1999-05-29,Gemini,Wikidata:Q37875995,False
-25073,Vitaly Janelt,Brentford,D | M,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,9,9,1998-05-10,Taurus,Wikidata:Q26212017,False
-1231,Vladimír Coufal,West Ham,D,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,4,2,1992-08-22,Leo,Wikidata:Q15113326,False
-162687,Vítězslav Jaroš,Liverpool,G,2024-09-21 14:00:00+00:00,2024-11-02 15:00:00+00:00,1,0,2001-07-23,Leo,Wikidata:Q112503285,False
-8500,Wataru Endo,Liverpool,M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,4,0,1993-02-09,Aquarius,Wikidata:Q10526787,False
-20089,Wes Burns,Ipswich,F | M,2024-08-17 11:30:00+00:00,2024-11-02 15:00:00+00:00,8,5,,,,False
-1736,Wesley Foderingham,West Ham,G,2024-11-02 15:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,1991-01-14,Capricorn,Wikidata:Q7983684,False
-22094,Wesley Fofana,Chelsea,D,2024-08-18 15:30:00+00:00,2024-10-27 13:00:00+00:00,8,8,,,,False
-18786,Wilfred Ndidi,Leicester,M,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1996-12-16,Sagittarius,Wikidata:Q19587938,False
-151756,Will Dennis,Bournemouth,G,2024-09-14 19:00:00+00:00,2024-11-02 15:00:00+00:00,0,0,2000-07-10,Cancer,Wikidata:Q97059231,False
-18806,Will Hughes,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-11-02 17:30:00+00:00,9,4,1995-04-17,Aries,Wikidata:Q133920,False
-393195,Will Lankshear,Tottenham,F,2024-09-29 15:30:00+00:00,2024-10-06 15:30:00+00:00,0,0,2005-04-20,Taurus,Wikidata:Q123001113,False
+158710,Victor Kristiansen,Leicester,D | M,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,15,15,2002-12-16,Sagittarius,Wikidata:Q104773462,False
+889,Victor Lindelöf,Manchester United,D,2024-09-29 15:30:00+00:00,2024-12-15 16:30:00+00:00,5,0,1994-07-17,Cancer,Wikidata:Q4125587,False
+290,Virgil van Dijk,Liverpool,D,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,15,15,1991-07-08,Cancer,API-Football,False
+2165,Vitaliy Mykolenko,Everton,D,2024-08-17 14:00:00+00:00,2024-12-22 14:00:00+00:00,14,14,1999-05-29,Gemini,Wikidata:Q37875995,False
+25073,Vitaly Janelt,Brentford,D | M,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,16,14,1998-05-10,Taurus,Wikidata:Q26212017,False
+1231,Vladimír Coufal,West Ham,D,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,10,4,1992-08-22,Leo,Wikidata:Q15113326,False
+162687,Vítězslav Jaroš,Liverpool,G,2024-09-21 14:00:00+00:00,2024-12-04 19:30:00+00:00,1,0,2001-07-23,Leo,Wikidata:Q112503285,False
+8500,Wataru Endo,Liverpool,M,2024-08-17 11:30:00+00:00,2024-12-14 15:00:00+00:00,6,0,1993-02-09,Aquarius,Wikidata:Q10526787,False
+20089,Wes Burns,Ipswich,F | M,2024-08-17 11:30:00+00:00,2024-12-21 15:00:00+00:00,14,9,,,,False
+1736,Wesley Foderingham,West Ham,G,2024-11-02 15:00:00+00:00,2024-12-03 20:15:00+00:00,0,0,1991-01-14,Capricorn,Wikidata:Q7983684,False
+22094,Wesley Fofana,Chelsea,D,2024-08-18 15:30:00+00:00,2024-12-01 13:30:00+00:00,12,12,,,,False
+18786,Wilfred Ndidi,Leicester,F | M,2024-08-19 19:00:00+00:00,2024-12-08 14:00:00+00:00,15,15,1996-12-16,Sagittarius,Wikidata:Q19587938,False
+151756,Will Dennis,Bournemouth,G,2024-09-14 19:00:00+00:00,2024-12-08 14:00:00+00:00,0,0,2000-07-10,Cancer,Wikidata:Q97059231,False
+18806,Will Hughes,Crystal Palace,M,2024-08-18 13:00:00+00:00,2024-12-21 17:30:00+00:00,15,10,1995-04-17,Aries,Wikidata:Q133920,False
+393195,Will Lankshear,Tottenham,F,2024-09-29 15:30:00+00:00,2024-12-15 19:00:00+00:00,2,0,2005-04-20,Taurus,Wikidata:Q123001113,False
 130421,Will Smallbone,Southampton,M,2024-08-17 14:00:00+00:00,2024-10-19 14:00:00+00:00,4,3,2000-02-21,Pisces,Wikidata:Q80952616,False
-315237,William Osula,Newcastle,F,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,3,0,2003-08-04,Leo,Wikidata:Q111464601,False
-22090,William Saliba,Arsenal,D,2024-08-17 14:00:00+00:00,2024-11-02 12:30:00+00:00,9,9,2001-03-24,Aries,Wikidata:Q56868118,False
-18739,Willy Boly,Nottingham Forest,D,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,2,1,1991-02-03,Aquarius,Wikidata:Q570983,False
+315237,William Osula,Newcastle,F,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,5,0,2003-08-04,Leo,Wikidata:Q111464601,False
+22090,William Saliba,Arsenal,D,2024-08-17 14:00:00+00:00,2024-12-21 17:30:00+00:00,16,16,2001-03-24,Aries,Wikidata:Q56868118,False
+18739,Willy Boly,Nottingham Forest,D,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,3,1,1991-02-03,Aquarius,Wikidata:Q570983,False
 336564,Wilson Odobert,Tottenham,F,2024-08-24 14:00:00+00:00,2024-09-15 13:00:00+00:00,3,2,2004-11-28,Sagittarius,Wikidata:Q113464781,False
-8694,Wout Faes,Leicester,D,2024-08-19 19:00:00+00:00,2024-11-02 15:00:00+00:00,10,10,1998-04-03,Aries,Wikidata:Q30014588,False
-383685,Yankuba Minteh,Brighton,F | M,2024-08-17 14:00:00+00:00,2024-10-06 15:30:00+00:00,7,5,2004-07-22,Cancer,Wikidata:Q115399505,False
-265820,Yasin Ayari,Brighton,M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,8,4,2003-10-06,Libra,Wikidata:Q103979811,False
-263538,Yehor Yarmoliuk,Brentford,M,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,5,1,,,,False
+8694,Wout Faes,Leicester,D,2024-08-19 19:00:00+00:00,2024-12-22 14:00:00+00:00,16,13,1998-04-03,Aries,Wikidata:Q30014588,False
+383685,Yankuba Minteh,Brighton,F | M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,12,6,2004-07-22,Cancer,Wikidata:Q115399505,False
+265820,Yasin Ayari,Brighton,M,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,14,9,2003-10-06,Libra,Wikidata:Q103979811,False
+263538,Yehor Yarmoliuk,Brentford,M,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,12,4,,,,False
 195717,Yerson Mosquera,Wolves,D,2024-08-17 14:00:00+00:00,2024-09-21 14:00:00+00:00,5,5,,,,False
-20649,Yoane Wissa,Brentford,F | M,2024-08-18 13:00:00+00:00,2024-10-26 14:00:00+00:00,6,5,1996-09-03,Virgo,Wikidata:Q28101965,False
-2926,Youri Tielemans,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-10-26 14:00:00+00:00,9,9,1997-05-07,Taurus,Wikidata:Q14327453,False
-32887,Yukinari Sugawara,Southampton,D | M,2024-08-17 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,8,2000-06-28,Cancer,Wikidata:Q50073536,False
-430734,Yunus Konak,Brentford,M,2024-08-31 14:00:00+00:00,2024-10-26 14:00:00+00:00,3,0,,,,False
-18968,Yves Bissouma,Tottenham,M,2024-08-24 14:00:00+00:00,2024-10-27 13:00:00+00:00,6,4,1996-08-30,Virgo,Wikidata:Q22683033,False
-47547,Álex Moreno,Nottingham Forest,D,2024-08-31 14:00:00+00:00,2024-11-02 15:00:00+00:00,7,7,2002-01-25,Aquarius,Wikidata:Q120630030,False
-633,İlkay Gündoğan,Manchester City,M,2024-08-24 14:00:00+00:00,2024-11-02 15:00:00+00:00,9,6,1990-10-24,Scorpio,Wikidata:Q161089,False
-2997,Łukasz Fabiański,West Ham,G,2024-08-17 16:30:00+00:00,2024-11-02 15:00:00+00:00,3,2,1985-04-18,Aries,Wikidata:Q40596,False
+20649,Yoane Wissa,Brentford,F | M,2024-08-18 13:00:00+00:00,2024-12-21 15:00:00+00:00,14,13,1996-09-03,Virgo,Wikidata:Q28101965,False
+2926,Youri Tielemans,Aston Villa,M,2024-08-17 16:30:00+00:00,2024-12-21 12:30:00+00:00,17,17,1997-05-07,Taurus,Wikidata:Q14327453,False
+330412,Youssef Chermiti,Everton,F,2024-12-22 14:00:00+00:00,2024-12-22 14:00:00+00:00,0,0,,,,False
+32887,Yukinari Sugawara,Southampton,D | M,2024-08-17 14:00:00+00:00,2024-12-15 19:00:00+00:00,14,9,2000-06-28,Cancer,Wikidata:Q50073536,False
+430734,Yunus Konak,Brentford,M,2024-08-31 14:00:00+00:00,2024-12-21 15:00:00+00:00,5,0,,,,False
+18968,Yves Bissouma,Tottenham,M,2024-08-24 14:00:00+00:00,2024-12-08 16:30:00+00:00,12,8,1996-08-30,Virgo,Wikidata:Q22683033,False
+363974,Zach Marsh,Crystal Palace,F,2024-11-09 15:00:00+00:00,2024-11-09 15:00:00+00:00,0,0,,,,False
+47547,Álex Moreno,Nottingham Forest,D,2024-08-31 14:00:00+00:00,2024-12-21 15:00:00+00:00,11,10,2002-01-25,Aquarius,Wikidata:Q120630030,False
+633,İlkay Gündoğan,Manchester City,M,2024-08-24 14:00:00+00:00,2024-12-21 12:30:00+00:00,16,13,1990-10-24,Scorpio,Wikidata:Q161089,False
+2997,Łukasz Fabiański,West Ham,G,2024-08-17 16:30:00+00:00,2024-12-21 15:00:00+00:00,10,9,1985-04-18,Aries,Wikidata:Q40596,False

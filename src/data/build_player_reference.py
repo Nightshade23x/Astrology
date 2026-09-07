@@ -219,12 +219,64 @@ def main():
 
     reference = build_player_reference(df)
 
-    validate(reference)
-
     output_path = (
         REFERENCE_DATA_DIR
         / "players.csv"
     )
+
+    enrichment_path = (
+        REFERENCE_DATA_DIR
+        / "player_enrichment.csv"
+    )
+
+    # -----------------------------------------------------
+    # DOB / ZODIAC ENRICHMENT
+    # -----------------------------------------------------
+
+    # Remove temporary blank enrichment columns generated
+    # by build_player_reference().
+    reference = reference.drop(
+        columns=[
+            "birth_date",
+            "zodiac",
+            "dob_source",
+            "dob_verified",
+        ],
+        errors="ignore",
+    )
+
+    if enrichment_path.exists():
+
+        enrichment = pd.read_csv(
+            enrichment_path
+        )
+
+        enrichment_columns = [
+            "player_id",
+            "birth_date",
+            "zodiac",
+            "dob_source",
+            "dob_verified",
+        ]
+
+        enrichment = enrichment[
+            enrichment_columns
+        ]
+
+        reference = reference.merge(
+            enrichment,
+            on="player_id",
+            how="left",
+        )
+
+    else:
+
+        reference["birth_date"] = None
+        reference["zodiac"] = None
+        reference["dob_source"] = None
+        reference["dob_verified"] = False
+
+    validate(reference)
 
     reference.to_csv(
         output_path,
@@ -240,3 +292,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
