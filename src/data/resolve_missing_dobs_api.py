@@ -10,6 +10,10 @@ from dotenv import load_dotenv
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+from src.data.enrichment_store import (
+    load_enrichment,
+    save_enrichment,
+)
 from src.data.fetch_player_profiles import zodiac_from_date
 
 
@@ -19,17 +23,19 @@ from src.data.fetch_player_profiles import zodiac_from_date
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-PLAYERS_PATH = (
+REFERENCE_DIR = (
     PROJECT_ROOT
     / "data"
     / "reference"
+)
+
+PLAYERS_PATH = (
+    REFERENCE_DIR
     / "players.csv"
 )
 
 LOOKUP_LOG_PATH = (
-    PROJECT_ROOT
-    / "data"
-    / "reference"
+    REFERENCE_DIR
     / "api_dob_lookup_log.csv"
 )
 
@@ -83,6 +89,11 @@ def create_session():
         adapter,
     )
 
+    session.mount(
+        "http://",
+        adapter,
+    )
+
     return session
 
 
@@ -93,7 +104,10 @@ SESSION = create_session()
 # CACHE
 # ---------------------------------------------------------
 
-def cache_path(season, player_id):
+def cache_path(
+    season,
+    player_id,
+):
 
     season_dir = (
         RAW_DIR
@@ -111,7 +125,10 @@ def cache_path(season, player_id):
     )
 
 
-def load_cache(season, player_id):
+def load_cache(
+    season,
+    player_id,
+):
 
     path = cache_path(
         season,
@@ -159,14 +176,19 @@ def save_cache(
 # API REQUEST
 # ---------------------------------------------------------
 
-def fetch_player(player_id, season):
+def fetch_player(
+    player_id,
+    season,
+):
 
     if not API_KEY:
         raise RuntimeError(
             "API_FOOTBALL_KEY not found."
         )
 
-    url = f"{BASE_URL}/players"
+    url = (
+        f"{BASE_URL}/players"
+    )
 
     headers = {
         "x-apisports-key": API_KEY,
@@ -198,7 +220,7 @@ def fetch_player(player_id, season):
 
 
 # ---------------------------------------------------------
-# PARSE PROFILE
+# PARSE PLAYER PROFILE
 # ---------------------------------------------------------
 
 def parse_profile(
@@ -225,6 +247,9 @@ def parse_profile(
             "id"
         )
 
+        if player_id is None:
+            continue
+
         if int(player_id) != int(
             expected_player_id
         ):
@@ -239,16 +264,7 @@ def parse_profile(
             "date"
         )
 
-        if not birth_date:
-            return {
-                "player_name_api":
-                    player.get("name"),
-
-                "birth_date":
-                    None,
-            }, "no_birth_date"
-
-        return {
+        profile = {
             "player_name_api":
                 player.get("name"),
 
@@ -263,16 +279,33 @@ def parse_profile(
 
             "nationality":
                 player.get("nationality"),
-        }, "matched"
+        }
 
-    return None, "player_id_not_found"
+        if not birth_date:
+            return (
+                profile,
+                "no_birth_date",
+            )
+
+        return (
+            profile,
+            "matched",
+        )
+
+    return (
+        None,
+        "player_id_not_found",
+    )
 
 
 # ---------------------------------------------------------
-# SAVE LOG
+# LOOKUP LOG
 # ---------------------------------------------------------
 
 def save_log(results):
+
+    if not results:
+        return
 
     new_df = pd.DataFrame(
         results
@@ -316,7 +349,54 @@ def save_log(results):
 
 
 # ---------------------------------------------------------
-# RESOLVE MISSING PLAYERS
+# UPDATE ENRICHMENT
+# ---------------------------------------------------------
+
+def update_enrichment(
+    enrichment,
+    player_id,
+    birth_date,
+):
+
+    matching_rows = enrichment[
+        enrichment["player_id"]
+        == int(player_id)
+    ].index
+
+    if len(matching_rows) != 1:
+        return False
+
+    index = matching_rows[0]
+
+    enrichment.at[
+        index,
+        "birth_date"
+    ] = birth_date
+
+    enrichment.at[
+        index,
+        "zodiac"
+    ] = zodiac_from_date(
+        birth_date
+    )
+
+    enrichment.at[
+        index,
+        "dob_source"
+    ] = "API-Football-ID"
+
+    # Exact API-Football player ID match,
+    # so we consider this identity verified.
+    enrichment.at[
+        index,
+        "dob_verified"
+    ] = True
+
+    return True
+
+
+# ---------------------------------------------------------
+# RESOLVE MISSING DOBs
 # ---------------------------------------------------------
 
 def resolve_missing(
@@ -324,21 +404,34 @@ def resolve_missing(
     max_requests,
 ):
 
+    # players.csv is generated data.
+    # We only use it for names, teams,
+    # appearances, etc.
     players = pd.read_csv(
         PLAYERS_PATH
     )
 
-    # Fix column types
-    players["dob_source"] = (
-        players["dob_source"]
-        .astype("string")
+    # player_enrichment.csv is the persistent
+    # DOB/zodiac source of truth.
+    enrichment = load_enrichment()
+
+    # -----------------------------------------------------
+    # FIND PLAYERS WITHOUT DOB
+    # -----------------------------------------------------
+
+    missing_ids = set(
+        enrichment[
+            enrichment["birth_date"].isna()
+        ]["player_id"]
     )
 
     missing = players[
-        players["birth_date"].isna()
+        players["player_id"].isin(
+            missing_ids
+        )
     ].copy()
 
-    # Most important players first
+    # Prioritise players with more appearances.
     missing = missing.sort_values(
         "appearances",
         ascending=False,
@@ -351,18 +444,21 @@ def resolve_missing(
 
     requests_made = 0
     cached_count = 0
+    skipped_due_limit = 0
+
     results = []
 
+    # -----------------------------------------------------
+    # PROCESS PLAYERS
+    # -----------------------------------------------------
+
     for number, (
-        index,
+        _,
         row,
     ) in enumerate(
         missing.iterrows(),
         start=1,
     ):
-
-        if requests_made >= max_requests:
-            break
 
         player_id = int(
             row["player_id"]
@@ -378,12 +474,37 @@ def resolve_missing(
             f"(ID {player_id})"
         )
 
+        # ---------------------------------------------
+        # TRY CACHE FIRST
+        # ---------------------------------------------
+
         payload = load_cache(
             season,
             player_id,
         )
 
-        if payload is None:
+        if payload is not None:
+
+            cached_count += 1
+
+        else:
+
+            # No cache and we've reached the
+            # allowed number of new API requests.
+            if requests_made >= max_requests:
+
+                skipped_due_limit += 1
+
+                print(
+                    "    -> skipped "
+                    "(request limit reached)"
+                )
+
+                continue
+
+            # -----------------------------------------
+            # NEW API REQUEST
+            # -----------------------------------------
 
             try:
 
@@ -400,13 +521,15 @@ def resolve_missing(
 
                 requests_made += 1
 
-                # Respect 10 requests/minute
+                # API-Football free plan:
+                # maximum ~10 requests/minute.
                 time.sleep(6.5)
 
             except Exception as exc:
 
                 print(
-                    f"    -> error: {exc}"
+                    f"    -> error: "
+                    f"{exc}"
                 )
 
                 results.append(
@@ -417,19 +540,25 @@ def resolve_missing(
                         "player_name":
                             player_name,
 
+                        "player_name_api":
+                            None,
+
                         "status":
                             "error",
 
                         "birth_date":
                             None,
+
+                        "error":
+                            str(exc),
                     }
                 )
 
                 continue
 
-        else:
-
-            cached_count += 1
+        # ---------------------------------------------
+        # PARSE PROFILE
+        # ---------------------------------------------
 
         profile, status = parse_profile(
             payload,
@@ -443,7 +572,9 @@ def resolve_missing(
         )
 
         api_name = (
-            profile.get("player_name_api")
+            profile.get(
+                "player_name_api"
+            )
             if profile
             else None
         )
@@ -452,30 +583,25 @@ def resolve_missing(
             f"    -> {status}"
         )
 
+        # ---------------------------------------------
+        # SAVE DOB TO ENRICHMENT ONLY
+        # ---------------------------------------------
+
         if status == "matched":
 
-            players.at[
-                index,
-                "birth_date"
-            ] = birth_date
-
-            players.at[
-                index,
-                "zodiac"
-            ] = zodiac_from_date(
-                birth_date
+            updated = update_enrichment(
+                enrichment,
+                player_id,
+                birth_date,
             )
 
-            players.at[
-                index,
-                "dob_source"
-            ] = "API-Football-ID"
+            if not updated:
 
-            # Exact API player ID match
-            players.at[
-                index,
-                "dob_verified"
-            ] = True
+                print(
+                    "    -> warning: "
+                    "player_id not uniquely "
+                    "present in enrichment"
+                )
 
         results.append(
             {
@@ -496,24 +622,31 @@ def resolve_missing(
             }
         )
 
-    players.to_csv(
-        PLAYERS_PATH,
-        index=False,
-        encoding="utf-8",
+    # -----------------------------------------------------
+    # SAVE PERSISTENT ENRICHMENT
+    # -----------------------------------------------------
+
+    save_enrichment(
+        enrichment
     )
 
+    # Save lookup history separately.
     save_log(
         results
     )
 
-    # ---------------------------------------------
+    # -----------------------------------------------------
     # SUMMARY
-    # ---------------------------------------------
+    # -----------------------------------------------------
 
-    total = len(players)
+    total = len(
+        enrichment
+    )
 
     with_dob = (
-        players["birth_date"]
+        enrichment[
+            "birth_date"
+        ]
         .notna()
         .sum()
     )
@@ -530,11 +663,13 @@ def resolve_missing(
 
         print(
             result_df["status"]
-            .value_counts()
+            .value_counts(
+                dropna=False
+            )
             .to_string()
         )
 
-    print()
+        print()
 
     print(
         f"New API requests: "
@@ -544,6 +679,11 @@ def resolve_missing(
     print(
         f"Cached profiles used: "
         f"{cached_count}"
+    )
+
+    print(
+        f"Skipped due request limit: "
+        f"{skipped_due_limit}"
     )
 
     print(
@@ -571,12 +711,20 @@ def main():
         "--season",
         type=int,
         default=2024,
+        help=(
+            "API-Football season, "
+            "e.g. 2024 for 2024/25."
+        ),
     )
 
     parser.add_argument(
         "--max-requests",
         type=int,
         default=5,
+        help=(
+            "Maximum number of NEW API "
+            "requests during this run."
+        ),
     )
 
     args = parser.parse_args()
