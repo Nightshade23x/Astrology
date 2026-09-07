@@ -4,7 +4,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 44,1996-06-22,Cancer,API-Football,False
 49,1993-06-13,Gemini,API-Football,False
 95,2001-03-26,Aries,API-Football,False
-104,,,,False
+104,1995-03-25,Aries,API-Football-Profile,True
 130,1993-11-16,Scorpio,API-Football,False
 131,1999-11-17,Scorpio,API-Football,False
 138,1999-12-30,Capricorn,API-Football,False

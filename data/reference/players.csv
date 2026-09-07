@@ -90,7 +90,7 @@ player_id,player_name,teams,positions,first_seen,last_seen,appearances,starts,bi
 282126,Carlos Borges,Wolves,F | M,2024-09-15 15:30:00+00:00,2024-12-22 14:00:00+00:00,7,1,,,,False
 10373,Carlos Miguel,Nottingham Forest,G,2024-08-17 14:00:00+00:00,2024-12-21 15:00:00+00:00,0,0,,,,False
 930,Carlos Soler,West Ham,M,2024-09-14 14:00:00+00:00,2024-12-16 20:00:00+00:00,13,6,1997-01-02,Capricorn,Wikidata:Q26707913,False
-104,Carlos Vinícius,Fulham,F,2024-12-05 19:30:00+00:00,2024-12-14 15:00:00+00:00,0,0,,,,False
+104,Carlos Vinícius,Fulham,F,2024-12-05 19:30:00+00:00,2024-12-14 15:00:00+00:00,0,0,1995-03-25,Aries,API-Football-Profile,True
 747,Casemiro,Manchester United,M,2024-08-16 19:00:00+00:00,2024-12-22 14:00:00+00:00,12,9,,,,False
 270507,Cesare Casadei,Chelsea,M,2024-09-01 12:30:00+00:00,2024-12-22 14:00:00+00:00,0,0,2003-01-10,Capricorn,Wikidata:Q112081015,False
 278898,Chadi Riad,Crystal Palace,D,2024-08-18 13:00:00+00:00,2024-08-24 14:00:00+00:00,1,1,2003-06-17,Gemini,Wikidata:Q104784108,False

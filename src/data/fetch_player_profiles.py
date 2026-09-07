@@ -10,6 +10,11 @@ from dotenv import load_dotenv
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+from src.data.enrichment_store import (
+    load_enrichment,
+    save_enrichment,
+)
+
 
 # ---------------------------------------------------------
 # PATHS
@@ -17,11 +22,16 @@ from urllib3.util.retry import Retry
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-RAW_PROFILE_DIR = (
+RAW_DIR = (
     PROJECT_ROOT
     / "data"
     / "raw"
     / "player_profiles"
+)
+
+RAW_DIR.mkdir(
+    parents=True,
+    exist_ok=True,
 )
 
 REFERENCE_DIR = (
@@ -30,376 +40,46 @@ REFERENCE_DIR = (
     / "reference"
 )
 
-RAW_PROFILE_DIR.mkdir(
-    parents=True,
-    exist_ok=True,
+
+# ---------------------------------------------------------
+# API CONFIGURATION
+# ---------------------------------------------------------
+
+load_dotenv(
+    PROJECT_ROOT / ".env"
 )
 
-REFERENCE_DIR.mkdir(
-    parents=True,
-    exist_ok=True,
+API_KEY = os.getenv(
+    "API_FOOTBALL_KEY"
 )
 
-
-# ---------------------------------------------------------
-# API CONFIG
-# ---------------------------------------------------------
-
-load_dotenv(PROJECT_ROOT / ".env")
-
-API_KEY = os.getenv("API_FOOTBALL_KEY")
-
-BASE_URL = "https://v3.football.api-sports.io"
-PREMIER_LEAGUE_ID = 39
-
-
-def create_session():
-
-    session = requests.Session()
-
-    retries = Retry(
-        total=5,
-        backoff_factor=1.5,
-        status_forcelist=[
-            429,
-            500,
-            502,
-            503,
-            504,
-        ],
-        allowed_methods=["GET"],
-    )
-
-    adapter = HTTPAdapter(
-        max_retries=retries
-    )
-
-    session.mount(
-        "https://",
-        adapter,
-    )
-
-    return session
-
-
-SESSION = create_session()
-
-
-# ---------------------------------------------------------
-# API CALL
-# ---------------------------------------------------------
-
-def fetch_page(season, page):
-
-    if not API_KEY:
-        raise RuntimeError(
-            "API_FOOTBALL_KEY not found."
-        )
-
-    url = f"{BASE_URL}/players"
-
-    headers = {
-        "x-apisports-key": API_KEY,
-    }
-
-    params = {
-        "league": PREMIER_LEAGUE_ID,
-        "season": season,
-        "page": page,
-    }
-
-    response = SESSION.get(
-        url,
-        headers=headers,
-        params=params,
-        timeout=30,
-    )
-
-    response.raise_for_status()
-
-    payload = response.json()
-
-    if payload.get("errors"):
-        raise RuntimeError(
-            f"API returned errors: "
-            f"{payload['errors']}"
-        )
-
-    return payload
-
-
-# ---------------------------------------------------------
-# RAW CACHE
-# ---------------------------------------------------------
-
-def page_path(season, page):
-
-    season_dir = (
-        RAW_PROFILE_DIR
-        / str(season)
-    )
-
-    season_dir.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    return (
-        season_dir
-        / f"page_{page}.json"
-    )
-
-
-def save_page(payload, season, page):
-
-    path = page_path(
-        season,
-        page,
-    )
-
-    with open(
-        path,
-        "w",
-        encoding="utf-8",
-    ) as file:
-
-        json.dump(
-            payload,
-            file,
-            indent=2,
-            ensure_ascii=False,
-        )
-
-
-def load_page(season, page):
-
-    path = page_path(
-        season,
-        page,
-    )
-
-    if not path.exists():
-        return None
-
-    with open(
-        path,
-        "r",
-        encoding="utf-8",
-    ) as file:
-
-        return json.load(file)
-
-
-# ---------------------------------------------------------
-# COLLECT
-# ---------------------------------------------------------
-
-def collect_profiles(season):
-
-    print(
-        f"\nFetching Premier League "
-        f"player profiles for {season}..."
-    )
-
-    # First page tells us how many pages exist.
-    first = load_page(
-        season,
-        1,
-    )
-
-    if first is None:
-
-        print("Fetching page 1...")
-
-        first = fetch_page(
-            season,
-            1,
-        )
-
-        save_page(
-            first,
-            season,
-            1,
-        )
-
-        time.sleep(6.5)
-
-    paging = first.get(
-        "paging",
-        {}
-    )
-
-    total_pages = paging.get(
-        "total",
-        1,
-    )
-    # API-Football free plan only allows pages 1-3
-    FREE_PLAN_MAX_PAGE = 3
-
-    available_pages = total_pages
-
-    total_pages = min(
-        total_pages,
-        FREE_PLAN_MAX_PAGE,
-    )
-
-    print(
-        f"Pages available from API: {available_pages}"
-    )
-
-    print(
-        f"Pages accessible on current plan: {total_pages}"
-    )
-    print(
-        f"Total pages: {total_pages}"
-    )
-
-    for page in range(
-        2,
-        total_pages + 1,
-    ):
-
-        if load_page(
-            season,
-            page,
-        ) is not None:
-
-            print(
-                f"Page {page} already cached."
-            )
-
-            continue
-
-        print(
-            f"Fetching page "
-            f"{page}/{total_pages}..."
-        )
-
-        payload = fetch_page(
-            season,
-            page,
-        )
-
-        save_page(
-            payload,
-            season,
-            page,
-        )
-
-        time.sleep(6.5)
-
-    print(
-        "\nProfile collection complete."
-    )
-
-
-# ---------------------------------------------------------
-# BUILD PROFILE TABLE
-# ---------------------------------------------------------
-
-def build_profile_table(season):
-
-    season_dir = (
-        RAW_PROFILE_DIR
-        / str(season)
-    )
-
-    files = sorted(
-        season_dir.glob(
-            "page_*.json"
-        )
-    )
-
-    rows = []
-
-    for file in files:
-
-        with open(
-            file,
-            "r",
-            encoding="utf-8",
-        ) as f:
-
-            payload = json.load(f)
-
-        for entry in payload.get(
-            "response",
-            []
-        ):
-
-            player = (
-                entry.get("player")
-                or {}
-            )
-
-            birth = (
-                player.get("birth")
-                or {}
-            )
-
-            rows.append(
-                {
-                    "player_id":
-                        player.get("id"),
-
-                    "player_name_api":
-                        player.get("name"),
-
-                    "firstname":
-                        player.get(
-                            "firstname"
-                        ),
-
-                    "lastname":
-                        player.get(
-                            "lastname"
-                        ),
-
-                    "birth_date":
-                        birth.get("date"),
-
-                    "birth_place":
-                        birth.get("place"),
-
-                    "birth_country":
-                        birth.get("country"),
-
-                    "nationality":
-                        player.get(
-                            "nationality"
-                        ),
-                }
-            )
-
-    df = pd.DataFrame(rows)
-
-    if not df.empty:
-
-        df = (
-            df
-            .drop_duplicates(
-                subset=["player_id"]
-            )
-            .sort_values(
-                "player_id"
-            )
-            .reset_index(drop=True)
-        )
-
-    return df
+BASE_URL = (
+    "https://v3.football.api-sports.io"
+)
+
+LEAGUE_ID = 39
+
+# API-Football free plan currently allows
+# only pages 1–3 for this endpoint.
+FREE_PLAN_MAX_PAGE = 3
 
 
 # ---------------------------------------------------------
 # ZODIAC
 # ---------------------------------------------------------
 
-def zodiac_from_date(date_value):
+def zodiac_from_date(
+    birth_date,
+):
 
-    if pd.isna(date_value):
+    if (
+        birth_date is None
+        or pd.isna(birth_date)
+    ):
         return None
 
     date = pd.to_datetime(
-        date_value,
+        birth_date,
         errors="coerce",
     )
 
@@ -490,158 +170,440 @@ def zodiac_from_date(date_value):
 
 
 # ---------------------------------------------------------
-# UPDATE MASTER REFERENCE
+# HTTP SESSION
 # ---------------------------------------------------------
 
-def update_reference(profiles):
+def create_session():
 
-    players_path = (
-        REFERENCE_DIR
-        / "players.csv"
+    session = requests.Session()
+
+    retries = Retry(
+        total=5,
+        backoff_factor=1.5,
+        status_forcelist=[
+            429,
+            500,
+            502,
+            503,
+            504,
+        ],
+        allowed_methods=["GET"],
     )
 
-    players = pd.read_csv(players_path)
-
-    profile_subset = profiles[
-        [
-            "player_id",
-            "birth_date",
-        ]
-    ].copy()
-
-    profile_subset = profile_subset.rename(
-        columns={
-            "birth_date": "new_birth_date"
-        }
+    adapter = HTTPAdapter(
+        max_retries=retries
     )
 
-    players = players.merge(
-        profile_subset,
-        on="player_id",
-        how="left",
+    session.mount(
+        "https://",
+        adapter,
     )
 
-    # Keep an existing DOB if we already have one.
-    # Otherwise use the newly retrieved API DOB.
-    if "birth_date" not in players.columns:
-        players["birth_date"] = None
+    return session
 
-    players["birth_date"] = (
-        players["birth_date"]
-        .combine_first(
-            players["new_birth_date"]
-        )
+
+SESSION = create_session()
+
+
+# ---------------------------------------------------------
+# CACHE
+# ---------------------------------------------------------
+
+def season_cache_dir(
+    season,
+):
+
+    directory = (
+        RAW_DIR
+        / str(season)
     )
 
-    players = players.drop(
-        columns=["new_birth_date"]
+    directory.mkdir(
+        parents=True,
+        exist_ok=True,
     )
 
-    # Recalculate zodiac from the preserved DOB
-    players["zodiac"] = (
-        players["birth_date"]
-        .apply(zodiac_from_date)
+    return directory
+
+
+def page_cache_path(
+    season,
+    page,
+):
+
+    return (
+        season_cache_dir(season)
+        / f"page_{page}.json"
     )
 
-    # Preserve an existing source where possible
-    if "dob_source" not in players.columns:
-        players["dob_source"] = pd.Series(
-            pd.NA,
-            index=players.index,
-            dtype="string",
-        )
-    else:
-        players["dob_source"] = (
-            players["dob_source"]
-            .astype("string")
-        )
 
-    new_api_dob = (
-        players["birth_date"].notna()
-        & players["dob_source"].isna()
+def load_cached_page(
+    season,
+    page,
+):
+
+    path = page_cache_path(
+        season,
+        page,
     )
 
-    players.loc[
-        new_api_dob,
-        "dob_source"
-    ] = "API-Football"
+    if not path.exists():
+        return None
 
-    if "dob_verified" not in players.columns:
-        players["dob_verified"] = False
-    else:
-        players["dob_verified"] = (
-            players["dob_verified"]
-            .apply(
-                lambda x: (
-                    str(x).strip().lower() == "true"
-                    if pd.notna(x)
-                    else False
-                )
-            )
-        )
-    players.to_csv(
-        players_path,
-        index=False,
+    with open(
+        path,
+        "r",
         encoding="utf-8",
+    ) as file:
+
+        return json.load(file)
+
+
+def save_cached_page(
+    season,
+    page,
+    payload,
+):
+
+    path = page_cache_path(
+        season,
+        page,
     )
 
-    return players
+    with open(
+        path,
+        "w",
+        encoding="utf-8",
+    ) as file:
 
-
-# ---------------------------------------------------------
-# VALIDATION
-# ---------------------------------------------------------
-
-def validate(players):
-
-    total = len(players)
-
-    with_dob = (
-        players["birth_date"]
-        .notna()
-        .sum()
-    )
-
-    with_zodiac = (
-        players["zodiac"]
-        .notna()
-        .sum()
-    )
-
-    print("\n==============================")
-    print("DOB / ZODIAC VALIDATION")
-    print("==============================")
-
-    print(
-        f"Players in reference: {total}"
-    )
-
-    print(
-        f"Players with DOB: "
-        f"{with_dob}/{total}"
-    )
-
-    print(
-        f"Players with zodiac: "
-        f"{with_zodiac}/{total}"
-    )
-
-    print(
-        f"Missing DOBs: "
-        f"{total - with_dob}"
-    )
-
-    print("\nZodiac distribution:")
-
-    print(
-        players["zodiac"]
-        .value_counts(
-            dropna=False
+        json.dump(
+            payload,
+            file,
+            indent=2,
+            ensure_ascii=False,
         )
-        .to_string()
+
+
+# ---------------------------------------------------------
+# API REQUEST
+# ---------------------------------------------------------
+
+def fetch_page(
+    season,
+    page,
+):
+
+    if not API_KEY:
+        raise RuntimeError(
+            "API_FOOTBALL_KEY not found."
+        )
+
+    url = (
+        f"{BASE_URL}/players"
     )
 
-    print("==============================\n")
+    headers = {
+        "x-apisports-key":
+            API_KEY,
+    }
+
+    params = {
+        "league":
+            LEAGUE_ID,
+
+        "season":
+            int(season),
+
+        "page":
+            int(page),
+    }
+
+    response = SESSION.get(
+        url,
+        headers=headers,
+        params=params,
+        timeout=30,
+    )
+
+    response.raise_for_status()
+
+    payload = response.json()
+
+    if payload.get("errors"):
+
+        raise RuntimeError(
+            f"API returned errors: "
+            f"{payload['errors']}"
+        )
+
+    return payload
+
+
+# ---------------------------------------------------------
+# PARSE API PROFILE PAGE
+# ---------------------------------------------------------
+
+def parse_page(
+    payload,
+):
+
+    rows = []
+
+    response = payload.get(
+        "response",
+        [],
+    )
+
+    for entry in response:
+
+        player = (
+            entry.get("player")
+            or {}
+        )
+
+        birth = (
+            player.get("birth")
+            or {}
+        )
+
+        player_id = player.get(
+            "id"
+        )
+
+        if player_id is None:
+            continue
+
+        rows.append(
+            {
+                "player_id":
+                    int(player_id),
+
+                "player_name_api":
+                    player.get("name"),
+
+                "firstname":
+                    player.get(
+                        "firstname"
+                    ),
+
+                "lastname":
+                    player.get(
+                        "lastname"
+                    ),
+
+                "birth_date":
+                    birth.get(
+                        "date"
+                    ),
+
+                "birth_place":
+                    birth.get(
+                        "place"
+                    ),
+
+                "birth_country":
+                    birth.get(
+                        "country"
+                    ),
+
+                "nationality":
+                    player.get(
+                        "nationality"
+                    ),
+            }
+        )
+
+    return rows
+
+
+# ---------------------------------------------------------
+# UPDATE PERSISTENT ENRICHMENT
+# ---------------------------------------------------------
+
+def apply_profiles_to_enrichment(
+    enrichment,
+    profiles,
+):
+
+    added = 0
+    already_present = 0
+    missing_birth_date = 0
+    player_not_in_reference = 0
+
+    enrichment_ids = set(
+        enrichment[
+            "player_id"
+        ].astype(int)
+    )
+
+    for _, profile in profiles.iterrows():
+
+        player_id = int(
+            profile["player_id"]
+        )
+
+        if (
+            player_id
+            not in enrichment_ids
+        ):
+
+            player_not_in_reference += 1
+            continue
+
+        birth_date = profile[
+            "birth_date"
+        ]
+
+        if pd.isna(
+            birth_date
+        ):
+            missing_birth_date += 1
+            continue
+
+        matching_rows = enrichment[
+            enrichment["player_id"]
+            == player_id
+        ].index
+
+        if len(matching_rows) != 1:
+            continue
+
+        index = matching_rows[0]
+
+        # Never overwrite a DOB from another source.
+        if pd.notna(
+            enrichment.at[
+                index,
+                "birth_date"
+            ]
+        ):
+            already_present += 1
+            continue
+
+        enrichment.at[
+            index,
+            "birth_date"
+        ] = birth_date
+
+        enrichment.at[
+            index,
+            "zodiac"
+        ] = zodiac_from_date(
+            birth_date
+        )
+
+        enrichment.at[
+            index,
+            "dob_source"
+        ] = "API-Football-Profile"
+
+        # Exact API player ID.
+        enrichment.at[
+            index,
+            "dob_verified"
+        ] = True
+
+        added += 1
+
+    return {
+        "added":
+            added,
+
+        "already_present":
+            already_present,
+
+        "missing_birth_date":
+            missing_birth_date,
+
+        "player_not_in_reference":
+            player_not_in_reference,
+    }
+
+
+# ---------------------------------------------------------
+# COLLECT PROFILES
+# ---------------------------------------------------------
+
+def collect_profiles(
+    season,
+    max_pages,
+    cache_only,
+):
+
+    max_pages = min(
+        max_pages,
+        FREE_PLAN_MAX_PAGE,
+    )
+
+    all_rows = []
+
+    new_requests = 0
+    cached_pages = 0
+
+    for page in range(
+        1,
+        max_pages + 1,
+    ):
+
+        print(
+            f"Page {page}/{max_pages}"
+        )
+
+        payload = load_cached_page(
+            season,
+            page,
+        )
+
+        if payload is not None:
+
+            cached_pages += 1
+
+            print(
+                "    -> using cache"
+            )
+
+        else:
+
+            if cache_only:
+
+                print(
+                    "    -> no cache, skipped"
+                )
+
+                continue
+
+            print(
+                "    -> requesting API"
+            )
+
+            payload = fetch_page(
+                season,
+                page,
+            )
+
+            save_cached_page(
+                season,
+                page,
+                payload,
+            )
+
+            new_requests += 1
+
+            time.sleep(6.5)
+
+        rows = parse_page(
+            payload
+        )
+
+        all_rows.extend(
+            rows
+        )
+
+    return (
+        pd.DataFrame(all_rows),
+        new_requests,
+        cached_pages,
+    )
 
 
 # ---------------------------------------------------------
@@ -654,25 +616,156 @@ def main():
 
     parser.add_argument(
         "--season",
-        required=True,
         type=int,
+        default=2024,
+        help=(
+            "API-Football season, "
+            "e.g. 2024 for 2024/25."
+        ),
+    )
+
+    parser.add_argument(
+        "--max-pages",
+        type=int,
+        default=3,
+        help=(
+            "Maximum number of API profile "
+            "pages to process."
+        ),
+    )
+
+    parser.add_argument(
+        "--cache-only",
+        action="store_true",
+        help=(
+            "Use already cached pages only. "
+            "Makes zero new API requests."
+        ),
     )
 
     args = parser.parse_args()
 
-    collect_profiles(
-        args.season
+    print(
+        f"Season: {args.season}"
     )
 
-    profiles = build_profile_table(
-        args.season
+    profiles, new_requests, cached_pages = (
+        collect_profiles(
+            season=args.season,
+            max_pages=args.max_pages,
+            cache_only=args.cache_only,
+        )
     )
 
-    players = update_reference(
+    if profiles.empty:
+
+        print(
+            "\nNo player profiles found."
+        )
+
+        return
+
+    profiles = (
         profiles
+        .drop_duplicates(
+            subset=["player_id"],
+            keep="last",
+        )
+        .reset_index(drop=True)
     )
 
-    validate(players)
+    enrichment = load_enrichment()
+
+    before = (
+        enrichment[
+            "birth_date"
+        ]
+        .notna()
+        .sum()
+    )
+
+    result = (
+        apply_profiles_to_enrichment(
+            enrichment,
+            profiles,
+        )
+    )
+
+    save_enrichment(
+        enrichment
+    )
+
+    after = (
+        enrichment[
+            "birth_date"
+        ]
+        .notna()
+        .sum()
+    )
+
+    total = len(
+        enrichment
+    )
+
+    print("\n==============================")
+    print("PLAYER PROFILE SUMMARY")
+    print("==============================")
+
+    print(
+        f"Profiles processed: "
+        f"{len(profiles)}"
+    )
+
+    print(
+        f"Cached pages used: "
+        f"{cached_pages}"
+    )
+
+    print(
+        f"New API requests: "
+        f"{new_requests}"
+    )
+
+    print()
+
+    print(
+        f"New DOBs added: "
+        f"{result['added']}"
+    )
+
+    print(
+        f"Already had DOB: "
+        f"{result['already_present']}"
+    )
+
+    print(
+        f"API profiles without DOB: "
+        f"{result['missing_birth_date']}"
+    )
+
+    print(
+        f"Players outside reference: "
+        f"{result['player_not_in_reference']}"
+    )
+
+    print()
+
+    print(
+        f"DOB coverage before: "
+        f"{before}/{total}"
+    )
+
+    print(
+        f"DOB coverage after: "
+        f"{after}/{total}"
+    )
+
+    print(
+        f"Still missing: "
+        f"{total - after}"
+    )
+
+    print("==============================\n")
 
 
 if __name__ == "__main__":
