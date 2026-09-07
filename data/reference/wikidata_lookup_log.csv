@@ -1,503 +1,508 @@
-player_id,player_name,status,wikidata_id,wikidata_label,birth_date,candidate_count
-617,Ederson,single_name_manual_review,,,,1
-626,John Stones,matched,Q2025900,John Stones,1994-05-28,1
-627,Kyle Walker,ambiguous_candidates,,,,2
-629,Kevin De Bruyne,matched,Q357984,Kevin De Bruyne,1991-06-28,1
-631,Phil Foden,matched,Q30729096,Phil Foden,2000-05-28,1
-633,İlkay Gündoğan,matched,Q161089,İlkay Gündoğan,1990-10-24,1
-636,Bernardo Silva,ambiguous_candidates,,,,2
-641,Oleksandr Zinchenko,matched,Q19636859,Oleksandr Zinchenko,1996-12-15,1
-643,Gabriel Jesus,matched,Q19708656,Gabriel Jesus,1997-04-03,1
-645,Raheem Sterling,matched,Q312157,Raheem Sterling,1994-12-08,1
-657,Kenny Tete,matched,Q14495103,Kenny Tete,1995-10-09,1
-665,Maxwel Cornet,matched,Q15081929,Maxwel Cornet,1996-09-27,1
-723,Joelinton,single_name_manual_review,,,,1
-727,Reiss Nelson,matched,Q35039261,Reiss Nelson,1999-12-10,1
-747,Casemiro,single_name_manual_review,,,,1
-766,Robin Olsen,matched,Q6799321,Robin Olsen,1990-01-08,1
-792,Justin Kluivert,matched,Q26934107,Justin Kluivert,1999-05-05,1
-863,Rodrigo Bentancur,matched,Q18817134,Rodrigo Bentancur,1997-06-25,1
-879,Stephy Mavididi,matched,Q28748037,Stephy Mavididi,1998-05-31,1
-886,Diogo Dalot,matched,Q26255506,Diogo Dalot,1999-03-18,1
-889,Victor Lindelöf,matched,Q4125587,Victor Lindelöf,1994-07-17,1
-894,Ashley Young,matched,Q10602,Ashley Young,1985-07-09,1
-895,James Garner,ambiguous_candidates,,,,2
-899,Andreas Pereira,matched,Q17619350,Andreas Pereira,1996-01-01,1
-903,Scott McTominay,matched,Q29624459,Scott McTominay,1996-12-08,1
-909,Marcus Rashford,matched,Q22951255,Marcus Rashford,1997-10-31,1
-912,Neto,single_name_manual_review,,,,3
-925,Gonçalo Guedes,matched,Q16729477,Gonçalo Guedes,1996-11-29,1
-930,Carlos Soler,matched,Q26707913,Carlos Soler,1997-01-02,1
-978,Kai Havertz,matched,Q27310755,Kai Havertz,1999-06-11,1
-983,Leon Bailey,matched,Q20890178,Leon Bailey,1997-08-09,1
-1096,Dominik Szoboszlai,matched,Q30134278,Dominik Szoboszlai,2000-10-25,1
-1100,Erling Haaland,matched,Q28967995,Erling Haaland,2000-07-21,1
-1119,Kristoffer Ajer,matched,Q18157457,Kristoffer Ajer,1998-04-17,1
-1125,Ryan Christie,matched,Q16236700,Ryan Christie,1995-02-22,1
-1135,Odsonne Édouard,matched,Q19963405,Odsonne Édouard,1998-01-16,1
-1145,Ibrahima Konaté,ambiguous_candidates,,,,2
-1150,Tyler Adams,matched,Q19871581,Tyler Adams,1999-02-14,1
-1161,Emile Smith Rowe,matched,Q55820249,Emile Smith Rowe,2000-07-28,1
-1165,Matheus Cunha,ambiguous_candidates,,,,2
-1166,Timo Werner,matched,Q3529022,Timo Werner,1996-03-06,1
-1231,Vladimír Coufal,matched,Q15113326,Vladimír Coufal,1992-08-22,1
-1243,Tomáš Souček,matched,Q20860081,Tomáš Souček,1995-02-27,1
-1361,Ferdi Kadıoğlu,matched,Q26719541,Ferdi Kadıoğlu,1999-10-07,1
-1422,Jérémy Doku,matched,Q59209505,Jérémy Doku,2002-05-27,1
-1438,Bernd Leno,matched,Q309966,Bernd Leno,1992-03-04,1
-1440,Rob Holding,matched,Q21061767,Rob Holding,1995-09-20,1
-1445,Konstantinos Mavropanos,matched,Q47015833,Konstantinos Mavropanos,1997-12-11,1
-1455,Alex Iwobi,matched,Q21091691,Alex Iwobi,1996-05-03,1
-1460,Bukayo Saka,matched,Q59306386,Bukayo Saka,2001-09-05,1
-1463,Joe Willock,matched,Q40471152,Joe Willock,1999-08-20,1
-1468,Edward Nketiah,no_confident_football_candidate,,,,0
-1469,Danny Welbeck,matched,Q188457,Danny Welbeck,1990-11-26,1
-1485,Bruno Fernandes,ambiguous_candidates,,,,3
-1590,José Sá,matched,Q6294052,José Sá,1993-01-17,1
-1600,Konstantinos Tsimikas,no_confident_football_candidate,,,,0
-1605,Daniel Podence,matched,Q5218462,Daniel Podence,1995-10-21,1
-1646,Lucas Paquetá,matched,Q30089624,Lucas Paquetá,1997-08-27,1
-1736,Wesley Foderingham,matched,Q7983684,Wes Foderingham,1991-01-14,1
-1864,Pedro Neto,matched,Q30036972,Pedro Neto,2000-03-09,1
-1904,Boubacar Kamara,matched,Q29962926,Boubacar Kamara,1999-11-23,1
-1934,Sander Berge,matched,Q20675980,Sander Berge,1998-02-14,1
-1946,Leandro Trossard,matched,Q6509762,Leandro Trossard,1994-12-04,1
-2032,Jørgen Strand Larsen,matched,Q28933132,Jørgen Strand Larsen,2000-02-06,1
-2056,Pablo Sarabia,matched,Q510165,Pablo Sarabia,1992-05-11,1
-2165,Vitaliy Mykolenko,matched,Q37875995,Vitaliy Mykolenko,1999-05-29,1
-2218,Ismaïla Sarr,matched,Q26924482,Ismaïla Sarr,1998-02-25,1
-2273,Kepa Arrizabalaga,matched,Q3195361,Kepa Arrizabalaga,1994-10-03,1
-2284,Emerson Palmieri,matched,Q5370912,Emerson Palmieri,1994-08-03,1
-2287,Ross Barkley,matched,Q326240,Ross Barkley,1993-12-05,1
-2289,Jorginho,single_name_manual_review,,,,3
-2291,Mateo Kovačić,matched,Q701297,Mateo Kovačić,1994-05-06,1
-2298,Callum Hudson-Odoi,matched,Q42396622,Callum Hudson-Odoi,2000-11-07,1
-2413,Richarlison,single_name_manual_review,,,,1
-2467,Lisandro Martínez,matched,Q30881092,Lisandro Martínez,1998-01-18,1
-2476,Guido Rodríguez,matched,Q18224850,Guido Rodríguez,1994-04-12,1
-2489,Luis Díaz,ambiguous_candidates,,,,2
-2490,Jefferson Lerma,matched,Q16300824,Jefferson Lerma,1994-10-25,1
-2507,Miguel Almirón,matched,Q16145667,Miguel Almirón,1994-02-10,1
-2597,Takehiro Tomiyasu,matched,Q21286402,Takehiro Tomiyasu,1998-11-05,1
-2601,Daichi Kamada,matched,Q20039495,Daichi Kamada,1996-08-05,1
-2678,Diogo Jota,matched,Q19518278,Diogo Jota,1996-12-04,1
-2724,Lucas Digne,matched,Q72648,Lucas Digne,1993-07-20,1
-2729,Joachim Andersen,matched,Q15943423,Joachim Andersen,1996-05-31,1
-2734,Philip Billing,matched,Q16727516,Philip Billing,1996-06-11,1
-2752,Massimo Luongo,matched,Q6784737,Massimo Luongo,1992-09-25,1
-2771,Ola Aina,matched,Q20730338,Ola Aina,1996-10-08,1
-2806,Fabian Schär,matched,Q673691,Fabian Schär,1991-12-20,1
-2817,Nikola Milenković,matched,Q23887939,Nikola Milenković,1997-10-12,1
-2823,Saša Lukić,matched,Q19594166,Saša Lukić,1996-08-13,1
-2855,Emil Krafth,matched,Q5371332,Emil Krafth,1994-08-02,1
-2864,Alexander Isak,matched,Q23759917,Alexander Isak,1999-09-21,1
-2869,Edson Álvarez,matched,Q27859514,Edson Álvarez,1997-10-24,1
-2887,Raúl Jiménez,ambiguous_candidates,,,,2
-2919,Matz Sels,matched,Q6792066,Matz Sels,1992-02-26,1
-2920,Timothy Castagne,matched,Q18041089,Timothy Castagne,1995-12-05,1
-2926,Youri Tielemans,matched,Q14327453,Youri Tielemans,1997-05-07,1
-2931,Tom Heaton,matched,Q357912,Tom Heaton,1986-04-15,1
-2932,Jordan Pickford,matched,Q13014035,Jordan Pickford,1994-03-07,1
-2934,Michael Keane,ambiguous_candidates,,,,2
-2935,Harry Maguire,matched,Q165772,Harry Maguire,1993-03-05,1
-2936,James Tarkowski,matched,Q6144020,James Tarkowski,1992-11-19,1
-2937,Declan Rice,matched,Q30007142,Declan Rice,1999-01-14,1
-2938,James Ward-Prowse,matched,Q2643777,James Ward-Prowse,1994-11-01,1
-2990,Idrissa Gueye,ambiguous_candidates,,,,3
-2997,Łukasz Fabiański,matched,Q40596,Łukasz Fabiański,1985-04-18,1
-2999,Jan Bednarek,matched,Q16212492,Jan Bednarek,1996-04-12,1
-3339,Cheick Doucouré,matched,Q47490408,Cheick Doucouré,2000-01-08,1
-3428,Jordan Ayew,matched,Q367861,Jordan Ayew,1991-09-11,1
-5996,Enzo Fernández,ambiguous_candidates,,,,2
-6056,Nicolás Domínguez,ambiguous_candidates,,,,2
-6610,Marcos Senesi,matched,Q23413053,Marcos Senesi,1997-05-10,1
-6716,Alexis Mac Allister,matched,Q33297140,Alexis Mac Allister,1998-12-24,1
-7029,Joe Gauci,matched,Q105944501,Joe Gauci,2000-07-04,1
-7600,Igor Júlio,matched,Q25983385,Igor Julio dos Santos de Paulo,1998-02-07,1
-8500,Wataru Endo,matched,Q10526787,Wataru Endō,1993-02-09,1
-8598,Taiwo Awoniyi,matched,Q20932574,Taiwo Awoniyi,1997-08-12,1
-8694,Wout Faes,matched,Q30014588,Wout Faes,1998-04-03,1
-8794,George Hirst,ambiguous_candidates,,,,2
-9971,Antony,no_confident_football_candidate,,,,0
-10135,Bruno Guimarães,matched,Q58323172,Bruno Guimarães,1997-11-16,1
-10329,João Pedro,ambiguous_candidates,,,,2
-10373,Carlos Miguel,no_confident_football_candidate,,,,0
-13489,Jhon Durán,matched,Q64748320,Jhon Durán,2003-12-13,1
-13736,Daniel Muñoz,matched,Q56703599,Daniel Muñoz,1996-05-25,2
-15745,Mads Roerslev,matched,Q29319616,Mads Roerslev,1999-06-24,1
-15797,Jens Cajuste,matched,Q42393774,Jens Cajuste,1999-08-10,1
-15799,Frank Onyeka,matched,Q56292818,Frank Onyeka,1998-01-01,1
-15812,Paul Onuachu,matched,Q15729123,Paul Onuachu,1994-05-28,1
-15870,Mads Hermansen,matched,Q65229910,Mads Hermansen,2000-07-11,1
-15884,Jesper Lindstrøm,matched,Q65967193,Jesper Lindstrøm,2000-02-29,1
-15908,Mikkel Damsgaard,matched,Q45034698,Mikkel Damsgaard,2000-07-03,1
-15911,Mohammed Kudus,matched,Q56877051,Mohammed Kudus,2000-08-02,1
-17365,Harry Toffolo,matched,Q18638102,Harry Toffolo,1995-08-19,1
-17579,Sammie Szmodics,matched,Q16237035,Sammie Szmodics,1995-09-24,1
-17597,Dara O'Shea,matched,Q56331751,Dara O'Shea,1999-03-04,1
-17661,Jarrad Branthwaite,matched,Q70780349,Jarrad Branthwaite,2002-06-27,1
-17714,Luke Woolfenden,matched,Q35554570,Luke Woolfenden,1998-10-21,1
-17736,Daniel Iversen,matched,Q38776669,Daniel Iversen,1997-07-19,1
-17739,George Edmundson,matched,Q21005715,George Edmundson,1997-08-31,1
-18146,Danny Ward,ambiguous_candidates,,,,4
-18397,Jack Taylor,ambiguous_candidates,,,,6
-18592,Iliman Ndiaye,matched,Q105956269,Iliman Ndiaye,2000-03-06,1
-18737,John Ruddy,matched,Q247312,John Ruddy,1986-10-24,1
-18739,Willy Boly,matched,Q570983,Willy Boly,1991-02-03,1
-18741,Conor Coady,matched,Q723606,Conor Coady,1993-02-25,1
-18742,Matt Doherty,ambiguous_candidates,,,,4
-18744,Max Kilman,no_confident_football_candidate,,,,0
-18746,Morgan Gibbs-White,matched,Q28147578,Morgan Gibbs-White,2000-01-27,1
-18753,Adama Traoré,ambiguous_candidates,,,,7
-18755,João Virgínia,matched,Q57315493,João Virgínia,1999-10-10,1
-18758,Séamus Coleman,matched,Q316724,Séamus Coleman,1988-10-11,1
-18766,Dominic Calvert-Lewin,matched,Q19956709,Dominic Calvert-Lewin,1997-03-16,1
-18771,Ricardo Pereira,matched,Q3718523,Ricardo Pereira,1993-10-06,1
-18772,Jonny Evans,matched,Q29495,Jonny Evans,1988-01-03,1
-18778,Harvey Barnes,matched,Q27974879,Harvey Barnes,1997-12-09,1
-18779,Hamza Choudhury,matched,Q23771218,Hamza Choudhury,1997-10-01,1
-18784,James Maddison,ambiguous_candidates,,,,2
-18786,Wilfred Ndidi,matched,Q19587938,Wilfred Ndidi,1996-12-16,1
-18788,Jamie Vardy,matched,Q6147586,Jamie Vardy,1987-01-11,1
-18805,Abdoulaye Doucouré,matched,Q13427925,Abdoulaye Doucouré,1993-01-01,1
-18806,Will Hughes,matched,Q133920,Will Hughes,1995-04-17,1
-18813,Aaron Cresswell,matched,Q3603066,Aaron Cresswell,1989-12-15,1
-18814,Issa Diop,matched,Q21621180,Issa Diop,1997-01-09,1
-18819,Michail Antonio,matched,Q1966430,Michail Antonio,1990-03-28,1
-18823,Ben Johnson,matched,Q61906182,Ben Johnson,2000-01-24,1
-18843,Jeffrey Schlupp,matched,Q323046,Jeffrey Schlupp,1992-12-23,1
-18846,Aaron Wan-Bissaka,matched,Q50137347,Aaron Wan-Bissaka,1997-11-26,1
-18847,Joel Ward,matched,Q2621755,Joel Ward,1989-10-29,1
-18858,Asmir Begović,matched,Q431368,Asmir Begović,1987-06-20,1
-18860,Mark Travers,matched,Q59913688,Mark Travers,1999-05-18,1
-18861,Nathan Aké,matched,Q1755683,Nathan Aké,1995-02-18,1
-18862,Nathaniel Clyne,matched,Q714067,Nathaniel Clyne,1991-04-05,1
-18869,Adam Smith,ambiguous_candidates,,,,4
-18870,David Brooks,no_birth_date,Q127250521,David Brooks,,1
-18872,Lewis Cook,ambiguous_candidates,,,,3
-18873,Ryan Fraser,matched,Q44527,Ryan Fraser,1994-02-24,1
-18883,Dominic Solanke,matched,Q18336397,Dominic Solanke,1997-09-14,1
-18886,Martin Dúbravka,matched,Q510401,Martin Dúbravka,1989-01-15,1
-18901,Sean Longstaff,matched,Q28542599,Sean Longstaff,1997-10-30,1
-18911,Nick Pope,matched,Q15999945,Nick Pope,1992-04-19,1
-18917,Ben Mee,ambiguous_candidates,,,,3
-18918,Charlie Taylor,ambiguous_candidates,,,,6
-18929,Dwight McNeil,matched,Q53652291,Dwight McNeil,1999-11-22,1
-18931,Chris Wood,ambiguous_candidates,,,,4
-18932,Fraser Forster,matched,Q348813,Fraser Forster,1988-03-17,1
-18935,Alex McCarthy,matched,Q887695,Alex McCarthy,1989-12-03,1
-18940,Jack Stephens,ambiguous_candidates,,,,2
-18941,Matt Targett,matched,Q18128628,Matt Targett,1995-09-18,1
-18943,Jannik Vestergaard,matched,Q66358,Jannik Vestergaard,1992-08-03,1
-18947,Mario Lemina,matched,Q13780454,Mario Lemina,1993-09-01,1
-18955,Danny Ings,matched,Q5220475,Danny Ings,1992-07-23,1
-18959,Robert Sánchez,matched,Q56043276,Robert Sánchez,1997-11-18,1
-18960,Jason Steele,matched,Q509809,Jason Steele,1990-08-18,1
-18961,Dan Burn,matched,Q5213217,Dan Burn,1992-05-09,1
-18963,Lewis Dunk,matched,Q6536506,Lewis Dunk,1991-11-21,1
-18968,Yves Bissouma,matched,Q22683033,Yves Bissouma,1996-08-30,1
-19004,Bobby Decordova-Reid,matched,Q10514792,Bobby De Cordova-Reid,1993-02-02,1
-19012,Marcus Bettinelli,matched,Q16200385,Marcus Bettinelli,1992-05-24,1
-19025,Tom Cairney,matched,Q1061904,Tom Cairney,1991-01-20,1
-19032,Ryan Sessegnon,matched,Q26250297,Ryan Sessegnon,2000-05-18,1
-19035,Harvey Elliott,ambiguous_candidates,,,,2
-19070,Max Aarons,matched,Q56641599,Max Aarons,2000-01-04,1
-19071,Emiliano Buendía,matched,Q18637343,Emiliano Buendía,1996-12-25,1
-19088,Dean Henderson,matched,Q28059260,Dean Henderson,1997-03-12,1
-19119,Leif Davis,matched,Q60194671,Leif Davis,1999-12-31,1
-19128,Jack Harrison,ambiguous_candidates,,,,5
-19130,Kalvin Phillips,matched,Q20641319,Kalvin Phillips,1995-12-02,1
-19136,Jack Clarke,ambiguous_candidates,,,,3
-19143,Sam Johnstone,matched,Q327227,Sam Johnstone,1993-03-25,1
-19145,Tosin Adarabioyo,matched,Q21620666,Tosin Adarabioyo,1997-09-24,1
-19147,Craig Dawson,matched,Q1705657,Craig Dawson,1990-05-06,1
-19150,Mason Holgate,matched,Q18921915,Mason Holgate,1996-10-22,1
-19152,Conor Townsend,matched,Q5162304,Conor Townsend,1993-03-04,1
-19163,Jacob Murphy,matched,Q15622117,Jacob Murphy,1995-02-24,1
-19170,Morgan Rogers,ambiguous_candidates,,,,2
-19179,Tyrone Mings,matched,Q16235643,Tyrone Mings,1993-03-13,1
-19182,Axel Tuanzebe,matched,Q27019988,Axel Tuanzebe,1997-11-14,1
-19187,Jack Grealish,matched,Q16056053,Jack Grealish,1995-09-10,1
-19191,John McGinn,matched,Q10547335,John McGinn,1994-10-18,1
-19192,Jacob Ramsey,matched,Q63228677,Jacob Ramsey,2001-05-28,1
-19197,Scott Carson,matched,Q295627,Scott Carson,1985-09-03,1
-19220,Mason Mount,matched,Q38000669,Mason Mount,1999-01-10,1
-19221,Harry Wilson,ambiguous_candidates,,,,4
-19235,Djed Spence,matched,Q56222532,Djed Spence,2000-08-09,1
-19245,Marcus Tavernier,matched,Q37996874,Marcus Tavernier,1999-03-22,1
-19248,Nathan Wood,ambiguous_candidates,,,,3
-19263,Lloyd Kelly,matched,Q35851317,Lloyd Kelly,1998-10-06,1
-19265,Adam Webster,ambiguous_candidates,,,,3
-19281,Antoine Semenyo,matched,Q52990659,Antoine Semenyo,2000-01-07,1
-19298,Matty Cash,matched,Q23041943,Matty Cash,1997-08-07,1
-19305,Ryan Yates,matched,Q28794002,Ryan Yates,1997-11-21,1
-19312,Steven Benda,matched,Q70276774,Steven Benda,1998-10-01,1
-19341,Daniel Bentley,no_confident_football_candidate,,,,0
-19354,Ezri Konsa,matched,Q27063854,Ezri Konsa,1997-10-23,1
-19364,Neal Maupay,matched,Q1101455,Neal Maupay,1996-08-14,1
-19365,Chiedozie Ogbene,matched,Q51727160,Chiedozie Ogbene,1997-05-01,1
-19366,Ollie Watkins,matched,Q16911979,Ollie Watkins,1995-12-30,1
-19428,Jarrod Bowen,matched,Q26704890,Jarrod Bowen,1996-12-20,1
-19465,David Raya,matched,Q19665907,David Raya,1995-09-15,1
-19480,Harrison Reed,matched,Q15054978,Harrison Reed,1995-01-27,1
-19484,Adam Armstrong,matched,Q16023869,Adam Armstrong,1997-02-10,1
-19485,Ben Brereton Díaz,matched,Q28606351,Ben Brereton,1999-04-18,1
-19495,Nathan Collins,ambiguous_candidates,,,,2
-19541,Christian Walton,matched,Q18387424,Christian Walton,1995-11-09,1
-19545,Reece James,ambiguous_candidates,,,,2
-19549,Antonee Robinson,matched,Q35778151,Antonee Robinson,1997-08-08,1
-19558,Sam Morsy,matched,Q7407943,Sam Morsy,1991-09-10,1
-19573,Joe Lumley,matched,Q17811744,Joe Lumley,1995-02-15,1
-19586,Eberechi Eze,matched,Q28445512,Eberechi Eze,1998-06-29,1
-19587,Ryan Manning,matched,Q28101945,Ryan Manning,1996-06-14,1
-19599,Emiliano Martínez,ambiguous_candidates,,,,2
-19684,Remi Matthews,matched,Q21061926,Remi Matthews,1994-02-10,1
-19719,James Bree,matched,Q16887631,James Bree,1997-10-11,1
-19720,Trevoh Chalobah,matched,Q36696865,Trevoh Chalobah,1999-07-05,1
-19733,Flynn Downes,matched,Q34994628,Flynn Downes,1999-01-20,1
-19760,James Justin,matched,Q26251403,James Justin,1998-02-23,1
-19789,Ethan Pinnock,matched,Q36999329,Ethan Pinnock,1993-05-29,1
-19825,Joe Aribo,matched,Q27469960,Joe Aribo,1996-07-21,1
-19959,Ben White,ambiguous_candidates,,,,2
-20007,Conor Chaplin,matched,Q18637246,Conor Chaplin,1997-02-16,1
-20031,Marcus Harness,matched,Q16245833,Marcus Harness,1996-02-24,1
-20089,Wes Burns,no_confident_football_candidate,,,,0
-20093,James Hill,ambiguous_candidates,,,,3
-20355,Aaron Ramsdale,matched,Q27967807,Aaron Ramsdale,1998-05-14,1
-20457,Cameron Burgess,matched,Q17496350,Cameron Burgess,1995-10-21,1
-20589,Bryan Mbeumo,matched,Q49561427,Bryan Mbeumo,1999-08-07,1
-20649,Yoane Wissa,matched,Q28101965,Yoane Wissa,1996-09-03,1
-20665,Jean-Ricner Bellegarde,matched,Q26251607,Jean-Ricner Bellegarde,1998-06-27,1
-20995,Maxence Lacroix,matched,Q60286976,Maxence Lacroix,2000-04-06,1
-21090,Diego Carlos,ambiguous_candidates,,,,2
-21138,Rayan Aït Nouri,matched,Q50825738,Rayan Aït-Nouri,2001-06-06,1
-21998,Axel Disasi,matched,Q23887767,Axel Disasi,1998-03-11,1
-22090,William Saliba,matched,Q56868118,William Saliba,2001-03-24,1
-22094,Wesley Fofana,ambiguous_candidates,,,,2
-22149,Ibrahim Sangaré,ambiguous_candidates,,,,2
-22224,Gabriel Magalhães,ambiguous_candidates,,,,2
-22233,Boubakary Soumaré,matched,Q43369896,Boubakary Soumaré,1999-02-27,1
-24882,Orel Mangala,matched,Q26838752,Orel Mangala,1998-03-18,1
-24888,Hee-Chan Hwang,no_confident_football_candidate,,,,0
-25004,Stefan Ortega,matched,Q821646,Stefan Ortega,1992-11-06,1
-25073,Vitaly Janelt,matched,Q26212017,Vitaly Janelt,1998-05-10,1
-25391,Niclas Füllkrug,matched,Q326159,Niclas Füllkrug,1993-02-09,1
-25927,Jean-Philippe Mateta,matched,Q26964668,Jean-Philippe Mateta,1997-06-28,1
-26232,Mark Flekken,matched,Q5811691,Mark Flekken,1993-06-13,1
-30407,Christian Nørgaard,matched,Q5109980,Christian Nørgaard,1994-03-10,1
-30410,Federico Chiesa,matched,Q26704703,Federico Chiesa,1997-10-25,1
-30427,Caleb Okoli,matched,Q99519583,Caleb Okoli,2001-07-13,1
-30435,Dejan Kulusevski,matched,Q59914139,Dejan Kulusevski,2000-04-25,1
-30776,Cristian Romero,ambiguous_candidates,,,,3
-31057,Hamed Junior Traorè,matched,Q43559571,Hamed Junior Traoré,2000-02-16,1
-31146,Sandro Tonali,matched,Q43402334,Sandro Tonali,2000-05-08,1
-31354,Guglielmo Vicario,matched,Q44083681,Guglielmo Vicario,1996-10-07,1
-32887,Yukinari Sugawara,matched,Q50073536,Yukinari Sugawara,2000-06-28,1
-36922,Sepp van den Berg,matched,Q50398907,Sepp van den Berg,2001-12-20,1
-37127,Martin Ødegaard,matched,Q16902219,Martin Ødegaard,1998-12-17,1
-37161,Luis Sinisterra,matched,Q26838145,Luis Sinisterra,1999-06-17,1
-37724,Crysencio Summerville,matched,Q60664537,Crysencio Summerville,2001-10-30,1
-38695,Jan Paul van Hecke,matched,Q66828825,Jan Paul van Hecke,2000-06-08,1
-38746,Jurriën Timber,matched,Q53952196,Jurriën Timber,2001-06-17,1
-40911,Jakub Moder,matched,Q52044004,Jakub Moder,1999-04-07,1
-41606,Toti Gomes,matched,Q64747505,Toti Gomes,1999-01-16,1
-41621,Matheus Nunes,ambiguous_candidates,,,,3
-45078,Ross Stewart,ambiguous_candidates,,,,2
-46731,Pervis Estupiñán,matched,Q20994068,Pervis Estupiñán,1998-01-21,1
-46815,Pau Torres,ambiguous_candidates,,,,2
-47311,Mikel Merino,matched,Q17612631,Mikel Merino,1996-06-22,1
-47380,Marc Cucurella,no_confident_football_candidate,,,,0
-47438,Mathias Jensen,ambiguous_candidates,,,,2
-47499,Enes Ünal,matched,Q14637461,Enes Ünal,1997-05-10,1
-47519,Pedro Porro,matched,Q44080929,Pedro Porro,1999-09-13,1
-47547,Álex Moreno,matched,Q120630030,Álex Moreno,2002-01-25,1
-50132,Altay Bayındır,matched,Q57415806,Altay Bayındır,1998-04-14,1
-50999,Matt Turner,ambiguous_candidates,,,,2
-51051,Julian Araujo,matched,Q57242266,Julián Araujo,2001-08-13,1
-51494,Manuel Ugarte,matched,Q27960175,Manuel Ugarte,2001-04-11,1
-51617,Darwin Núñez,matched,Q46372260,Darwin Núñez,1999-06-24,1
-61431,Jakub Kiwior,matched,Q61744153,Jakub Kiwior,2000-02-15,1
-61742,Hákon Rafn Valdimarsson,no_confident_football_candidate,,,,0
-63577,Mykhaylo Mudryk,matched,Q58494476,Mykhailo Mudryk,2001-01-05,1
-67943,Morato,single_name_manual_review,,,,1
-67971,Marc Guéhi,matched,Q44737396,Marc Guéhi,2000-07-13,1
-68466,Andy Irving,matched,Q47510489,Andy Irving,2000-05-13,1
-70100,Joshua Zirkzee,matched,Q65675442,Joshua Zirkzee,2001-05-22,1
-70747,Julio Enciso,no_confident_football_candidate,,,,0
-90590,Georginio Rutter,matched,Q74051767,Georginio Rutter,2002-04-20,1
-92993,Mats Wieffer,matched,Q58767078,Mats Wieffer,1999-11-16,1
-106725,Keane Lewis-Potter,matched,Q62269289,Keane Lewis-Potter,2001-02-22,1
-106835,Kaoru Mitoma,matched,Q44395063,Kaoru Mitoma,1997-05-20,1
-116117,Moisés Caicedo,matched,Q87715532,Moisés Caicedo,2001-11-02,1
-125743,Beto,single_name_manual_review,,,,3
-126791,Nathan Broadhead,matched,Q44963860,Nathan Broadhead,1998-04-05,1
-126949,Chris Richards,ambiguous_candidates,,,,2
-127579,Jacob Greaves,matched,Q66685109,Jacob Greaves,2000-09-12,1
-127769,Gabriel Martinelli,matched,Q61460651,Gabriel Martinelli,2001-06-18,1
-129033,Joško Gvardiol,matched,Q73400656,Joško Gvardiol,2002-01-23,1
-129058,Bart Verbruggen,matched,Q98682558,Bart Verbruggen,2002-08-18,1
-129643,Evan Ferguson,matched,Q68650133,Evan Ferguson,2004-10-19,1
-129711,Brennan Johnson,matched,Q66108160,Brennan Johnson,2001-05-23,1
-130421,Will Smallbone,matched,Q80952616,Will Smallbone,2000-02-21,1
-130423,Billy Gilmour,matched,Q42847487,Billy Gilmour,2001-06-11,1
-135334,Santiago Bueno,matched,Q25367692,Santiago Bueno,1998-11-09,1
-136723,Noni Madueke,matched,Q66801705,Noni Madueke,2002-03-10,1
-137302,Cameron Archer,matched,Q66779547,Cameron Archer,2001-12-09,1
-138417,Nathan Patterson,matched,Q83264648,Nathan Patterson,2001-10-16,1
-138780,Neco Williams,matched,Q72921909,Neco Williams,2001-04-13,1
-138787,Anthony Gordon,ambiguous_candidates,,,,3
-138815,Tariq Lamptey,matched,Q80197171,Tariq Lamptey,2000-09-30,1
-138816,Ian Maatsen,matched,Q69495231,Ian Maatsen,2002-03-10,1
-138836,Harry Clarke,ambiguous_candidates,,,,3
-138908,Elliot Anderson,matched,Q104762954,Elliot Anderson,2002-11-06,1
-138931,Jaden Philogene-Bidace,matched,Q106916429,Jaden Philogene,2002-02-08,1
-140947,Issa Kaboré,matched,Q67175861,Issa Kaboré,2001-05-12,1
-141901,Jota Silva,matched,Q105945662,Jota Silva,1999-08-01,1
-144729,Taylor Harwood-Bellis,matched,Q68485418,Taylor Harwood-Bellis,2002-01-30,1
-144732,Tommy Doyle,ambiguous_candidates,,,,3
-147835,Andrew Omobamidele,matched,Q104849454,Andrew Omobamidele,2002-06-23,1
-148099,Kiernan Dewsbury-Hall,matched,Q83632882,Kiernan Dewsbury-Hall,1998-09-06,1
-148270,Oliwier Zych,matched,Q105104357,Oliwier Zych,2004-06-28,1
-151756,Will Dennis,matched,Q97059231,Will Dennis,2000-07-10,1
-152418,Naouirou Ahamada,matched,Q74050891,Naouirou Ahamada,2002-03-29,1
-152849,Micky van de Ven,matched,Q69812902,Micky van de Ven,2001-04-19,1
-152856,Evanilson,single_name_manual_review,,,,1
-152953,Levi Colwill,matched,Q107766903,Levi Colwill,2003-02-26,1
-152967,Calvin Bassey,matched,Q97059010,Calvin Bassey,1999-12-31,1
-152969,Luke Thomas,ambiguous_candidates,,,,2
-152982,Cole Palmer,matched,Q99760796,Cole Palmer,2002-05-06,1
-153066,Fabio Carvalho,ambiguous_candidates,,,,2
-153407,Nathan Butler-Oyedeji,matched,Q116687539,Nathan Butler-Oyedeji,2003-01-04,1
-153430,Anthony Elanga,matched,Q106805131,Anthony Elanga,2002-04-27,1
-156428,Brandon Austin,matched,Q107316392,Brandon Austin,1999-01-08,1
-157052,Riccardo Calafiori,matched,Q97999586,Riccardo Calafiori,2002-05-19,1
-157912,Boubacar Traoré,ambiguous_candidates,,,,4
-157997,Amad Diallo,matched,Q72603655,Amad Diallo,2002-07-11,1
-158694,Valentino Livramento,matched,Q107930811,Tino Livramento,2002-11-12,1
-158697,James McAtee,matched,Q108653498,James McAtee,2002-10-18,1
-158698,Jarell Quansah,matched,Q112813857,Jarell Quansah,2003-01-29,1
-158702,Cieran Slicker,matched,Q105477368,Cieran Slicker,2002-09-15,1
-158710,Victor Kristiansen,matched,Q104773462,Victor Kristiansen,2002-12-16,1
-161671,Illia Zabarnyi,matched,Q99360090,Illya Zabarnyi,2002-09-01,1
-161907,Malo Gusto,matched,Q78752401,Malo Gusto,2003-05-19,1
-161948,Liam Delap,matched,Q99584177,Liam Delap,2003-02-08,1
-162498,Radu Drăguşin,matched,Q86835512,Radu Drăgușin,2002-02-03,1
-162590,Tyler Morton,matched,Q108653507,Tyler Morton,2002-10-31,1
-162687,Vítězslav Jaroš,matched,Q112503285,Vítězslav Jaroš,2001-07-23,1
-162714,Amadou Onana,matched,Q99328435,Amadou Onana,2001-08-16,1
-178077,Kevin Schade,matched,Q103845834,Kevin Schade,2001-11-27,1
-180308,Myles Peart-Harris,matched,Q108653513,Myles Peart-Harris,2002-09-18,1
-180316,Harvey Davies,matched,Q115145113,Harvey Davies,2003-09-23,1
-180317,Conor Bradley,matched,Q107031318,Conor Bradley,2003-07-09,1
-182201,Tyrick Mitchell,matched,Q96943831,Tyrick Mitchell,1999-09-01,1
-191971,Jay Stansfield,matched,Q81053047,Jay Stansfield,2002-11-24,1
-195103,João Gomes,no_confident_football_candidate,,,,0
-195106,Rodrigo Muniz,ambiguous_candidates,,,,2
-195717,Yerson Mosquera,no_confident_football_candidate,,,,0
-195962,Chiquinho,single_name_manual_review,,,,3
-195993,Carlos Alcaraz,matched,Q88130791,Carlos Alcaraz,2002-11-30,1
-196298,Ramón Sosa,matched,Q110160871,Ramón Sosa,1999-08-31,1
-196855,Jaidon Anthony,matched,Q103417114,Jaidon Anthony,1999-12-01,1
-199837,Kamaldeen Sulemana,matched,Q86269576,Kamaldeen Sulemana,2002-02-15,1
-201368,Killian Cahill,no_birth_date,Q135750301,Killian Cahill,,1
-202086,Jeremy Sarmiento,matched,Q108659564,Jeremy Sarmiento,2002-06-16,1
-204039,Destiny Udogie,matched,Q73825355,Destiny Udogie,2002-11-28,1
-206254,Miloš Kerkez,matched,Q110874376,Milos Kerkez,2003-11-07,1
-215874,Thomas Cannon,matched,Q115208158,Thomas Cannon,2002-12-28,1
-237129,Pape Matar Sarr,matched,Q104877690,Pape Matar Sarr,2002-09-14,1
-263538,Yehor Yarmoliuk,no_confident_football_candidate,,,,0
-265784,André,no_confident_football_candidate,,,,0
-265820,Yasin Ayari,matched,Q103979811,Yasin Ayari,2003-10-06,1
-266657,Savinho,single_name_manual_review,,,,1
-270139,Jake O'Brien,matched,Q110565461,Jake O'Brien,2001-05-15,1
-270507,Cesare Casadei,matched,Q112081015,Cesare Casadei,2003-01-10,1
-270508,Lesley Ugochukwu,matched,Q106366721,Lesley Ugochukwu,2004-03-26,1
-273757,Alfie Devine,matched,Q104772508,Alfie Devine,2004-08-01,1
-273758,Imari Samuels,matched,Q118470954,Imari Samuels,2003-02-05,1
-275170,Danilo,single_name_manual_review,,,,1
-278074,Salah Oulad M'Hand,no_confident_football_candidate,,,,0
-278085,Samuel Edozie,matched,Q105478432,Samuel Edozie,2003-01-28,1
-278088,Carl Rushworth,matched,Q107985580,Carl Rushworth,2001-07-02,1
-278118,Benjamin Nelson,no_confident_football_candidate,,,,0
-278898,Chadi Riad,matched,Q104784108,Chadi Riad,2003-06-17,1
-282125,Roméo Lavia,matched,Q108649714,Roméo Lavia,2004-01-06,1
-282126,Carlos Borges,ambiguous_candidates,,,,2
-282770,Rodrigo Gomes,ambiguous_candidates,,,,2
-283058,Nicolas Jackson,matched,Q100144350,Nicolas Jackson,2001-06-20,1
-283272,Alfie Pond,matched,Q110069543,Alfie Pond,2004-03-01,1
-283290,Kasey McAteer,matched,Q110086287,Kasey McAteer,2001-11-22,1
-284230,Rico Lewis,matched,Q113509374,Rico Lewis,2004-11-21,1
-284322,Kobbie Mainoo,matched,Q114703020,Kobbie Mainoo,2005-04-19,1
-284324,Alejandro Garnacho,matched,Q111366053,Alejandro Garnacho,2004-07-01,1
-284400,Toby Collyer,matched,Q121437419,Toby Collyer,2004-01-03,1
-284428,Omari Hutchinson,matched,Q111145131,Omari Hutchinson,2003-10-29,1
-284457,Lamare Bogarde,matched,Q104737263,Lamare Bogarde,2004-01-05,1
-284492,Lewis Hall,matched,Q110487162,Lewis Hall,2004-09-08,1
-284500,Tim Iroegbunam,matched,Q111027477,Tim Iroegbunam,2003-06-30,1
-284523,Sil Swinkels,matched,Q101627158,Sil Swinkels,2004-01-06,1
-284797,Dango Ouattara,matched,Q108000402,Dango Ouattara,2002-02-11,1
-286458,Justin Devenny,matched,Q122089959,Justin Devenny,2003-10-11,1
-286616,Filip Jørgensen,matched,Q108776426,Filip Jörgensen,2002-04-16,1
-288006,Rasmus Højlund,matched,Q66467324,Rasmus Højlund,2003-02-04,1
-288102,Adam Wharton,matched,Q113488911,Adam Wharton,2004-02-06,1
-288116,Kaelan Casey,matched,Q115048295,Kaelan Casey,2004-10-28,1
-296458,Daniel Jebbison,matched,Q106766809,Daniel Jebbison,2003-08-13,1
-297640,Roman Quintyne,no_confident_football_candidate,,,,0
-297641,Jenson Metcalfe,matched,Q129256414,Jenson Metcalfe,2004-09-06,1
-299813,Ali Al-Hamadi,matched,Q80661874,Ali Al-Hamadi,2002-03-01,1
-301295,Kaden Rodney,matched,Q113586426,Kaden Rodney,2004-10-07,1
-301771,Simon Adingra,matched,Q107742783,Simon Adingra,2002-01-01,1
-303467,Abdul Fatawu Issahaku,matched,Q105812639,Abdul Fatawu Issahak,2004-03-08,1
-304317,Tyler Dibling,matched,Q115973966,Tyler Dibling,2006-03-12,1
-304853,Alex Scott,ambiguous_candidates,,,,4
-305730,Jack Hinshelwood,matched,Q118791841,Jack Hinshelwood,2005-04-11,1
-307123,Nico O'Reilly,matched,Q118645253,Nico O'Reilly,2005-03-21,1
-311334,Facundo Buonanotte,matched,Q113028093,Facundo Buonanotte,2004-12-23,1
-312260,Kadan Young,matched,Q118870489,Kadan Young,2006-01-19,1
-313236,Ethan Nwaneri,matched,Q114027518,Ethan Nwaneri,2007-03-21,1
-313245,Myles Lewis-Skelly,matched,Q118571844,Myles Lewis-Skelly,2006-09-26,1
-315237,William Osula,matched,Q111464601,William Osula,2003-08-04,1
-318056,Alex Murphy,ambiguous_candidates,,,,2
-319572,Valentín Barco,matched,Q107542811,Valentín Barco,2004-07-23,1
-328089,Archie Gray,ambiguous_candidates,,,,2
-328105,Lewis Miley,matched,Q118780753,Lewis Miley,2006-05-01,1
-328225,Brajan Gruda,matched,Q116432094,Brajan Gruda,2004-05-31,1
-334035,Samuel Amo-Ameyaw,matched,Q118869958,Sam Amo-Ameyaw,2006-07-18,1
-336564,Wilson Odobert,matched,Q113464781,Wilson Odobert,2004-11-28,1
-336585,Mateus Fernandes,ambiguous_candidates,,,,2
-336671,Renato Veiga,matched,Q116700351,Renato Veiga,2003-07-29,1
-340135,Mark O'Mahony,matched,Q121463467,Mark O'Mahony,2005-01-14,1
-340136,Franco Umeh,no_birth_date,Q129084697,Franco Umeh,,1
-340573,Bilal El Khannouss,matched,Q105955374,Bilal El Khannouss,2004-05-10,1
-342243,Tommy Setford,matched,Q123512560,Tommy Setford,2006-03-13,1
-342320,Kosta Nedeljković,matched,Q119719443,Kosta Nedeljković,2005-12-16,1
-347316,Lucas Bergvall,matched,Q115371638,Lucas Bergvall,2006-02-02,1
-350625,Jayden Meghoma,matched,Q121307507,Jayden Meghoma,2006-06-28,1
-356041,Carlos Baleba,matched,Q113472432,Carlos Baleba,2004-01-03,1
-356237,Kim Ji-Soo,no_confident_football_candidate,,,,0
-361497,Dean Huijsen,matched,Q112184628,Dean Huijsen,2005-04-14,1
-362270,Ethan Wheatley,matched,Q125585047,Ethan Wheatley,2006-01-20,1
-363695,Murillo,no_confident_football_candidate,,,,0
-367634,Asher Agbinone,matched,Q130608565,Asher Agbinone,2005-09-27,1
-380492,Eric da Silva Moreira,matched,Q118611497,Eric da Silva Moreira,2006-05-03,1
-380679,Caleb Kporha,matched,Q131109014,Caleb Kporha,2006-07-15,1
-380690,Mikey Moore,matched,Q119700600,Mikey Moore,2007-08-11,1
-380696,Josh Nichols,matched,Q130668046,Josh Nichols,2006-07-26,1
-380697,Maldini Kacurri,matched,Q130305495,Maldini Kacurri,2005-10-04,1
-382355,Jacob Wright,ambiguous_candidates,,,,2
-382925,Ryan Trevitt,matched,Q113586549,Ryan Trevitt,2003-03-12,1
-383685,Yankuba Minteh,matched,Q115399505,Yankuba Minteh,2004-07-22,1
-383770,Jack Fletcher,ambiguous_candidates,,,,3
-388510,Tony Yogane,matched,Q130316133,Tony Yogane,2005-09-24,1
-389306,Roman Dixon,matched,Q129689290,Roman Dixon,2004-09-06,1
-389315,Joshua King,ambiguous_candidates,,,,2
-392270,Marc Guiu,matched,Q118472572,Marc Guiu Paz,2006-01-04,1
-393195,Will Lankshear,matched,Q123001113,Will Lankshear,2005-04-20,1
-402329,Ayden Heaven,matched,Q130319703,Ayden Heaven,2006-09-22,1
-403064,Harry Amass,matched,Q119971486,Harry Amass,2007-03-16,1
-404574,Luis Guilherme,ambiguous_candidates,,,,2
-404656,Jahmai Simpson-Pusey,matched,Q130740691,Jahmai Simpson-Pusey,2005-11-04,1
-405360,Harrison Armstrong,matched,Q129702132,Harrison Armstrong,2007-01-19,1
-407033,Ismeal Kabia,matched,Q130304859,Ismeal Kabia,2005-12-10,1
-430734,Yunus Konak,no_confident_football_candidate,,,,0
-449245,Pedro Lima,matched,Q125548367,Pedro Lima,2006-07-01,1
+player_id,player_name,status,wikidata_id,wikidata_label,birth_date,candidate_count,qid,candidate_label,similarity
+617,Ederson,single_name_manual_review,,,,1.0,,,
+626,John Stones,matched,Q2025900,John Stones,1994-05-28,1.0,,,
+627,Kyle Walker,ambiguous_candidates,,,,2.0,,,
+629,Kevin De Bruyne,matched,Q357984,Kevin De Bruyne,1991-06-28,1.0,,,
+631,Phil Foden,matched,Q30729096,Phil Foden,2000-05-28,1.0,,,
+633,İlkay Gündoğan,matched,Q161089,İlkay Gündoğan,1990-10-24,1.0,,,
+636,Bernardo Silva,ambiguous_candidates,,,,2.0,,,
+641,Oleksandr Zinchenko,matched,Q19636859,Oleksandr Zinchenko,1996-12-15,1.0,,,
+643,Gabriel Jesus,matched,Q19708656,Gabriel Jesus,1997-04-03,1.0,,,
+645,Raheem Sterling,matched,Q312157,Raheem Sterling,1994-12-08,1.0,,,
+657,Kenny Tete,matched,Q14495103,Kenny Tete,1995-10-09,1.0,,,
+665,Maxwel Cornet,matched,Q15081929,Maxwel Cornet,1996-09-27,1.0,,,
+723,Joelinton,single_name_manual_review,,,,1.0,,,
+727,Reiss Nelson,matched,Q35039261,Reiss Nelson,1999-12-10,1.0,,,
+747,Casemiro,single_name_manual_review,,,,1.0,,,
+766,Robin Olsen,matched,Q6799321,Robin Olsen,1990-01-08,1.0,,,
+792,Justin Kluivert,matched,Q26934107,Justin Kluivert,1999-05-05,1.0,,,
+863,Rodrigo Bentancur,matched,Q18817134,Rodrigo Bentancur,1997-06-25,1.0,,,
+879,Stephy Mavididi,matched,Q28748037,Stephy Mavididi,1998-05-31,1.0,,,
+886,Diogo Dalot,matched,Q26255506,Diogo Dalot,1999-03-18,1.0,,,
+889,Victor Lindelöf,matched,Q4125587,Victor Lindelöf,1994-07-17,1.0,,,
+894,Ashley Young,matched,Q10602,Ashley Young,1985-07-09,1.0,,,
+895,James Garner,ambiguous_candidates,,,,2.0,,,
+899,Andreas Pereira,matched,Q17619350,Andreas Pereira,1996-01-01,1.0,,,
+903,Scott McTominay,matched,Q29624459,Scott McTominay,1996-12-08,1.0,,,
+909,Marcus Rashford,matched,Q22951255,Marcus Rashford,1997-10-31,1.0,,,
+912,Neto,single_name_manual_review,,,,3.0,,,
+925,Gonçalo Guedes,matched,Q16729477,Gonçalo Guedes,1996-11-29,1.0,,,
+930,Carlos Soler,matched,Q26707913,Carlos Soler,1997-01-02,1.0,,,
+978,Kai Havertz,matched,Q27310755,Kai Havertz,1999-06-11,1.0,,,
+983,Leon Bailey,matched,Q20890178,Leon Bailey,1997-08-09,1.0,,,
+1096,Dominik Szoboszlai,matched,Q30134278,Dominik Szoboszlai,2000-10-25,1.0,,,
+1098,Patson Daka,matched,,,1998-10-09,,Q20810726,Patson Daka,100.0
+1100,Erling Haaland,matched,Q28967995,Erling Haaland,2000-07-21,1.0,,,
+1119,Kristoffer Ajer,matched,Q18157457,Kristoffer Ajer,1998-04-17,1.0,,,
+1125,Ryan Christie,matched,Q16236700,Ryan Christie,1995-02-22,1.0,,,
+1135,Odsonne Édouard,matched,Q19963405,Odsonne Édouard,1998-01-16,1.0,,,
+1145,Ibrahima Konaté,ambiguous_candidates,,,,2.0,,,
+1150,Tyler Adams,matched,Q19871581,Tyler Adams,1999-02-14,1.0,,,
+1161,Emile Smith Rowe,matched,Q55820249,Emile Smith Rowe,2000-07-28,1.0,,,
+1165,Matheus Cunha,ambiguous_candidates,,,,2.0,,,
+1166,Timo Werner,matched,Q3529022,Timo Werner,1996-03-06,1.0,,,
+1231,Vladimír Coufal,matched,Q15113326,Vladimír Coufal,1992-08-22,1.0,,,
+1243,Tomáš Souček,matched,Q20860081,Tomáš Souček,1995-02-27,1.0,,,
+1361,Ferdi Kadıoğlu,matched,Q26719541,Ferdi Kadıoğlu,1999-10-07,1.0,,,
+1422,Jérémy Doku,matched,Q59209505,Jérémy Doku,2002-05-27,1.0,,,
+1438,Bernd Leno,matched,Q309966,Bernd Leno,1992-03-04,1.0,,,
+1440,Rob Holding,matched,Q21061767,Rob Holding,1995-09-20,1.0,,,
+1445,Konstantinos Mavropanos,matched,Q47015833,Konstantinos Mavropanos,1997-12-11,1.0,,,
+1455,Alex Iwobi,matched,Q21091691,Alex Iwobi,1996-05-03,1.0,,,
+1460,Bukayo Saka,matched,Q59306386,Bukayo Saka,2001-09-05,1.0,,,
+1463,Joe Willock,matched,Q40471152,Joe Willock,1999-08-20,1.0,,,
+1468,Edward Nketiah,no_confident_football_candidate,,,,0.0,,,
+1469,Danny Welbeck,matched,Q188457,Danny Welbeck,1990-11-26,1.0,,,
+1485,Bruno Fernandes,ambiguous_candidates,,,,3.0,,,
+1590,José Sá,matched,Q6294052,José Sá,1993-01-17,1.0,,,
+1600,Konstantinos Tsimikas,no_confident_football_candidate,,,,0.0,,,
+1605,Daniel Podence,matched,Q5218462,Daniel Podence,1995-10-21,1.0,,,
+1646,Lucas Paquetá,matched,Q30089624,Lucas Paquetá,1997-08-27,1.0,,,
+1736,Wesley Foderingham,matched,Q7983684,Wes Foderingham,1991-01-14,1.0,,,
+1864,Pedro Neto,matched,Q30036972,Pedro Neto,2000-03-09,1.0,,,
+1904,Boubacar Kamara,matched,Q29962926,Boubacar Kamara,1999-11-23,1.0,,,
+1934,Sander Berge,matched,Q20675980,Sander Berge,1998-02-14,1.0,,,
+1946,Leandro Trossard,matched,Q6509762,Leandro Trossard,1994-12-04,1.0,,,
+2032,Jørgen Strand Larsen,matched,Q28933132,Jørgen Strand Larsen,2000-02-06,1.0,,,
+2056,Pablo Sarabia,matched,Q510165,Pablo Sarabia,1992-05-11,1.0,,,
+2165,Vitaliy Mykolenko,matched,Q37875995,Vitaliy Mykolenko,1999-05-29,1.0,,,
+2218,Ismaïla Sarr,matched,Q26924482,Ismaïla Sarr,1998-02-25,1.0,,,
+2273,Kepa Arrizabalaga,matched,Q3195361,Kepa Arrizabalaga,1994-10-03,1.0,,,
+2284,Emerson Palmieri,matched,Q5370912,Emerson Palmieri,1994-08-03,1.0,,,
+2287,Ross Barkley,matched,Q326240,Ross Barkley,1993-12-05,1.0,,,
+2289,Jorginho,single_name_manual_review,,,,3.0,,,
+2291,Mateo Kovačić,matched,Q701297,Mateo Kovačić,1994-05-06,1.0,,,
+2298,Callum Hudson-Odoi,matched,Q42396622,Callum Hudson-Odoi,2000-11-07,1.0,,,
+2413,Richarlison,single_name_manual_review,,,,1.0,,,
+2467,Lisandro Martínez,matched,Q30881092,Lisandro Martínez,1998-01-18,1.0,,,
+2476,Guido Rodríguez,matched,Q18224850,Guido Rodríguez,1994-04-12,1.0,,,
+2489,Luis Díaz,ambiguous_candidates,,,,2.0,,,
+2490,Jefferson Lerma,matched,Q16300824,Jefferson Lerma,1994-10-25,1.0,,,
+2507,Miguel Almirón,matched,Q16145667,Miguel Almirón,1994-02-10,1.0,,,
+2597,Takehiro Tomiyasu,matched,Q21286402,Takehiro Tomiyasu,1998-11-05,1.0,,,
+2601,Daichi Kamada,matched,Q20039495,Daichi Kamada,1996-08-05,1.0,,,
+2678,Diogo Jota,matched,Q19518278,Diogo Jota,1996-12-04,1.0,,,
+2724,Lucas Digne,matched,Q72648,Lucas Digne,1993-07-20,1.0,,,
+2729,Joachim Andersen,matched,Q15943423,Joachim Andersen,1996-05-31,1.0,,,
+2734,Philip Billing,matched,Q16727516,Philip Billing,1996-06-11,1.0,,,
+2752,Massimo Luongo,matched,Q6784737,Massimo Luongo,1992-09-25,1.0,,,
+2771,Ola Aina,matched,Q20730338,Ola Aina,1996-10-08,1.0,,,
+2806,Fabian Schär,matched,Q673691,Fabian Schär,1991-12-20,1.0,,,
+2817,Nikola Milenković,matched,Q23887939,Nikola Milenković,1997-10-12,1.0,,,
+2823,Saša Lukić,matched,Q19594166,Saša Lukić,1996-08-13,1.0,,,
+2855,Emil Krafth,matched,Q5371332,Emil Krafth,1994-08-02,1.0,,,
+2864,Alexander Isak,matched,Q23759917,Alexander Isak,1999-09-21,1.0,,,
+2869,Edson Álvarez,matched,Q27859514,Edson Álvarez,1997-10-24,1.0,,,
+2887,Raúl Jiménez,ambiguous_candidates,,,,2.0,,,
+2919,Matz Sels,matched,Q6792066,Matz Sels,1992-02-26,1.0,,,
+2920,Timothy Castagne,matched,Q18041089,Timothy Castagne,1995-12-05,1.0,,,
+2926,Youri Tielemans,matched,Q14327453,Youri Tielemans,1997-05-07,1.0,,,
+2931,Tom Heaton,matched,Q357912,Tom Heaton,1986-04-15,1.0,,,
+2932,Jordan Pickford,matched,Q13014035,Jordan Pickford,1994-03-07,1.0,,,
+2934,Michael Keane,ambiguous_candidates,,,,2.0,,,
+2935,Harry Maguire,matched,Q165772,Harry Maguire,1993-03-05,1.0,,,
+2936,James Tarkowski,matched,Q6144020,James Tarkowski,1992-11-19,1.0,,,
+2937,Declan Rice,matched,Q30007142,Declan Rice,1999-01-14,1.0,,,
+2938,James Ward-Prowse,matched,Q2643777,James Ward-Prowse,1994-11-01,1.0,,,
+2939,Callum Wilson,ambiguous_candidates,,,,,,,
+2990,Idrissa Gueye,ambiguous_candidates,,,,3.0,,,
+2997,Łukasz Fabiański,matched,Q40596,Łukasz Fabiański,1985-04-18,1.0,,,
+2999,Jan Bednarek,matched,Q16212492,Jan Bednarek,1996-04-12,1.0,,,
+3339,Cheick Doucouré,matched,Q47490408,Cheick Doucouré,2000-01-08,1.0,,,
+3428,Jordan Ayew,matched,Q367861,Jordan Ayew,1991-09-11,1.0,,,
+5996,Enzo Fernández,ambiguous_candidates,,,,2.0,,,
+6056,Nicolás Domínguez,ambiguous_candidates,,,,2.0,,,
+6610,Marcos Senesi,matched,Q23413053,Marcos Senesi,1997-05-10,1.0,,,
+6716,Alexis Mac Allister,matched,Q33297140,Alexis Mac Allister,1998-12-24,1.0,,,
+7029,Joe Gauci,matched,Q105944501,Joe Gauci,2000-07-04,1.0,,,
+7600,Igor Júlio,matched,Q25983385,Igor Julio dos Santos de Paulo,1998-02-07,1.0,,,
+8500,Wataru Endo,matched,Q10526787,Wataru Endō,1993-02-09,1.0,,,
+8598,Taiwo Awoniyi,matched,Q20932574,Taiwo Awoniyi,1997-08-12,1.0,,,
+8694,Wout Faes,matched,Q30014588,Wout Faes,1998-04-03,1.0,,,
+8794,George Hirst,ambiguous_candidates,,,,2.0,,,
+9971,Antony,no_confident_football_candidate,,,,0.0,,,
+10135,Bruno Guimarães,matched,Q58323172,Bruno Guimarães,1997-11-16,1.0,,,
+10329,João Pedro,ambiguous_candidates,,,,2.0,,,
+10373,Carlos Miguel,no_confident_football_candidate,,,,0.0,,,
+13489,Jhon Durán,matched,Q64748320,Jhon Durán,2003-12-13,1.0,,,
+13736,Daniel Muñoz,matched,Q56703599,Daniel Muñoz,1996-05-25,2.0,,,
+15745,Mads Roerslev,matched,Q29319616,Mads Roerslev,1999-06-24,1.0,,,
+15797,Jens Cajuste,matched,Q42393774,Jens Cajuste,1999-08-10,1.0,,,
+15799,Frank Onyeka,matched,Q56292818,Frank Onyeka,1998-01-01,1.0,,,
+15812,Paul Onuachu,matched,Q15729123,Paul Onuachu,1994-05-28,1.0,,,
+15870,Mads Hermansen,matched,Q65229910,Mads Hermansen,2000-07-11,1.0,,,
+15884,Jesper Lindstrøm,matched,Q65967193,Jesper Lindstrøm,2000-02-29,1.0,,,
+15908,Mikkel Damsgaard,matched,Q45034698,Mikkel Damsgaard,2000-07-03,1.0,,,
+15911,Mohammed Kudus,matched,Q56877051,Mohammed Kudus,2000-08-02,1.0,,,
+17365,Harry Toffolo,matched,Q18638102,Harry Toffolo,1995-08-19,1.0,,,
+17579,Sammie Szmodics,matched,Q16237035,Sammie Szmodics,1995-09-24,1.0,,,
+17597,Dara O'Shea,matched,Q56331751,Dara O'Shea,1999-03-04,1.0,,,
+17661,Jarrad Branthwaite,matched,Q70780349,Jarrad Branthwaite,2002-06-27,1.0,,,
+17714,Luke Woolfenden,matched,Q35554570,Luke Woolfenden,1998-10-21,1.0,,,
+17736,Daniel Iversen,matched,Q38776669,Daniel Iversen,1997-07-19,1.0,,,
+17739,George Edmundson,matched,Q21005715,George Edmundson,1997-08-31,1.0,,,
+18146,Danny Ward,ambiguous_candidates,,,,4.0,,,
+18397,Jack Taylor,ambiguous_candidates,,,,6.0,,,
+18592,Iliman Ndiaye,matched,Q105956269,Iliman Ndiaye,2000-03-06,1.0,,,
+18737,John Ruddy,matched,Q247312,John Ruddy,1986-10-24,1.0,,,
+18739,Willy Boly,matched,Q570983,Willy Boly,1991-02-03,1.0,,,
+18741,Conor Coady,matched,Q723606,Conor Coady,1993-02-25,1.0,,,
+18742,Matt Doherty,ambiguous_candidates,,,,4.0,,,
+18744,Max Kilman,no_confident_football_candidate,,,,0.0,,,
+18746,Morgan Gibbs-White,matched,Q28147578,Morgan Gibbs-White,2000-01-27,1.0,,,
+18753,Adama Traoré,ambiguous_candidates,,,,7.0,,,
+18755,João Virgínia,matched,Q57315493,João Virgínia,1999-10-10,1.0,,,
+18758,Séamus Coleman,matched,Q316724,Séamus Coleman,1988-10-11,1.0,,,
+18766,Dominic Calvert-Lewin,matched,Q19956709,Dominic Calvert-Lewin,1997-03-16,1.0,,,
+18771,Ricardo Pereira,matched,Q3718523,Ricardo Pereira,1993-10-06,1.0,,,
+18772,Jonny Evans,matched,Q29495,Jonny Evans,1988-01-03,1.0,,,
+18778,Harvey Barnes,matched,Q27974879,Harvey Barnes,1997-12-09,1.0,,,
+18779,Hamza Choudhury,matched,Q23771218,Hamza Choudhury,1997-10-01,1.0,,,
+18784,James Maddison,ambiguous_candidates,,,,2.0,,,
+18786,Wilfred Ndidi,matched,Q19587938,Wilfred Ndidi,1996-12-16,1.0,,,
+18788,Jamie Vardy,matched,Q6147586,Jamie Vardy,1987-01-11,1.0,,,
+18805,Abdoulaye Doucouré,matched,Q13427925,Abdoulaye Doucouré,1993-01-01,1.0,,,
+18806,Will Hughes,matched,Q133920,Will Hughes,1995-04-17,1.0,,,
+18813,Aaron Cresswell,matched,Q3603066,Aaron Cresswell,1989-12-15,1.0,,,
+18814,Issa Diop,matched,Q21621180,Issa Diop,1997-01-09,1.0,,,
+18819,Michail Antonio,matched,Q1966430,Michail Antonio,1990-03-28,1.0,,,
+18823,Ben Johnson,matched,Q61906182,Ben Johnson,2000-01-24,1.0,,,
+18843,Jeffrey Schlupp,matched,Q323046,Jeffrey Schlupp,1992-12-23,1.0,,,
+18846,Aaron Wan-Bissaka,matched,Q50137347,Aaron Wan-Bissaka,1997-11-26,1.0,,,
+18847,Joel Ward,matched,Q2621755,Joel Ward,1989-10-29,1.0,,,
+18858,Asmir Begović,matched,Q431368,Asmir Begović,1987-06-20,1.0,,,
+18860,Mark Travers,matched,Q59913688,Mark Travers,1999-05-18,1.0,,,
+18861,Nathan Aké,matched,Q1755683,Nathan Aké,1995-02-18,1.0,,,
+18862,Nathaniel Clyne,matched,Q714067,Nathaniel Clyne,1991-04-05,1.0,,,
+18869,Adam Smith,ambiguous_candidates,,,,4.0,,,
+18870,David Brooks,no_birth_date,Q127250521,David Brooks,,1.0,,,
+18872,Lewis Cook,ambiguous_candidates,,,,3.0,,,
+18873,Ryan Fraser,matched,Q44527,Ryan Fraser,1994-02-24,1.0,,,
+18883,Dominic Solanke,matched,Q18336397,Dominic Solanke,1997-09-14,1.0,,,
+18886,Martin Dúbravka,matched,Q510401,Martin Dúbravka,1989-01-15,1.0,,,
+18901,Sean Longstaff,matched,Q28542599,Sean Longstaff,1997-10-30,1.0,,,
+18911,Nick Pope,matched,Q15999945,Nick Pope,1992-04-19,1.0,,,
+18917,Ben Mee,ambiguous_candidates,,,,3.0,,,
+18918,Charlie Taylor,ambiguous_candidates,,,,6.0,,,
+18929,Dwight McNeil,matched,Q53652291,Dwight McNeil,1999-11-22,1.0,,,
+18931,Chris Wood,ambiguous_candidates,,,,4.0,,,
+18932,Fraser Forster,matched,Q348813,Fraser Forster,1988-03-17,1.0,,,
+18935,Alex McCarthy,matched,Q887695,Alex McCarthy,1989-12-03,1.0,,,
+18940,Jack Stephens,ambiguous_candidates,,,,2.0,,,
+18941,Matt Targett,matched,Q18128628,Matt Targett,1995-09-18,1.0,,,
+18943,Jannik Vestergaard,matched,Q66358,Jannik Vestergaard,1992-08-03,1.0,,,
+18947,Mario Lemina,matched,Q13780454,Mario Lemina,1993-09-01,1.0,,,
+18955,Danny Ings,matched,Q5220475,Danny Ings,1992-07-23,1.0,,,
+18959,Robert Sánchez,matched,Q56043276,Robert Sánchez,1997-11-18,1.0,,,
+18960,Jason Steele,matched,Q509809,Jason Steele,1990-08-18,1.0,,,
+18961,Dan Burn,matched,Q5213217,Dan Burn,1992-05-09,1.0,,,
+18963,Lewis Dunk,matched,Q6536506,Lewis Dunk,1991-11-21,1.0,,,
+18968,Yves Bissouma,matched,Q22683033,Yves Bissouma,1996-08-30,1.0,,,
+19004,Bobby Decordova-Reid,matched,Q10514792,Bobby De Cordova-Reid,1993-02-02,1.0,,,
+19012,Marcus Bettinelli,matched,Q16200385,Marcus Bettinelli,1992-05-24,1.0,,,
+19025,Tom Cairney,matched,Q1061904,Tom Cairney,1991-01-20,1.0,,,
+19030,Matt O'Riley,matched,,,2000-11-21,,Q35829599,Matt O'Riley,100.0
+19032,Ryan Sessegnon,matched,Q26250297,Ryan Sessegnon,2000-05-18,1.0,,,
+19035,Harvey Elliott,ambiguous_candidates,,,,2.0,,,
+19070,Max Aarons,matched,Q56641599,Max Aarons,2000-01-04,1.0,,,
+19071,Emiliano Buendía,matched,Q18637343,Emiliano Buendía,1996-12-25,1.0,,,
+19088,Dean Henderson,matched,Q28059260,Dean Henderson,1997-03-12,1.0,,,
+19119,Leif Davis,matched,Q60194671,Leif Davis,1999-12-31,1.0,,,
+19128,Jack Harrison,ambiguous_candidates,,,,5.0,,,
+19130,Kalvin Phillips,matched,Q20641319,Kalvin Phillips,1995-12-02,1.0,,,
+19136,Jack Clarke,ambiguous_candidates,,,,3.0,,,
+19143,Sam Johnstone,matched,Q327227,Sam Johnstone,1993-03-25,1.0,,,
+19145,Tosin Adarabioyo,matched,Q21620666,Tosin Adarabioyo,1997-09-24,1.0,,,
+19147,Craig Dawson,matched,Q1705657,Craig Dawson,1990-05-06,1.0,,,
+19150,Mason Holgate,matched,Q18921915,Mason Holgate,1996-10-22,1.0,,,
+19152,Conor Townsend,matched,Q5162304,Conor Townsend,1993-03-04,1.0,,,
+19163,Jacob Murphy,matched,Q15622117,Jacob Murphy,1995-02-24,1.0,,,
+19170,Morgan Rogers,ambiguous_candidates,,,,2.0,,,
+19179,Tyrone Mings,matched,Q16235643,Tyrone Mings,1993-03-13,1.0,,,
+19182,Axel Tuanzebe,matched,Q27019988,Axel Tuanzebe,1997-11-14,1.0,,,
+19187,Jack Grealish,matched,Q16056053,Jack Grealish,1995-09-10,1.0,,,
+19191,John McGinn,matched,Q10547335,John McGinn,1994-10-18,1.0,,,
+19192,Jacob Ramsey,matched,Q63228677,Jacob Ramsey,2001-05-28,1.0,,,
+19197,Scott Carson,matched,Q295627,Scott Carson,1985-09-03,1.0,,,
+19220,Mason Mount,matched,Q38000669,Mason Mount,1999-01-10,1.0,,,
+19221,Harry Wilson,ambiguous_candidates,,,,4.0,,,
+19235,Djed Spence,matched,Q56222532,Djed Spence,2000-08-09,1.0,,,
+19245,Marcus Tavernier,matched,Q37996874,Marcus Tavernier,1999-03-22,1.0,,,
+19248,Nathan Wood,ambiguous_candidates,,,,3.0,,,
+19263,Lloyd Kelly,matched,Q35851317,Lloyd Kelly,1998-10-06,1.0,,,
+19265,Adam Webster,ambiguous_candidates,,,,3.0,,,
+19281,Antoine Semenyo,matched,Q52990659,Antoine Semenyo,2000-01-07,1.0,,,
+19298,Matty Cash,matched,Q23041943,Matty Cash,1997-08-07,1.0,,,
+19305,Ryan Yates,matched,Q28794002,Ryan Yates,1997-11-21,1.0,,,
+19312,Steven Benda,matched,Q70276774,Steven Benda,1998-10-01,1.0,,,
+19341,Daniel Bentley,no_confident_football_candidate,,,,0.0,,,
+19354,Ezri Konsa,matched,Q27063854,Ezri Konsa,1997-10-23,1.0,,,
+19364,Neal Maupay,matched,Q1101455,Neal Maupay,1996-08-14,1.0,,,
+19365,Chiedozie Ogbene,matched,Q51727160,Chiedozie Ogbene,1997-05-01,1.0,,,
+19366,Ollie Watkins,matched,Q16911979,Ollie Watkins,1995-12-30,1.0,,,
+19428,Jarrod Bowen,matched,Q26704890,Jarrod Bowen,1996-12-20,1.0,,,
+19465,David Raya,matched,Q19665907,David Raya,1995-09-15,1.0,,,
+19480,Harrison Reed,matched,Q15054978,Harrison Reed,1995-01-27,1.0,,,
+19484,Adam Armstrong,matched,Q16023869,Adam Armstrong,1997-02-10,1.0,,,
+19485,Ben Brereton Díaz,matched,Q28606351,Ben Brereton,1999-04-18,1.0,,,
+19495,Nathan Collins,ambiguous_candidates,,,,2.0,,,
+19541,Christian Walton,matched,Q18387424,Christian Walton,1995-11-09,1.0,,,
+19545,Reece James,ambiguous_candidates,,,,2.0,,,
+19549,Antonee Robinson,matched,Q35778151,Antonee Robinson,1997-08-08,1.0,,,
+19558,Sam Morsy,matched,Q7407943,Sam Morsy,1991-09-10,1.0,,,
+19573,Joe Lumley,matched,Q17811744,Joe Lumley,1995-02-15,1.0,,,
+19586,Eberechi Eze,matched,Q28445512,Eberechi Eze,1998-06-29,1.0,,,
+19587,Ryan Manning,matched,Q28101945,Ryan Manning,1996-06-14,1.0,,,
+19599,Emiliano Martínez,ambiguous_candidates,,,,2.0,,,
+19684,Remi Matthews,matched,Q21061926,Remi Matthews,1994-02-10,1.0,,,
+19719,James Bree,matched,Q16887631,James Bree,1997-10-11,1.0,,,
+19720,Trevoh Chalobah,matched,Q36696865,Trevoh Chalobah,1999-07-05,1.0,,,
+19733,Flynn Downes,matched,Q34994628,Flynn Downes,1999-01-20,1.0,,,
+19760,James Justin,matched,Q26251403,James Justin,1998-02-23,1.0,,,
+19789,Ethan Pinnock,matched,Q36999329,Ethan Pinnock,1993-05-29,1.0,,,
+19825,Joe Aribo,matched,Q27469960,Joe Aribo,1996-07-21,1.0,,,
+19959,Ben White,ambiguous_candidates,,,,2.0,,,
+20007,Conor Chaplin,matched,Q18637246,Conor Chaplin,1997-02-16,1.0,,,
+20031,Marcus Harness,matched,Q16245833,Marcus Harness,1996-02-24,1.0,,,
+20089,Wes Burns,no_confident_football_candidate,,,,0.0,,,
+20093,James Hill,ambiguous_candidates,,,,3.0,,,
+20355,Aaron Ramsdale,matched,Q27967807,Aaron Ramsdale,1998-05-14,1.0,,,
+20457,Cameron Burgess,matched,Q17496350,Cameron Burgess,1995-10-21,1.0,,,
+20589,Bryan Mbeumo,matched,Q49561427,Bryan Mbeumo,1999-08-07,1.0,,,
+20649,Yoane Wissa,matched,Q28101965,Yoane Wissa,1996-09-03,1.0,,,
+20665,Jean-Ricner Bellegarde,matched,Q26251607,Jean-Ricner Bellegarde,1998-06-27,1.0,,,
+20995,Maxence Lacroix,matched,Q60286976,Maxence Lacroix,2000-04-06,1.0,,,
+21090,Diego Carlos,ambiguous_candidates,,,,2.0,,,
+21138,Rayan Aït Nouri,matched,Q50825738,Rayan Aït-Nouri,2001-06-06,1.0,,,
+21998,Axel Disasi,matched,Q23887767,Axel Disasi,1998-03-11,1.0,,,
+22090,William Saliba,matched,Q56868118,William Saliba,2001-03-24,1.0,,,
+22094,Wesley Fofana,ambiguous_candidates,,,,2.0,,,
+22149,Ibrahim Sangaré,ambiguous_candidates,,,,2.0,,,
+22224,Gabriel Magalhães,ambiguous_candidates,,,,2.0,,,
+22233,Boubakary Soumaré,matched,Q43369896,Boubakary Soumaré,1999-02-27,1.0,,,
+24882,Orel Mangala,matched,Q26838752,Orel Mangala,1998-03-18,1.0,,,
+24888,Hee-Chan Hwang,no_confident_football_candidate,,,,0.0,,,
+25004,Stefan Ortega,matched,Q821646,Stefan Ortega,1992-11-06,1.0,,,
+25073,Vitaly Janelt,matched,Q26212017,Vitaly Janelt,1998-05-10,1.0,,,
+25391,Niclas Füllkrug,matched,Q326159,Niclas Füllkrug,1993-02-09,1.0,,,
+25927,Jean-Philippe Mateta,matched,Q26964668,Jean-Philippe Mateta,1997-06-28,1.0,,,
+26232,Mark Flekken,matched,Q5811691,Mark Flekken,1993-06-13,1.0,,,
+30407,Christian Nørgaard,matched,Q5109980,Christian Nørgaard,1994-03-10,1.0,,,
+30410,Federico Chiesa,matched,Q26704703,Federico Chiesa,1997-10-25,1.0,,,
+30427,Caleb Okoli,matched,Q99519583,Caleb Okoli,2001-07-13,1.0,,,
+30435,Dejan Kulusevski,matched,Q59914139,Dejan Kulusevski,2000-04-25,1.0,,,
+30776,Cristian Romero,ambiguous_candidates,,,,3.0,,,
+31057,Hamed Junior Traorè,matched,Q43559571,Hamed Junior Traoré,2000-02-16,1.0,,,
+31146,Sandro Tonali,matched,Q43402334,Sandro Tonali,2000-05-08,1.0,,,
+31354,Guglielmo Vicario,matched,Q44083681,Guglielmo Vicario,1996-10-07,1.0,,,
+32887,Yukinari Sugawara,matched,Q50073536,Yukinari Sugawara,2000-06-28,1.0,,,
+36922,Sepp van den Berg,matched,Q50398907,Sepp van den Berg,2001-12-20,1.0,,,
+37127,Martin Ødegaard,matched,Q16902219,Martin Ødegaard,1998-12-17,1.0,,,
+37161,Luis Sinisterra,matched,Q26838145,Luis Sinisterra,1999-06-17,1.0,,,
+37724,Crysencio Summerville,matched,Q60664537,Crysencio Summerville,2001-10-30,1.0,,,
+38695,Jan Paul van Hecke,matched,Q66828825,Jan Paul van Hecke,2000-06-08,1.0,,,
+38746,Jurriën Timber,matched,Q53952196,Jurriën Timber,2001-06-17,1.0,,,
+40911,Jakub Moder,matched,Q52044004,Jakub Moder,1999-04-07,1.0,,,
+41606,Toti Gomes,matched,Q64747505,Toti Gomes,1999-01-16,1.0,,,
+41621,Matheus Nunes,ambiguous_candidates,,,,3.0,,,
+45078,Ross Stewart,ambiguous_candidates,,,,2.0,,,
+46731,Pervis Estupiñán,matched,Q20994068,Pervis Estupiñán,1998-01-21,1.0,,,
+46815,Pau Torres,ambiguous_candidates,,,,2.0,,,
+47311,Mikel Merino,matched,Q17612631,Mikel Merino,1996-06-22,1.0,,,
+47380,Marc Cucurella,no_confident_football_candidate,,,,0.0,,,
+47438,Mathias Jensen,ambiguous_candidates,,,,2.0,,,
+47499,Enes Ünal,matched,Q14637461,Enes Ünal,1997-05-10,1.0,,,
+47519,Pedro Porro,matched,Q44080929,Pedro Porro,1999-09-13,1.0,,,
+47547,Álex Moreno,matched,Q120630030,Álex Moreno,2002-01-25,1.0,,,
+50132,Altay Bayındır,matched,Q57415806,Altay Bayındır,1998-04-14,1.0,,,
+50999,Matt Turner,ambiguous_candidates,,,,2.0,,,
+51051,Julian Araujo,matched,Q57242266,Julián Araujo,2001-08-13,1.0,,,
+51494,Manuel Ugarte,matched,Q27960175,Manuel Ugarte,2001-04-11,1.0,,,
+51617,Darwin Núñez,matched,Q46372260,Darwin Núñez,1999-06-24,1.0,,,
+61431,Jakub Kiwior,matched,Q61744153,Jakub Kiwior,2000-02-15,1.0,,,
+61742,Hákon Rafn Valdimarsson,no_confident_football_candidate,,,,0.0,,,
+63577,Mykhaylo Mudryk,matched,Q58494476,Mykhailo Mudryk,2001-01-05,1.0,,,
+67943,Morato,single_name_manual_review,,,,1.0,,,
+67971,Marc Guéhi,matched,Q44737396,Marc Guéhi,2000-07-13,1.0,,,
+68466,Andy Irving,matched,Q47510489,Andy Irving,2000-05-13,1.0,,,
+70100,Joshua Zirkzee,matched,Q65675442,Joshua Zirkzee,2001-05-22,1.0,,,
+70747,Julio Enciso,no_confident_football_candidate,,,,0.0,,,
+90590,Georginio Rutter,matched,Q74051767,Georginio Rutter,2002-04-20,1.0,,,
+92993,Mats Wieffer,matched,Q58767078,Mats Wieffer,1999-11-16,1.0,,,
+106725,Keane Lewis-Potter,matched,Q62269289,Keane Lewis-Potter,2001-02-22,1.0,,,
+106835,Kaoru Mitoma,matched,Q44395063,Kaoru Mitoma,1997-05-20,1.0,,,
+116117,Moisés Caicedo,matched,Q87715532,Moisés Caicedo,2001-11-02,1.0,,,
+125743,Beto,single_name_manual_review,,,,3.0,,,
+126791,Nathan Broadhead,matched,Q44963860,Nathan Broadhead,1998-04-05,1.0,,,
+126949,Chris Richards,ambiguous_candidates,,,,2.0,,,
+127579,Jacob Greaves,matched,Q66685109,Jacob Greaves,2000-09-12,1.0,,,
+127769,Gabriel Martinelli,matched,Q61460651,Gabriel Martinelli,2001-06-18,1.0,,,
+129033,Joško Gvardiol,matched,Q73400656,Joško Gvardiol,2002-01-23,1.0,,,
+129058,Bart Verbruggen,matched,Q98682558,Bart Verbruggen,2002-08-18,1.0,,,
+129643,Evan Ferguson,matched,Q68650133,Evan Ferguson,2004-10-19,1.0,,,
+129711,Brennan Johnson,matched,Q66108160,Brennan Johnson,2001-05-23,1.0,,,
+130421,Will Smallbone,matched,Q80952616,Will Smallbone,2000-02-21,1.0,,,
+130423,Billy Gilmour,matched,Q42847487,Billy Gilmour,2001-06-11,1.0,,,
+135334,Santiago Bueno,matched,Q25367692,Santiago Bueno,1998-11-09,1.0,,,
+136723,Noni Madueke,matched,Q66801705,Noni Madueke,2002-03-10,1.0,,,
+137302,Cameron Archer,matched,Q66779547,Cameron Archer,2001-12-09,1.0,,,
+138417,Nathan Patterson,matched,Q83264648,Nathan Patterson,2001-10-16,1.0,,,
+138780,Neco Williams,matched,Q72921909,Neco Williams,2001-04-13,1.0,,,
+138787,Anthony Gordon,ambiguous_candidates,,,,3.0,,,
+138815,Tariq Lamptey,matched,Q80197171,Tariq Lamptey,2000-09-30,1.0,,,
+138816,Ian Maatsen,matched,Q69495231,Ian Maatsen,2002-03-10,1.0,,,
+138836,Harry Clarke,ambiguous_candidates,,,,3.0,,,
+138908,Elliot Anderson,matched,Q104762954,Elliot Anderson,2002-11-06,1.0,,,
+138931,Jaden Philogene-Bidace,matched,Q106916429,Jaden Philogene,2002-02-08,1.0,,,
+140947,Issa Kaboré,matched,Q67175861,Issa Kaboré,2001-05-12,1.0,,,
+141901,Jota Silva,matched,Q105945662,Jota Silva,1999-08-01,1.0,,,
+144729,Taylor Harwood-Bellis,matched,Q68485418,Taylor Harwood-Bellis,2002-01-30,1.0,,,
+144732,Tommy Doyle,ambiguous_candidates,,,,3.0,,,
+147835,Andrew Omobamidele,matched,Q104849454,Andrew Omobamidele,2002-06-23,1.0,,,
+148099,Kiernan Dewsbury-Hall,matched,Q83632882,Kiernan Dewsbury-Hall,1998-09-06,1.0,,,
+148270,Oliwier Zych,matched,Q105104357,Oliwier Zych,2004-06-28,1.0,,,
+151756,Will Dennis,matched,Q97059231,Will Dennis,2000-07-10,1.0,,,
+152418,Naouirou Ahamada,matched,Q74050891,Naouirou Ahamada,2002-03-29,1.0,,,
+152849,Micky van de Ven,matched,Q69812902,Micky van de Ven,2001-04-19,1.0,,,
+152856,Evanilson,single_name_manual_review,,,,1.0,,,
+152953,Levi Colwill,matched,Q107766903,Levi Colwill,2003-02-26,1.0,,,
+152967,Calvin Bassey,matched,Q97059010,Calvin Bassey,1999-12-31,1.0,,,
+152969,Luke Thomas,ambiguous_candidates,,,,2.0,,,
+152982,Cole Palmer,matched,Q99760796,Cole Palmer,2002-05-06,1.0,,,
+153066,Fabio Carvalho,ambiguous_candidates,,,,2.0,,,
+153407,Nathan Butler-Oyedeji,matched,Q116687539,Nathan Butler-Oyedeji,2003-01-04,1.0,,,
+153430,Anthony Elanga,matched,Q106805131,Anthony Elanga,2002-04-27,1.0,,,
+156428,Brandon Austin,matched,Q107316392,Brandon Austin,1999-01-08,1.0,,,
+157052,Riccardo Calafiori,matched,Q97999586,Riccardo Calafiori,2002-05-19,1.0,,,
+157912,Boubacar Traoré,ambiguous_candidates,,,,4.0,,,
+157997,Amad Diallo,matched,Q72603655,Amad Diallo,2002-07-11,1.0,,,
+158694,Valentino Livramento,matched,Q107930811,Tino Livramento,2002-11-12,1.0,,,
+158697,James McAtee,matched,Q108653498,James McAtee,2002-10-18,1.0,,,
+158698,Jarell Quansah,matched,Q112813857,Jarell Quansah,2003-01-29,1.0,,,
+158702,Cieran Slicker,matched,Q105477368,Cieran Slicker,2002-09-15,1.0,,,
+158710,Victor Kristiansen,matched,Q104773462,Victor Kristiansen,2002-12-16,1.0,,,
+161671,Illia Zabarnyi,matched,Q99360090,Illya Zabarnyi,2002-09-01,1.0,,,
+161907,Malo Gusto,matched,Q78752401,Malo Gusto,2003-05-19,1.0,,,
+161948,Liam Delap,matched,Q99584177,Liam Delap,2003-02-08,1.0,,,
+162498,Radu Drăguşin,matched,Q86835512,Radu Drăgușin,2002-02-03,1.0,,,
+162590,Tyler Morton,matched,Q108653507,Tyler Morton,2002-10-31,1.0,,,
+162687,Vítězslav Jaroš,matched,Q112503285,Vítězslav Jaroš,2001-07-23,1.0,,,
+162714,Amadou Onana,matched,Q99328435,Amadou Onana,2001-08-16,1.0,,,
+178077,Kevin Schade,matched,Q103845834,Kevin Schade,2001-11-27,1.0,,,
+180308,Myles Peart-Harris,matched,Q108653513,Myles Peart-Harris,2002-09-18,1.0,,,
+180316,Harvey Davies,matched,Q115145113,Harvey Davies,2003-09-23,1.0,,,
+180317,Conor Bradley,matched,Q107031318,Conor Bradley,2003-07-09,1.0,,,
+182201,Tyrick Mitchell,matched,Q96943831,Tyrick Mitchell,1999-09-01,1.0,,,
+191971,Jay Stansfield,matched,Q81053047,Jay Stansfield,2002-11-24,1.0,,,
+195103,João Gomes,no_confident_football_candidate,,,,0.0,,,
+195106,Rodrigo Muniz,ambiguous_candidates,,,,2.0,,,
+195717,Yerson Mosquera,no_confident_football_candidate,,,,0.0,,,
+195962,Chiquinho,single_name_manual_review,,,,3.0,,,
+195993,Carlos Alcaraz,matched,Q88130791,Carlos Alcaraz,2002-11-30,1.0,,,
+196156,Igor Thiago,matched,,,2001-06-26,,Q83639138,Igor Thiago,100.0
+196298,Ramón Sosa,matched,Q110160871,Ramón Sosa,1999-08-31,1.0,,,
+196855,Jaidon Anthony,matched,Q103417114,Jaidon Anthony,1999-12-01,1.0,,,
+199837,Kamaldeen Sulemana,matched,Q86269576,Kamaldeen Sulemana,2002-02-15,1.0,,,
+201368,Killian Cahill,no_birth_date,Q135750301,Killian Cahill,,1.0,,,
+202086,Jeremy Sarmiento,matched,Q108659564,Jeremy Sarmiento,2002-06-16,1.0,,,
+204039,Destiny Udogie,matched,Q73825355,Destiny Udogie,2002-11-28,1.0,,,
+206254,Miloš Kerkez,matched,Q110874376,Milos Kerkez,2003-11-07,1.0,,,
+215874,Thomas Cannon,matched,Q115208158,Thomas Cannon,2002-12-28,1.0,,,
+237129,Pape Matar Sarr,matched,Q104877690,Pape Matar Sarr,2002-09-14,1.0,,,
+263538,Yehor Yarmoliuk,no_confident_football_candidate,,,,0.0,,,
+265784,André,no_confident_football_candidate,,,,0.0,,,
+265820,Yasin Ayari,matched,Q103979811,Yasin Ayari,2003-10-06,1.0,,,
+266657,Savinho,single_name_manual_review,,,,1.0,,,
+270139,Jake O'Brien,matched,Q110565461,Jake O'Brien,2001-05-15,1.0,,,
+270507,Cesare Casadei,matched,Q112081015,Cesare Casadei,2003-01-10,1.0,,,
+270508,Lesley Ugochukwu,matched,Q106366721,Lesley Ugochukwu,2004-03-26,1.0,,,
+273757,Alfie Devine,matched,Q104772508,Alfie Devine,2004-08-01,1.0,,,
+273758,Imari Samuels,matched,Q118470954,Imari Samuels,2003-02-05,1.0,,,
+275170,Danilo,single_name_manual_review,,,,1.0,,,
+278074,Salah Oulad M'Hand,no_confident_football_candidate,,,,0.0,,,
+278085,Samuel Edozie,matched,Q105478432,Samuel Edozie,2003-01-28,1.0,,,
+278088,Carl Rushworth,matched,Q107985580,Carl Rushworth,2001-07-02,1.0,,,
+278118,Benjamin Nelson,no_confident_football_candidate,,,,0.0,,,
+278898,Chadi Riad,matched,Q104784108,Chadi Riad,2003-06-17,1.0,,,
+282125,Roméo Lavia,matched,Q108649714,Roméo Lavia,2004-01-06,1.0,,,
+282126,Carlos Borges,ambiguous_candidates,,,,2.0,,,
+282770,Rodrigo Gomes,ambiguous_candidates,,,,2.0,,,
+283058,Nicolas Jackson,matched,Q100144350,Nicolas Jackson,2001-06-20,1.0,,,
+283272,Alfie Pond,matched,Q110069543,Alfie Pond,2004-03-01,1.0,,,
+283290,Kasey McAteer,matched,Q110086287,Kasey McAteer,2001-11-22,1.0,,,
+284230,Rico Lewis,matched,Q113509374,Rico Lewis,2004-11-21,1.0,,,
+284322,Kobbie Mainoo,matched,Q114703020,Kobbie Mainoo,2005-04-19,1.0,,,
+284324,Alejandro Garnacho,matched,Q111366053,Alejandro Garnacho,2004-07-01,1.0,,,
+284400,Toby Collyer,matched,Q121437419,Toby Collyer,2004-01-03,1.0,,,
+284428,Omari Hutchinson,matched,Q111145131,Omari Hutchinson,2003-10-29,1.0,,,
+284457,Lamare Bogarde,matched,Q104737263,Lamare Bogarde,2004-01-05,1.0,,,
+284492,Lewis Hall,matched,Q110487162,Lewis Hall,2004-09-08,1.0,,,
+284500,Tim Iroegbunam,matched,Q111027477,Tim Iroegbunam,2003-06-30,1.0,,,
+284523,Sil Swinkels,matched,Q101627158,Sil Swinkels,2004-01-06,1.0,,,
+284797,Dango Ouattara,matched,Q108000402,Dango Ouattara,2002-02-11,1.0,,,
+286458,Justin Devenny,matched,Q122089959,Justin Devenny,2003-10-11,1.0,,,
+286616,Filip Jørgensen,matched,Q108776426,Filip Jörgensen,2002-04-16,1.0,,,
+288006,Rasmus Højlund,matched,Q66467324,Rasmus Højlund,2003-02-04,1.0,,,
+288102,Adam Wharton,matched,Q113488911,Adam Wharton,2004-02-06,1.0,,,
+288116,Kaelan Casey,matched,Q115048295,Kaelan Casey,2004-10-28,1.0,,,
+296458,Daniel Jebbison,matched,Q106766809,Daniel Jebbison,2003-08-13,1.0,,,
+297640,Roman Quintyne,no_confident_football_candidate,,,,0.0,,,
+297641,Jenson Metcalfe,matched,Q129256414,Jenson Metcalfe,2004-09-06,1.0,,,
+299813,Ali Al-Hamadi,matched,Q80661874,Ali Al-Hamadi,2002-03-01,1.0,,,
+301295,Kaden Rodney,matched,Q113586426,Kaden Rodney,2004-10-07,1.0,,,
+301771,Simon Adingra,matched,Q107742783,Simon Adingra,2002-01-01,1.0,,,
+303467,Abdul Fatawu Issahaku,matched,Q105812639,Abdul Fatawu Issahak,2004-03-08,1.0,,,
+304317,Tyler Dibling,matched,Q115973966,Tyler Dibling,2006-03-12,1.0,,,
+304853,Alex Scott,ambiguous_candidates,,,,4.0,,,
+305730,Jack Hinshelwood,matched,Q118791841,Jack Hinshelwood,2005-04-11,1.0,,,
+307123,Nico O'Reilly,matched,Q118645253,Nico O'Reilly,2005-03-21,1.0,,,
+311334,Facundo Buonanotte,matched,Q113028093,Facundo Buonanotte,2004-12-23,1.0,,,
+312260,Kadan Young,matched,Q118870489,Kadan Young,2006-01-19,1.0,,,
+313236,Ethan Nwaneri,matched,Q114027518,Ethan Nwaneri,2007-03-21,1.0,,,
+313245,Myles Lewis-Skelly,matched,Q118571844,Myles Lewis-Skelly,2006-09-26,1.0,,,
+315237,William Osula,matched,Q111464601,William Osula,2003-08-04,1.0,,,
+318056,Alex Murphy,ambiguous_candidates,,,,2.0,,,
+319572,Valentín Barco,matched,Q107542811,Valentín Barco,2004-07-23,1.0,,,
+328089,Archie Gray,ambiguous_candidates,,,,2.0,,,
+328105,Lewis Miley,matched,Q118780753,Lewis Miley,2006-05-01,1.0,,,
+328225,Brajan Gruda,matched,Q116432094,Brajan Gruda,2004-05-31,1.0,,,
+334035,Samuel Amo-Ameyaw,matched,Q118869958,Sam Amo-Ameyaw,2006-07-18,1.0,,,
+336564,Wilson Odobert,matched,Q113464781,Wilson Odobert,2004-11-28,1.0,,,
+336585,Mateus Fernandes,ambiguous_candidates,,,,2.0,,,
+336671,Renato Veiga,matched,Q116700351,Renato Veiga,2003-07-29,1.0,,,
+340135,Mark O'Mahony,matched,Q121463467,Mark O'Mahony,2005-01-14,1.0,,,
+340136,Franco Umeh,no_birth_date,Q129084697,Franco Umeh,,1.0,,,
+340573,Bilal El Khannouss,matched,Q105955374,Bilal El Khannouss,2004-05-10,1.0,,,
+342243,Tommy Setford,matched,Q123512560,Tommy Setford,2006-03-13,1.0,,,
+342320,Kosta Nedeljković,matched,Q119719443,Kosta Nedeljković,2005-12-16,1.0,,,
+342970,Leny Yoro,matched,,,2005-11-13,,Q112039295,Leny Yoro,100.0
+347316,Lucas Bergvall,matched,Q115371638,Lucas Bergvall,2006-02-02,1.0,,,
+350625,Jayden Meghoma,matched,Q121307507,Jayden Meghoma,2006-06-28,1.0,,,
+356041,Carlos Baleba,matched,Q113472432,Carlos Baleba,2004-01-03,1.0,,,
+356237,Kim Ji-Soo,no_confident_football_candidate,,,,0.0,,,
+361497,Dean Huijsen,matched,Q112184628,Dean Huijsen,2005-04-14,1.0,,,
+362270,Ethan Wheatley,matched,Q125585047,Ethan Wheatley,2006-01-20,1.0,,,
+363695,Murillo,no_confident_football_candidate,,,,0.0,,,
+367634,Asher Agbinone,matched,Q130608565,Asher Agbinone,2005-09-27,1.0,,,
+380492,Eric da Silva Moreira,matched,Q118611497,Eric da Silva Moreira,2006-05-03,1.0,,,
+380679,Caleb Kporha,matched,Q131109014,Caleb Kporha,2006-07-15,1.0,,,
+380690,Mikey Moore,matched,Q119700600,Mikey Moore,2007-08-11,1.0,,,
+380696,Josh Nichols,matched,Q130668046,Josh Nichols,2006-07-26,1.0,,,
+380697,Maldini Kacurri,matched,Q130305495,Maldini Kacurri,2005-10-04,1.0,,,
+382355,Jacob Wright,ambiguous_candidates,,,,2.0,,,
+382925,Ryan Trevitt,matched,Q113586549,Ryan Trevitt,2003-03-12,1.0,,,
+383685,Yankuba Minteh,matched,Q115399505,Yankuba Minteh,2004-07-22,1.0,,,
+383770,Jack Fletcher,ambiguous_candidates,,,,3.0,,,
+388510,Tony Yogane,matched,Q130316133,Tony Yogane,2005-09-24,1.0,,,
+389306,Roman Dixon,matched,Q129689290,Roman Dixon,2004-09-06,1.0,,,
+389315,Joshua King,ambiguous_candidates,,,,2.0,,,
+392270,Marc Guiu,matched,Q118472572,Marc Guiu Paz,2006-01-04,1.0,,,
+393195,Will Lankshear,matched,Q123001113,Will Lankshear,2005-04-20,1.0,,,
+402329,Ayden Heaven,matched,Q130319703,Ayden Heaven,2006-09-22,1.0,,,
+403064,Harry Amass,matched,Q119971486,Harry Amass,2007-03-16,1.0,,,
+404574,Luis Guilherme,ambiguous_candidates,,,,2.0,,,
+404656,Jahmai Simpson-Pusey,matched,Q130740691,Jahmai Simpson-Pusey,2005-11-04,1.0,,,
+405360,Harrison Armstrong,matched,Q129702132,Harrison Armstrong,2007-01-19,1.0,,,
+407033,Ismeal Kabia,matched,Q130304859,Ismeal Kabia,2005-12-10,1.0,,,
+430734,Yunus Konak,no_confident_football_candidate,,,,0.0,,,
+449245,Pedro Lima,matched,Q125548367,Pedro Lima,2006-07-01,1.0,,,

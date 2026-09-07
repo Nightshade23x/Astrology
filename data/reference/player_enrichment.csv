@@ -71,7 +71,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 978,1999-06-11,Gemini,Wikidata:Q27310755,False
 983,1997-08-09,Leo,Wikidata:Q20890178,False
 1096,2000-10-25,Scorpio,Wikidata:Q30134278,False
-1098,,,,False
+1098,1998-10-09,Libra,Wikidata:Q20810726,False
 1100,2000-07-21,Cancer,Wikidata:Q28967995,False
 1117,,,,False
 1119,1998-04-17,Aries,Wikidata:Q18157457,False
@@ -242,7 +242,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 19004,1993-02-02,Aquarius,Wikidata:Q10514792,False
 19012,1992-05-24,Gemini,Wikidata:Q16200385,False
 19025,1991-01-20,Aquarius,Wikidata:Q1061904,False
-19030,,,,False
+19030,2000-11-21,Scorpio,Wikidata:Q35829599,False
 19032,2000-05-18,Taurus,Wikidata:Q26250297,False
 19035,,,,False
 19070,2000-01-04,Capricorn,Wikidata:Q56641599,False
@@ -445,7 +445,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 195717,,,,False
 195962,,,,False
 195993,2002-11-30,Sagittarius,Wikidata:Q88130791,False
-196156,,,,False
+196156,2001-06-26,Cancer,Wikidata:Q83639138,False
 196298,1999-08-31,Virgo,Wikidata:Q110160871,False
 196855,1999-12-01,Sagittarius,Wikidata:Q103417114,False
 199837,2002-02-15,Aquarius,Wikidata:Q86269576,False
@@ -531,7 +531,7 @@ player_id,birth_date,zodiac,dob_source,dob_verified
 340573,2004-05-10,Taurus,Wikidata:Q105955374,False
 342243,2006-03-13,Pisces,Wikidata:Q123512560,False
 342320,2005-12-16,Sagittarius,Wikidata:Q119719443,False
-342970,,,,False
+342970,2005-11-13,Scorpio,Wikidata:Q112039295,False
 343209,,,,False
 347316,2006-02-02,Aquarius,Wikidata:Q115371638,False
 350625,2006-06-28,Cancer,Wikidata:Q121307507,False
